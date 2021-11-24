@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "511523890093",
+    "project_id": "ela2-cea81",
+    "storage_bucket": "ela2-cea81.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:511523890093:android:43512219343a830279f724",
+        "android_client_info": {
+          "package_name": "com.example.ela2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "511523890093-itt9o9pndko95g41nk6k0q5s6e1tqgra.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDppCEqc4rcyBA_GAQa4i-7QwCY9zrqd0U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "511523890093-itt9o9pndko95g41nk6k0q5s6e1tqgra.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

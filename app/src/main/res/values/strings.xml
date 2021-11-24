@@ -1,0 +1,493 @@
+<resources>
+    <!-- Main Menu -->
+    <string name="app_name">ELA</string>
+    <string name="TextViewTitle1">Welcome to</string>
+    <string name="TextViewTitle2"><![CDATA[E-Learning On Arduino & Its Applications]]></string>
+    <string name="buttonSubmenu1">INTRODUCTION</string>
+    <string name="buttonSubmenu2">COMPARISON</string>
+    <string name="buttonSubmenu3">APPLICATION</string>
+    <string name="title_activity_menu2">MainActivity</string>
+    <string name="buttonSubmenu4">About the App</string>
+
+
+    <!-- Submenu 1: Introduction of Arduino -->
+    <string name="textviewSubmenu1_1"><b>1. What is Arduino?</b>
+        \n Basically, <b>Arduino</b> is an electronic platform that available on both software
+        (Arduino IDE) and hardware (Arduino Board). It is open-source and it operated by giving
+        instructions (which written with Arduino IDE) to microcontroller of the Arduino board.
+        \n <u>Arduino original inventors:</u>
+        \n <b>Massimo Banzi</b> and <b>David Cuartielles</b> at the
+        <b>Interaction Design Institute Ivrea (Ivrea, Italy)</b> in 2005.
+        \n Arduino software (IDE) was created by <b>David Mellis</b>;
+        Inventors joined later:
+        \n <b>Gianluca Martino</b> and <b>Tom Igoe</b>
+        \n\n <b>2.  Arduino Hardware (Arduino Board)</b>
+        \n Arduino Board is an electronic circuit board which embedded with microcontroller which
+        it can be used to read inputs (such as light received by light sensors, finger triggered on
+        button) and produce outputs (such as turn on LED, activate motor).
+        \n Usually it used in electronic project as a main component to control its whole activity. \n</string>
+    <string name="arduinounor3">arduino_unor3</string>
+    <string name="arduino_uno_r3">arduino_unor3</string>
+    <string name="arduino_uno_textview1"><b>Arduino UNO R3</b>
+        \n Suggested Link to buy:
+        \n <a href="https://store.arduino.cc/usa/arduino-uno-rev3">[Arduino Official]</a>
+        \n [Cytron Malaysia]
+        \n <a href="https://my.cytron.io/p-starter-kit-for-arduino-uno">[Starter Kit]</a>
+        \n <a href="https://my.cytron.io/p-arduino-uno-rev3-main-board">[Board]</a>
+        \n <a href="https://shopee.com.my/product/33091591/466533399?smtt=0.19388095-1637001249.3">[Shopee]</a>  \n</string>
+    <string name="arduino_mega">arduino_mega</string>
+    <string name="arduino_mega_textview"> <b>Arduino Mega 2560 R3</b>
+        \n Suggested Link to buy:
+        \n <a href="https://store.arduino.cc/usa/mega-2560-r3">[Arduino Official]</a>
+        \n <a href="https://my.cytron.io/p-arduino-mega-2560-r3-main-board">[Cytron Malaysia]
+        \n <a href="https://shopee.com.my/product/126211897/1919705808?smtt=0.19388095-1637001788.3.">[Shopee]</a>    \n</a>
+    </string>
+    <string name="arduino_nano">arduino_nano</string>
+    <string name="arduino_nano_textview"> <b>Arduino Nano</b>
+        \n Suggested Link to buy:
+        \n <a href="https://store.arduino.cc/usa/arduino-nano">[Arduino Official]</a>
+        \n <a href="https://my.cytron.io/p-arduino-nano-main-board">[Cytron Malaysia]
+        \n <a href="https://shopee.com.my/product/6674515/33163331?smtt=0.19388095-1637001648.3.">[Shopee]</a>    \n</a></string>
+    <string name="arduino_leonardo">arduino_leonardo</string>
+    <string name="arduino_leonardo_textview"> <b>Arduino Leonardo</b>
+    \n Suggested Link to buy:
+        \n <a href="https://store.arduino.cc/usa/leonardo">[Arduino Official]  \n</a></string>
+
+    <!-- Arduino IDE -->
+    <string name="textviewSubmenu1.3">\n <b>3.  Arduino Software (Arduino IDE)</b> </string>
+    <string name="arduino_ide">arduino ide</string>
+    <string name="arduino_ide_textview1">The implementation of Arduino software, Arduino IDE is used to
+    give command Arduino board by coding in Arduino programming language. It can connect to Arduino
+    hardware (Arduino board) \n
+        \n <u>Arduino IDE Download Links:</u> \n (About 200MB) \n\n </string>
+    <!-- Arduino IDE button here -->
+    <string name="arduino_ide_textview2">
+    \n\n <u>Arduino IDE Download Video:</u> \n\n </string>
+    <!-- Download video button here -->
+    <string name="arduino_ide_textview3">
+        \n\n <u>Set HEX files location video guide:</u> \n\n </string>
+    <!-- HEX files location video button here -->
+    <string name="arduino_ide_textview4">
+        \n\n <u>Video how to implement Arduino code to Proteus (with HEX files):</u> \n\n </string>
+    <!-- Video button here -->
+
+    <!-- Schematic Diagram Software -->
+    <string name="textviewSubmenu1.4.1">
+    \n\n <u><b>Schematic Diagram Software:</b></u>
+        \n\n <u>Proteus Professional</u>
+        \n Official Download Links: \n\n </string>
+    <string name="crack_proteus1">
+        \n\n Crack (Alternatives) Download Links: \n\n  </string>
+    <string name="crack_proteus2">
+        \n\n Crack Installation Guide Video: \n\n  </string>
+    <string name="no_library">
+        \n\n\n If no Library Found in Proteus: \n\n </string>
+    <string name="arduino_library1">
+        \n\n\n Arduino Library of Proteus: \n\n  </string>
+    <string name="arduino_library2">
+        \n\n Installation Video of Adding Arduino Library into Proteus: \n\n </string>
+    <string name="KiCAD">
+        \n\n\n <u>KiCAD</u>
+        \n (About 1.2GB)
+        \n Download Links: \n\n  </string>
+
+    <!-- Wiring Connection Software -->
+    <string name="textviewSubmenu1.5">
+    \n\n <u><b>Wiring Connection Software:</b></u>
+    \n\n <u>Fritzing</u>
+        \n (About 180MB)
+        \n Official (Not Free): \n </string>
+    <string name="crack_fritzing">
+        \n Free (Version 0.9.3b.32.pc): \n  </string>
+    <string name="virtualbreadboard">
+        \n\n <u>Virtual Breadboard</u>
+        \n (About 152MB)
+        \n Official (Free, Windows): \n
+    </string>
+
+
+    <!-- Submenu 2: Comparison of Different Types of Arduino -->
+    <string name="buttonSubmenu2_1">Arduino MEGA</string>
+    <string name="buttonSubmenu2_2">Arduino UNO</string>
+    <string name="buttonSubmenu2_3">Arduino NANO</string>
+
+    <!-- Submenu 1.1: Arduino MEGA -->
+    <string name="pins_arduino_mega">pins_arduino_mega</string>
+    <string name="textviewSubmenu2_1_1">\n <b>Specification and Manual :</b> </string>
+    <string name="textviewSubmenu2_1_2">\n Suggested Project for Arduino MEGA:\n
+
+    </string>
+
+    <!-- Submenu 2.2: Arduino UNO -->
+    <string name="pins_arduino_uno">pins_arduino_uno</string>
+    <string name="textviewSubmenu2_2_1">\n <b>Specification and Manual :</b> </string>
+    <!-- \n\n <b>Digital Pins:</b>
+    \n <u>Serial Communication :</u>
+        \n \t Connected to correspond pins
+        \n\t (FTDI USB-to-TTL Serial Chip).
+        \n \t a) Pin 0 (RX): Used to receive (RX) TTL serial data.
+        \n \t b) Pin 1 (TX): Used to transmit (TX) TTL serial data. \n
+    \n <u>External Interrupts :</u> Pin 2, Pin 3
+        \n \t Configured to trigger an external interrupt by providing LOW value,
+        Rising Edge / Falling Edge /changing of value.
+        \n \t Function "attachinterrupt()" = https://www.arduino.cc/reference/en/language/functions/external-interrupts/attachinterrupt/ \n
+    \n <u>PWM output :</u> Pin 3, 5, 6, 9, 10, 11
+        \n \t Configured to provide 8-bit PWM output with "analog()" function.
+        \n \t Board with Microcontroller [ATmega8]: Available for Pin 9, Pin 10, Pin 11 only. \n
+    \n <u>BT Reset :</u> Pin 7
+        \n \t [Arduino BT ONLY] Implemented connection to RESET of bluetooth module. \n
+    \n <u>SPI :</u> Pin 10 | SS : Pin 11 | MISO : Pin 12 | SCK : Pin 13
+        \n \t SPI (Serial Peripheral Interface): These pins provide SPI communication with assistance
+        of SPI library.AREF (Analog Reference). [Currently not included in Arduino language] \n
+    \n <u>LED :</u> Pin 13
+        \n \t Pin Value = HIGH, LED ON.
+        \n \t Pin Value = LOW, LED OFF. \n
+    \n\n <b>Analog Pins:</b>
+        \n \t Pin A0, A1, A2, A3, A4, A5:
+        \n \t Configured to provide analog input (Range: 0-5 V).
+                Allowed to used as digital pins (Pin A0-A5 = Pin A14-A19). \n
+        \n \t A4(SDA) and A5(SCA) : Can be configured for TWI Communication
+        \n (with Wire library = http://wiring.org.co/reference/libraries/Wire/index.html) \n
+    \n\n <b>Power Pins: </b>
+        \n \t Vin : Configured for external power source to have input voltage to Arduino board
+        \n \t 5V : Configured to regulated power supply (DC) to power microcontroller (ATMega)
+        and other components.
+        \n \t 3.3V : Configured to give supply (maximum current draw=50mA) that generated by
+        on-board voltage regulator.
+        \n \t GND : Ground Pins.
+    \n \t RESET Pin: Reset microcontroller by set this line to LOW.
+    \n \t AREF Pin: Reference voltage for analog inputs and used with "analogReference()"
+        [https://www.arduino.cc/reference/en/language/functions/analog-io/analogreference/]
+    \n\n <b>DC Power Jack: \n </b> Connected to give external DC power supply. (9-12 V)
+    \n <b>USB Port:</b>
+    \n 1) Used for uploading sketches (coding) to Arduino IDE (Computer) to Arduino board.
+    \n 2) Used for Serial Communication between computer and board.
+    \n 3) Used for powering the board.
+    \n\n <b>Specification of Microcontroller, ATmega328P :</b>
+    \n Digital I/O Pins : 14 (6 is PWM Output)
+    \n Analog Input Pins : 6 (DIP)
+    \n DC Current per I/O Pin : 40 mA
+    \n Flash Memory : 32 kB
+    \n SRAM : 2 KB
+    \n EEPROM: 1 KB
+    \n\n Manual: \n [https://ww1.microchip.com/downloads/en/DeviceDoc/ATmega48A-PA-88A-PA-168A-PA-328-P-DS-DS40002061B.pdf]
+    </string> -->
+    <string name="textviewSubmenu2_2_2">\n Suggested Project for Arduino UNO:\n
+        \n - <a href="https://www.theengineeringprojects.com/2015/12/interfacing-keypad-arduino-proteus-isis.html">Interfacing of Keypad with Arduino in Proteus ISIS</a>
+        \n - <a href="https://www.theengineeringprojects.com/2015/04/display-adc-value-on-lcd-using-arduino-in-proteus-isis.html">Display ADC value on LCD using Arduino in Proteus</a>
+        \n - <a href="https://www.theengineeringprojects.com/2015/02/ultrasonic-sensor-simulation-proteus.html">Ultrasonic Sensor Simulation in Proteus</a>
+        \n - <a href="https://www.theengineeringprojects.com/2014/07/circuit-designing-lcd-arduino-proteus-isis.html">Circuit Designing of LCD With Arduino in Proteus</a>
+        \n - <a href="https://www.theengineeringprojects.com/2017/08/ultrasonic-sensor-arduino-interfacing.html">Ultrasonic Sensor Arduino Interfacing</a>
+        \n - <a href="https://www.theengineeringprojects.com/2015/09/interfacing-lm35-arduino-proteus-isis.html">Interfacing of LM35 with Arduino in Proteus ISIS</a>
+        \n - <a href="https://www.theengineeringprojects.com/2015/03/interfacing-of-seven-segment-with-arduino-in-proteus.html">Interfacing of Seven Segment with Arduino in Proteus</a>
+        \n - <a href="https://www.theengineeringprojects.com/2015/06/interfacing-pir-sensor-arduino.html">Interfacing PIR sensor with Arduino</a>
+        \n - <a href="https://www.theengineeringprojects.com/2016/07/interfacing-flame-sensor-arduino.html">Interfacing of Flame Sensor with Arduino</a>
+        \n - <a href="https://www.theengineeringprojects.com/2015/11/control-servo-motor-arduino-proteus.html">Control Servo Motor with Arduino in Proteus</a>
+    </string>
+
+    <!-- Submenu 2.3: Arduino NANO -->
+    <string name="pins_arduino_nano">pins_arduino_nano</string>
+    <string name="textviewSubmenu2_3_1">\n <b>Specification and Manual :</b> </string>
+    <string name="textviewSubmenu2_3_2">\n Suggested Project for Arduino NANO:\n
+
+    </string>
+
+
+    <!-- Submenu 3: Application of Arduino -->
+    <string name="buttonSubmenu3_1">Examples of \n <b>ARDUINO MEGA</b> </string>
+    <string name="buttonSubmenu3_2">Examples of \n <b>ARDUINO UNO</b></string>
+    <string name="buttonSubmenu3_3">Examples of \n <b>ARDUINO NANO</b></string>
+
+    <!-- Submenu 3.1: Examples of Arduino MEGA -->
+    <string name="textviewSubmenu3_1_1">1.</string>
+    <string name="textviewCoding3_1_1">[Coding put here]</string>
+    <string name="textviewSubmenu3_1_2">Schematic Diagram (Plot in Proteus)</string>
+    <string name="textviewSubmenu3_1_3">Wiring Connection</string>
+    <string name="textviewSubmenu3_1_4">Video Demonstration:</string>
+    <string name="comment_example_1">Comment (Example 1)</string>
+    <!-- Comment Feature 1 -->
+    <string name="send_button1">Comment</string>
+    <string name="hint_enter_comment1">Pls Enter Comments</string>
+    <string name="rec_comment1">---Comment--- \n\n\n</string>
+
+    <!-- Submenu 3.2: Examples of Arduino UNO -->
+
+    <!-- 4th Example -->
+    <string name="textviewSubmenu3_2_1"> <b>1.  Blinking with Transistor</b>
+    \n <u>Components needed:</u> \n- Arduino UNO R3 *1 \n- Breadboard *1 \n- General Purpose Transistor NPN *1
+    \n- LED light bulb *1 \n- 1k ohm Resistor *2 \n- Jumper Wires *1 \n- 5V Power Source (Powerbank, laptop port of battery)
+    \n\n <u>Software needed :</u> \n Arduino IDE, Proteus (Schematic Diagram), Fritzing / Virtual Breadboard (Wiring Diagram).
+    \n\n <u>Coding</u> (Arduino IDE): \n</string>
+    <string name="textviewCoding3_2_1">
+        const int transnpn = 2;
+
+        \n\n void setup()
+        \n {
+        \n pinMode (transnpn, OUTPUT);
+        \n}
+
+        \n\n void loop()
+        \n   {
+        \n digitalWrite (transnpn, HIGH);
+        \n delay(1500);
+        \n digitalWrite (transnpn, LOW);
+        \n delay(1500);
+        \n }
+    </string>
+    <string name="textviewSubmenu3_2_2"> \n <u>Schematic Diagram</u> (Proteus):</string>
+    <string name="schematic_examples3_2_1">Schematic_of_Blinking_with_Transistor</string>
+    <string name="textviewSubmenu3_2_3">\n <u>Wiring Connection (Fritzing / Virtual Breadboard):</u></string>
+    <string name="connection_examples_3_2_1">connection_examples_3_2_1</string>
+    <string name="textviewSubmenu3_2_4">\n\n <u>Video Demonstration:</u> \n https://www.youtube.com/watch?v=UElw1EXf3gw \n\n</string>
+    <string name="comment_example_4">Comment Example 4</string>
+    <!-- Comment Feature 4 -->
+    <string name="send_button4">Comment</string>
+    <string name="hint_enter_comment4">Pls type in Comments</string>
+    <string name="rec_comment4">---Comment--- \n\n\n</string>
+
+    <!-- 5th Example -->
+    <string name="textviewSubmenu3_2_5">\n\n <b>2. 4 Digit 7 Segment LED Display</b>
+    \n <u>Components Needed:</u> \n- Arduino UNO R3 *1 \n- Breadboard *1 \n- 7-Segment Display (3461BS-1, 6 pins) *1
+    \n- Jumper Wire *11 \n- 5V Power Source (Powerbank, laptop port or battery)
+    \n\n <u>Software Needed:</u> \n Arduino IDE, Proteus (Schematic Diagram), Fritzing / Virtual Breadboard (Wiring Diagram)
+    \n\n <u>Coding</u> (Arduino IDE): \n</string>
+    <string name="textviewCoding3_2_2"><![CDATA[
+    /*
+    \n Showing number 0-9 on a Common Anode 7-segment LED display
+    \n Displays the numbers 0-9 on the display, with one second in between.
+    \n      A
+    \n     ---
+    \n F |    | B
+    \n   | G  |
+    \n     ---
+    \n E |    | C
+    \n   |    |
+    \n     ---
+    \n     D
+    \n */
+    \n
+    \n // Pin 2-8 is connected to the 7 segments of the display.
+    \n
+    \n int pinA = 2;
+    \n int pinB = 3;
+    \n int pinC = 4;
+    \n int pinD = 5;
+    \n int pinE = 6;
+    \n int pinF = 7;
+    \n int pinG = 8;
+    \n int D1 = 9;
+    \n int D2 = 10;
+    \n int D3 = 11;
+    \n int D4 = 12;
+    \n
+    \n // the setup routine runs once when you press reset:
+    \n
+    \n  void setup() {
+    \n  // initialize the digital pins as outputs.
+    \n  pinMode(pinA, OUTPUT);
+    \n  pinMode(pinB, OUTPUT);
+    \n  pinMode(pinC, OUTPUT);
+    \n  pinMode(pinD, OUTPUT);
+    \n  pinMode(pinE, OUTPUT);
+    \n  pinMode(pinF, OUTPUT);
+    \n  pinMode(pinG, OUTPUT);
+    \n  pinMode(D1, OUTPUT);
+    \n  pinMode(D2, OUTPUT);
+    \n  pinMode(D3, OUTPUT);
+    \n  pinMode(D4, OUTPUT);
+    \n  }
+    \n
+    \n //In the cases of digit to display (from 0 – 9), HIGH means the Display OFF, LOW means Display ON
+    \n
+    \n void loop() {
+    \n  //First Digit
+    \n  digitalWrite(D1, HIGH);
+    \n  digitalWrite(D2, LOW);
+    \n  digitalWrite(D3, LOW);
+    \n  digitalWrite(D4, LOW);
+    \n  //0
+    \n  digitalWrite(pinA, LOW);
+    \n  digitalWrite(pinB, LOW);
+    \n  digitalWrite(pinC, LOW);
+    \n  digitalWrite(pinD, LOW);
+    \n  digitalWrite(pinE, LOW);
+    \n  digitalWrite(pinF, LOW);
+    \n  digitalWrite(pinG, HIGH);
+    \n  delay(1000);               // wait for a second
+    \n
+    \n  //Second Digit
+    \n  digitalWrite(D1, LOW);
+    \n  digitalWrite(D2, HIGH);
+    \n  digitalWrite(D3, LOW);
+    \n  digitalWrite(D4, LOW);
+    \n  //1
+    \n  digitalWrite(pinA, HIGH);
+    \n  digitalWrite(pinB, LOW);
+    \n  digitalWrite(pinC, LOW);
+    \n  digitalWrite(pinD, HIGH);
+    \n  digitalWrite(pinE, HIGH);
+    \n  digitalWrite(pinF, HIGH);
+    \n  digitalWrite(pinG, HIGH);
+    \n  delay(1000);               // wait for a second
+    \n
+    \n  //Third Digit
+    \n  digitalWrite(D1, LOW);
+    \n  digitalWrite(D2, LOW);
+    \n  digitalWrite(D3, HIGH);
+    \n  digitalWrite(D4, LOW);
+    \n  //2
+    \n  digitalWrite(pinA, LOW);
+    \n  digitalWrite(pinB, LOW);
+    \n  digitalWrite(pinC, HIGH);
+    \n  digitalWrite(pinD, LOW);
+    \n  digitalWrite(pinE, LOW);
+    \n  digitalWrite(pinF, HIGH);
+    \n  digitalWrite(pinG, LOW);
+    \n  delay(1000);               // wait for a second
+    \n
+    \n  //Fourth Digit
+    \n  digitalWrite(D1, LOW);
+    \n  digitalWrite(D2, LOW);
+    \n  digitalWrite(D3, LOW);
+    \n  digitalWrite(D4, HIGH);
+    \n  //3
+    \n  digitalWrite(pinA, LOW);
+    \n  digitalWrite(pinB, LOW);
+    \n  digitalWrite(pinC, LOW);
+    \n  digitalWrite(pinD, LOW);
+    \n  digitalWrite(pinE, HIGH);
+    \n  digitalWrite(pinF, HIGH);
+    \n  digitalWrite(pinG, LOW);
+    \n  delay(1000);               // wait for a second
+    \n
+    \n  //All Digit
+    \n  digitalWrite(D1, HIGH);
+    \n  digitalWrite(D2, HIGH);
+    \n  digitalWrite(D3, HIGH);
+    \n  digitalWrite(D4, HIGH);
+    \n
+    \n  //4
+    \n  digitalWrite(pinA, HIGH);
+    \n  digitalWrite(pinB, LOW);
+    \n  digitalWrite(pinC, LOW);
+    \n  digitalWrite(pinD, HIGH);
+    \n  digitalWrite(pinE, HIGH);
+    \n  digitalWrite(pinF, LOW);
+    \n  digitalWrite(pinG, LOW);
+    \n  delay(1000);               // wait for a second
+    \n
+    \n  //5
+    \n  digitalWrite(pinA, LOW);
+    \n  digitalWrite(pinB, HIGH);
+    \n  digitalWrite(pinC, LOW);
+    \n  digitalWrite(pinD, LOW);
+    \n  digitalWrite(pinE, HIGH);
+    \n  digitalWrite(pinF, LOW);
+    \n  digitalWrite(pinG, LOW);
+    \n  delay(1000);               // wait for a second
+    \n
+    \n  //6
+    \n  digitalWrite(pinA, LOW);
+    \n  digitalWrite(pinB, HIGH);
+    \n  digitalWrite(pinC, LOW);
+    \n  digitalWrite(pinD, LOW);
+    \n  digitalWrite(pinE, LOW);
+    \n  digitalWrite(pinF, LOW);
+    \n  digitalWrite(pinG, LOW);
+    \n  delay(1000);               // wait for a second
+    \n
+    \n  //7
+    \n  digitalWrite(pinA, LOW);
+    \n  digitalWrite(pinB, LOW);
+    \n  digitalWrite(pinC, LOW);
+    \n  digitalWrite(pinD, HIGH);
+    \n  digitalWrite(pinE, HIGH);
+    \n  digitalWrite(pinF, HIGH);
+    \n  digitalWrite(pinG, HIGH);
+    \n  delay(1000);               // wait for a second
+    \n
+    \n
+    \n /*
+    \n //8
+    \n  digitalWrite(pinA, LOW);
+    \n digitalWrite(pinB, LOW);
+    \n  digitalWrite(pinC, LOW);
+    \n  digitalWrite(pinD, LOW);
+    \n  digitalWrite(pinE, LOW);
+    \n  digitalWrite(pinF, LOW);
+    \n  digitalWrite(pinG, LOW);
+    \n
+    \n
+    \n  //9
+    \n  digitalWrite(pinA, LOW);
+    \n  digitalWrite(pinB, LOW);
+    \n  digitalWrite(pinC, LOW);
+    \n  digitalWrite(pinD, HIGH);
+    \n  digitalWrite(pinE, HIGH);
+    \n  digitalWrite(pinF, LOW);
+    \n  digitalWrite(pinG, LOW);
+    \n */
+    \n
+    \n }
+    \n
+    \n ]]></string>
+    <string name="textviewSubmenu3_2_6">\n <u>Schematic Diagram</u> (Proteus):</string>
+    <string name="schematic_examples3_2_2">Schematic_of_4 Digit 7 Segment LED Display</string>
+    <string name="textviewSubmenu3_2_7">\n <u>Wiring Connection (Fritzing / Virtual Breadboard):</u></string>
+    <string name="connection_examples_3_2_2">connection_examples_3_2_2</string>
+    <string name="textviewSubmenu3_2_8">\n <u>Video Demonstration:</u></string>
+    <string name="comment_example_5">Comment Example 5</string>
+    <!-- Comment Feature 5 -->
+
+    <!-- 6th Example -->
+    <string name="textviewSubmenu3_2_9">\n\n <b>3. Arduino Light Detector Flower</b>
+    \n <u>Components Needed:</u> \n- Arduino UNO R3 *1 \n- Breadboard *1 \n- Servo Motor *1
+    \n- Jumper Wire *7 \n- 5V Power Source (Powerbank, laptop port or battery)
+    \n\n <u>Software Needed:</u> \n Arduino IDE, Proteus (Schematic Diagram), Fritzing / Virtual Breadboard (Wiring Diagram)
+    \n\n <u>Coding</u> (Arduino IDE): \n</string>
+    1
+    <string name="textviewCoding3_2_3"><![CDATA[
+    #include <Servo.h>
+    \n
+    \n int sensorPin = A0;
+    \n int servoPin  = 9;
+    \n
+    \n int sensorValue = 0;
+    \n int servoGrad = 90;
+    \n int tolerance = 40;
+    \n
+    \n Servo myservo;
+    \n
+    \n void setup() {
+    \n   pinMode( sensorPin, INPUT);
+    \n   myservo.attach( servoPin );
+    \n   myservo.write( servoGrad );
+    \n }
+    \n
+    \n void loop() {
+    \n   sensorValue = analogRead(sensorPin);
+    \n   if ( sensorValue < (512-tolerance) )
+    \n   {
+    \n   if (servoGrad < 180) servoGrad++;
+    \n   }
+    \n
+    \n  if ( sensorValue > (512+tolerance) )
+    \n  {
+    \n    if (servoGrad > 0) servoGrad--;
+    \n  }
+    \n
+    \n  myservo.write( servoGrad );
+    \n
+    \n  delay(100);
+    \n }
+    \n
+    ]]></string>
+    <string name="textviewSubmenu3_2_10">\n <u>Schematic Diagram</u> (Proteus):</string>
+    <string name="schematic_examples3_2_3">Schematic_of_4 Digit 7 Segment LED Display</string>
+    <string name="textviewSubmenu3_2_11">\n <u>Wiring Connection (Fritzing / Virtual Breadboard):</u></string>
+    <string name="connection_examples_3_2_3">connection_examples_3_2_2</string>
+    <string name="textviewSubmenu3_2_12">\n <u>Video Demonstration:</u></string>
+    <string name="comment_example_6">Comment Example 6</string>
+
+
+</resources>

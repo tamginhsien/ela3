@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image_2"
+    tools:context=".Submenu2_1">
+
+    <ScrollView
+        android:id="@+id/ScrollView2_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D9d8bfd8"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="10dp"
+        app:layout_constraintVertical_bias="0.5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/Submenu2_1Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#78A5BA"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/buttonSubmenu2_1"
+                android:textAlignment="center"
+                android:textColor="#535D61"
+                android:textSize="36sp"
+                android:layout_marginBottom="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ARDUINO MEGA BOARD"
+                android:layout_gravity="center"
+                android:paddingBottom="5dp"
+                />
+
+            <!--    <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/clicktozoomimage"
+                    android:minHeight="?attr/actionBarSize"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            -->
+
+            <ImageView
+                android:id="@+id/pins_arduino_mega"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@string/pins_arduino_mega"
+                android:src="@drawable/pins_arduino_mega"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:clickable="true"
+                android:onClick="ImageClick1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Click the Image to get Zoom View (PDF)"
+                android:justificationMode="inter_word"
+                android:autoLink="all"
+                android:layout_margin="5dp"
+                />
+
+
+            <!-- <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Firstdfgsbhdbd"
+                        android:justificationMode="inter_word"
+                        android:autoLink="all"
+                        android:layout_margin="5dp"
+                        android:layout_column="0"
+                        android:gravity="center"
+                        />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Second"
+                        android:justificationMode="inter_word"
+                        android:autoLink="all"
+                        android:layout_margin="5dp"
+                        android:layout_column="0"
+                        android:gravity="center"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Second 2sjmnodpjvspodcvdcz \n\n vhvhvhvhvhvhvhvhvhvcnicnidcjdi"
+                        android:justificationMode="inter_word"
+                        android:autoLink="all"
+                        android:layout_margin="5dp"
+                        android:layout_column="1"
+                        android:gravity="center"
+                        />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Third"
+                        android:justificationMode="inter_word"
+                        android:autoLink="all"
+                        android:layout_margin="5dp"
+                        android:layout_column="0"
+                        android:gravity="center"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Third3"
+                        android:justificationMode="inter_word"
+                        android:autoLink="all"
+                        android:layout_margin="5dp"
+                        android:layout_column="1"
+                        android:gravity="center"
+                        />
+
+                </TableRow>
+
+            </TableLayout> -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:text="@string/textviewSubmenu2_1_1"
+                android:justificationMode="inter_word"
+                android:autoLink="all"
+                android:layout_margin="20dp"
+                android:background="#4286b4"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:autoLink="all"
+                android:text="ARDUINO MEGA MANUAL"
+                android:onClick="ButtonClick1"
+                android:drawableStart="@drawable/pdf_icon_1"
+                android:layout_marginBottom="5dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="@string/textviewSubmenu2_1_2"
+                android:justificationMode="inter_word"
+                android:layout_gravity="start"
+                android:autoLink="all"
+
+                />
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

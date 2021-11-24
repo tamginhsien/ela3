@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image_2"
+    tools:context=".Submenu3_2">
+
+    <!-- <ImageView
+            app:srcCompat="@drawable/Image File Name"
+         />
+    -->
+
+    <TextView
+        android:id="@+id/Submenu3_2Title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#78A5BA"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/buttonSubmenu3_2"
+        android:textAlignment="center"
+        android:textColor="#535D61"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:textIsSelectable="true"/>
+
+    <ScrollView
+        android:layout_width="350dp"
+        android:layout_height="600dp"
+        android:background="#d8bfd8"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Submenu3_2Title"
+        app:layout_constraintVertical_bias="0.5"
+        >
+
+        <LinearLayout
+            android:id="@+id/button_example_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:contextClickable="true">
+
+            <TextView
+                android:id="@+id/textView_submenu3.2.1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textviewSubmenu3_2_1"
+                android:textColor="@color/black"
+                android:justificationMode="inter_word"
+                />
+
+            <TextView
+                android:id="@+id/textView_coding3.2.1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="@string/textviewCoding3_2_1"
+                android:textColor="@color/black"
+                android:justificationMode="inter_word"
+                android:textIsSelectable="true"
+                />
+
+            <TextView
+                android:id="@+id/textView_submenu3.2.2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textviewSubmenu3_2_2"
+                android:textColor="@color/black"
+                android:justificationMode="inter_word"
+                />
+
+            <com.ortiz.touchview.TouchImageView
+                android:id="@+id/schematic_examples3.2.1"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:contentDescription="@string/schematic_examples3_2_1"
+                android:src="@drawable/schematic_examples3_2_1" />
+
+            <TextView
+                android:id="@+id/textView_submenu3.2.3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textviewSubmenu3_2_3"
+                android:textColor="@color/black"
+                android:justificationMode="inter_word"
+                />
+
+
+            <com.ortiz.touchview.TouchImageView
+                android:id="@+id/connection_examples3.2.1"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/connection_examples_3_2_1"
+                android:src="@drawable/connection_examples3_2_1" />
+
+            <TextView
+                android:id="@+id/textView_submenu3.2.4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/textviewSubmenu3_2_4"
+                android:textColor="@color/black"
+                android:justificationMode="inter_word"
+                android:autoLink="web"
+                />
+
+            <Button
+                android:id="@+id/button_comment_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/comment_example_4"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/textView_submenu3.2.5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textviewSubmenu3_2_5"
+                android:textColor="@color/black"
+                android:justificationMode="inter_word"
+                />
+
+            <TextView
+                android:id="@+id/textView_coding3.2.2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="@string/textviewCoding3_2_2"
+                android:textColor="@color/black"
+                android:justificationMode="inter_word"
+                android:textIsSelectable="true"
+                />
+
+            <TextView
+                android:id="@+id/textView_submenu3.2.6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textviewSubmenu3_2_6"
+                android:textColor="@color/black"
+                android:justificationMode="inter_word"
+                />
+
+            <com.ortiz.touchview.TouchImageView
+                android:id="@+id/schematic_examples3.2.2"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:contentDescription="@string/schematic_examples3_2_2"
+                android:src="@drawable/schematic_examples3_2_2" />
+
+            <TextView
+                android:id="@+id/textView_submenu3.2.7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textviewSubmenu3_2_7"
+                android:textColor="@color/black"
+                android:justificationMode="inter_word"
+                />
+
+            <com.ortiz.touchview.TouchImageView
+                android:id="@+id/connection_examples_3.2.2"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/connection_examples_3_2_2"
+                android:src="@drawable/connection_examples3_2_2" />
+
+            <TextView
+                android:id="@+id/textView_submenu3.2.8"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/textviewSubmenu3_2_8"
+                android:textColor="@color/black"
+                android:justificationMode="inter_word"
+                android:autoLink="web"
+                />
+
+            <Button
+                android:id="@+id/button_comment_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/comment_example_5"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/textView_submenu3.2.9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textviewSubmenu3_2_9"
+                android:textColor="@color/black"
+                android:justificationMode="inter_word"
+                />
+
+            <TextView
+                android:id="@+id/textView_coding3.2.3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="@string/textviewCoding3_2_3"
+                android:textColor="@color/black"
+                android:justificationMode="inter_word"
+                android:textIsSelectable="true"
+                />
+
+            <TextView
+                android:id="@+id/textView_submenu3.2.10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textviewSubmenu3_2_10"
+                android:textColor="@color/black"
+                android:justificationMode="inter_word"
+                />
+
+            <com.ortiz.touchview.TouchImageView
+                android:id="@+id/schematic_examples3.2.3"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:contentDescription="@string/schematic_examples3_2_3"
+                android:src="@drawable/schematic_examples3_2_3" />
+
+            <TextView
+                android:id="@+id/textView_submenu3.2.11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textviewSubmenu3_2_11"
+                android:textColor="@color/black"
+                android:justificationMode="inter_word"
+                />
+
+            <com.ortiz.touchview.TouchImageView
+                android:id="@+id/connection_examples_3.2.3"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/connection_examples_3_2_3"
+                android:src="@drawable/connection_examples3_2_3" />
+
+
+            <TextView
+                android:id="@+id/textView_submenu3.2.12"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/textviewSubmenu3_2_12"
+                android:textColor="@color/black"
+                android:justificationMode="inter_word"
+                android:autoLink="web"
+                />
+
+            <Button
+                android:id="@+id/button_comment_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/comment_example_6"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
