@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image_3">
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/titledesign"
+        android:text="@string/TextViewTitle1"
+        android:textColor="#bebebe"
+        android:textSize="50sp"
+        android:layout_marginVertical="10dp"
+        android:padding="15dp"
+        app:drawableBottomCompat="@drawable/title1_logo2" />
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title1"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/titledesign2"
+        android:text="@string/TextViewTitle2"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title2"
+        android:columnCount="2"
+        android:layout_marginVertical="15dp"
+        android:useDefaultMargins="true">
+
+        <Button
+            android:id="@+id/Submenu1"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="fill"
+            android:background="@drawable/buttondesign1"
+            android:shadowColor="@color/white"
+            android:text="@string/buttonSubmenu1"
+            android:textSize="18sp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="20dp"/>
+
+        <Button
+            android:id="@+id/Submenu2"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:background="@drawable/buttondesign1"
+            android:shadowColor="#2196F3"
+            android:text="@string/buttonSubmenu2"
+            android:textSize="18sp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="20dp"/>
+
+        <Button
+            android:id="@+id/Submenu3"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:background="@drawable/buttondesign1"
+            android:text="@string/buttonSubmenu3"
+            android:textSize="18sp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="20dp"/>
+
+        <Button
+            android:id="@+id/Submenu4"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:background="@drawable/buttondesign1"
+            android:shadowColor="#2196F3"
+            android:text="@string/buttonSubmenu4"
+            android:textSize="18sp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="20dp"/>
+
+    </GridLayout>
+
+
+</RelativeLayout>
+
+

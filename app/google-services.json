@@ -1,33 +1,34 @@
 {
   "project_info": {
-    "project_number": "606982866957",
-    "project_id": "ela-1-tgh",
-    "storage_bucket": "ela-1-tgh.appspot.com"
+    "project_number": "511523890093",
+    "firebase_url": "https://ela2-cea81-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "ela2-cea81",
+    "storage_bucket": "ela2-cea81.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:606982866957:android:07832715c1808c30832d44",
+        "mobilesdk_app_id": "1:511523890093:android:43512219343a830279f724",
         "android_client_info": {
           "package_name": "com.example.ela2"
         }
       },
       "oauth_client": [
         {
-          "client_id": "606982866957-nc4s6f9momqq383b0vt1pnm2isjs654e.apps.googleusercontent.com",
+          "client_id": "511523890093-itt9o9pndko95g41nk6k0q5s6e1tqgra.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCFTceX5bf0UJgc0GRtDflQET9y8LkS9i0"
+          "current_key": "AIzaSyDppCEqc4rcyBA_GAQa4i-7QwCY9zrqd0U"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "606982866957-nc4s6f9momqq383b0vt1pnm2isjs654e.apps.googleusercontent.com",
+              "client_id": "511523890093-itt9o9pndko95g41nk6k0q5s6e1tqgra.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

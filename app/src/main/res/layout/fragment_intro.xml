@@ -241,6 +241,7 @@
 
             <!-- Official Download button -->
             <Button
+                android:id="@+id/btn_proteusofficial"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -344,6 +345,7 @@
 
             <!-- Adding Arduino Library Video Button -->
             <Button
+                android:id="@+id/btn_library_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -364,7 +366,7 @@
 
             <!-- Official KiCAD Download Button -->
             <Button
-                android:id="@+id/btn_library_2"
+                android:id="@+id/btn_kicad"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"

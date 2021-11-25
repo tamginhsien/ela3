@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.ela2.screen.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_introFragment"
+            app:destination="@id/introFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_mainFragment_to_comparisonFragment"
+            app:destination="@id/comparisonFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_mainFragment_to_applicationFragment"
+            app:destination="@id/applicationFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_mainFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/introFragment"
+        android:name="com.example.ela2.screen.IntroFragment"
+        android:label="IntroFragment"
+        tools:layout="@layout/fragment_intro" />
+    <fragment
+        android:id="@+id/comparisonFragment"
+        android:name="com.example.ela2.screen.comparison.ComparisonFragment"
+        android:label="ComparisonFragment"
+        tools:layout="@layout/fragment_comparison">
+        <action
+            android:id="@+id/action_comparisonFragment_to_megaFragment"
+            app:destination="@id/megaFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_comparisonFragment_to_unoFragment"
+            app:destination="@id/unoFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_comparisonFragment_to_nanoFragment"
+            app:destination="@id/nanoFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/megaFragment"
+        android:name="com.example.ela2.screen.comparison.MegaFragment"
+        android:label="MegaFragment"
+        tools:layout="@layout/fragment_mega" />
+    <fragment
+        android:id="@+id/unoFragment"
+        android:name="com.example.ela2.screen.comparison.UnoFragment"
+        android:label="UnoFragment"
+        tools:layout="@layout/fragment_uno" />
+    <fragment
+        android:id="@+id/nanoFragment"
+        android:name="com.example.ela2.screen.comparison.NanoFragment"
+        android:label="NanoFragment"
+        tools:layout="@layout/fragment_nano" />
+    <fragment
+        android:id="@+id/applicationFragment"
+        android:name="com.example.ela2.screen.application.ApplicationFragment"
+        android:label="ApplicationFragment"
+        tools:layout="@layout/fragment_application">
+        <action
+            android:id="@+id/action_applicationFragment_to_exampleUnoFragment"
+            app:destination="@id/exampleUnoFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_applicationFragment_to_exampleNanoFragment"
+            app:destination="@id/exampleNanoFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_applicationFragment_to_exampleMegaFragment"
+            app:destination="@id/exampleMegaFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/exampleMegaFragment"
+        android:name="com.example.ela2.screen.application.ExampleMegaFragment"
+        android:label="ExampleMegaFragment"
+        tools:layout="@layout/fragment_example_mega">
+        <action
+            android:id="@+id/action_mega_comment"
+            app:destination="@id/commentFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/exampleNanoFragment"
+        android:name="com.example.ela2.screen.application.ExampleNanoFragment"
+        android:label="ExampleNanoFragment"
+        tools:layout="@layout/fragment_example_nano">
+        <action
+            android:id="@+id/action_nano_comment"
+            app:destination="@id/commentFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/exampleUnoFragment"
+        android:name="com.example.ela2.screen.application.ExampleUnoFragment"
+        android:label="ExampleUnoFragment"
+        tools:layout="@layout/fragment_example_uno">
+        <action
+            android:id="@+id/action_uno_comment"
+            app:destination="@id/commentFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_uno_image"
+            app:destination="@id/imagePreviewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.ela2.screen.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/commentFragment"
+        android:name="com.example.ela2.screen.comment.CommentFragment"
+        android:label="CommentFragment"
+        tools:layout="@layout/fragment_comment">
+        <argument
+            android:name="comments_key"
+            app:argType="string" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/imagePreviewFragment"
+        android:name="com.example.ela2.screen.ImagePreviewFragment"
+        android:label="ImagePreviewFragment"
+        tools:layout="@layout/fragment_image_preview" >
+        <argument
+            android:name="image"
+            app:argType="reference" />
+    </fragment>
+
+</navigation>

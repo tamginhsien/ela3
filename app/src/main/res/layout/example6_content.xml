@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@color/color_pink_background">
+
+    <TextView
+        android:id="@+id/textView_submenu3.2.9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:justificationMode="inter_word"
+        android:text="@string/textviewSubmenu3_2_9"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/textView_coding3.2.3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:justificationMode="inter_word"
+        android:text="@string/textviewCoding3_2_3"
+        android:textColor="@color/black"
+        android:textIsSelectable="true" />
+
+    <TextView
+        android:id="@+id/textView_submenu3.2.10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:justificationMode="inter_word"
+        android:text="@string/textviewSubmenu3_2_10"
+        android:textColor="@color/black" />
+
+    <ImageView
+        android:id="@+id/schematic_examples3.2.3"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:contentDescription="@string/schematic_examples3_2_3"
+        android:src="@drawable/schematic_examples3_2_3" />
+
+    <TextView
+        android:id="@+id/textView_submenu3.2.11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:justificationMode="inter_word"
+        android:text="@string/textviewSubmenu3_2_11"
+        android:textColor="@color/black" />
+
+    <ImageView
+        android:id="@+id/connection_examples_3.2.3"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/connection_examples_3_2_3"
+        android:src="@drawable/connection_examples3_2_3" />
+
+    <TextView
+        android:id="@+id/textView_submenu3.2.12"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:autoLink="web"
+        android:justificationMode="inter_word"
+        android:text="@string/textviewSubmenu3_2_12"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btn_comment_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/comment_example_6"
+        android:textSize="16sp" />
+
+</LinearLayout>

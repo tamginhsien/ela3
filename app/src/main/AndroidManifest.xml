@@ -13,9 +13,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Ela2"
         android:usesCleartextTraffic="true">
-        <activity
-            android:name=".pins_arduinouno_picture"
-            android:exported="false" />
         <activity android:name=".Submenu2_3" />
         <activity android:name=".Submenu2_2" />
         <activity android:name=".Submenu2_1" />
@@ -26,7 +23,8 @@
         <activity android:name=".Submenu3_1" />
         <activity android:name=".Submenu3" />
         <activity android:name=".Submenu1" />
-        <activity android:name=".SplashActivity">
+        <activity android:name=".SplashActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

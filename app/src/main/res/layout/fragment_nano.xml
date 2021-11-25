@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image_2"
+    tools:context=".Submenu2_3">
+
+    <ScrollView
+        android:id="@+id/ScrollView2_3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="#D9d8bfd8"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/Submenu2_3Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="#78A5BA"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/buttonSubmenu2_3"
+                android:textAlignment="center"
+                android:textColor="#535D61"
+                android:textSize="36sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="5dp"
+                android:text="ARDUINO NANO BOARD" />
+
+
+            <ImageView
+                android:id="@+id/iv_pins_arduino_mega"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:contentDescription="@string/pins_arduino_nano"
+                android:onClick="ImageClick1"
+                android:scaleType="fitXY"
+                android:src="@drawable/pins_arduino_nano" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:autoLink="all"
+                android:justificationMode="inter_word"
+                android:text="Click the Image to get Zoom View (PDF)" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:autoLink="all"
+                android:background="#4286b4"
+                android:justificationMode="inter_word"
+                android:text="@string/textviewSubmenu2_3_1"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn_download"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:autoLink="all"
+                android:drawableStart="@drawable/pdf_icon_1"
+                android:onClick="ButtonClick1"
+                android:text="ARDUINO NANO MANUAL" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:autoLink="all"
+                android:justificationMode="inter_word"
+                android:text="@string/textviewSubmenu2_3_2"
+                android:textColor="@color/black" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

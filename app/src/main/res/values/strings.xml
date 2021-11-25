@@ -205,6 +205,14 @@
     <string name="textviewSubmenu3_1_3">Wiring Connection</string>
     <string name="textviewSubmenu3_1_4">Video Demonstration:</string>
     <string name="comment_example_1">Comment (Example 1)</string>
+    <string name="comment_example_2">Comment (Example 2)</string>
+    <string name="comment_example_3">Comment (Example 3)</string>
+    <string name="comment_example_4">Comment (Example 4)</string>
+    <string name="comment_example_5">Comment (Example 5)</string>
+    <string name="comment_example_6">Comment (Example 6)</string>
+    <string name="comment_example_7">Comment (Example 7)</string>
+    <string name="comment_example_8">Comment (Example 8)</string>
+    <string name="comment_example_9">Comment (Example 9)</string>
     <!-- Comment Feature 1 -->
     <string name="send_button1">Comment</string>
     <string name="hint_enter_comment1">Pls Enter Comments</string>
@@ -213,8 +221,7 @@
     <!-- Submenu 3.2: Examples of Arduino UNO -->
 
     <!-- 4th Example -->
-    <string name="textviewSubmenu3_2_1"> <b>1.  Blinking with Transistor</b>
-    \n <u>Components needed:</u> \n- Arduino UNO R3 *1 \n- Breadboard *1 \n- General Purpose Transistor NPN *1
+    <string name="textviewSubmenu3_2_1"> <u>Components needed:</u> \n- Arduino UNO R3 *1 \n- Breadboard *1 \n- General Purpose Transistor NPN *1
     \n- LED light bulb *1 \n- 1k ohm Resistor *2 \n- Jumper Wires *1 \n- 5V Power Source (Powerbank, laptop port of battery)
     \n\n <u>Software needed :</u> \n Arduino IDE, Proteus (Schematic Diagram), Fritzing / Virtual Breadboard (Wiring Diagram).
     \n\n <u>Coding</u> (Arduino IDE): \n</string>
@@ -239,15 +246,13 @@
     <string name="textviewSubmenu3_2_3">\n <u>Wiring Connection (Fritzing / Virtual Breadboard):</u></string>
     <string name="connection_examples_3_2_1">connection_examples_3_2_1</string>
     <string name="textviewSubmenu3_2_4">\n\n <u>Video Demonstration:</u> \n https://www.youtube.com/watch?v=UElw1EXf3gw \n\n</string>
-    <string name="comment_example_4">Comment Example 4</string>
     <!-- Comment Feature 4 -->
     <string name="send_button4">Comment</string>
     <string name="hint_enter_comment4">Pls type in Comments</string>
     <string name="rec_comment4">---Comment--- \n\n\n</string>
 
     <!-- 5th Example -->
-    <string name="textviewSubmenu3_2_5">\n\n <b>2. 4 Digit 7 Segment LED Display</b>
-    \n <u>Components Needed:</u> \n- Arduino UNO R3 *1 \n- Breadboard *1 \n- 7-Segment Display (3461BS-1, 6 pins) *1
+    <string name="textviewSubmenu3_2_5"> <u>Components Needed:</u> \n- Arduino UNO R3 *1 \n- Breadboard *1 \n- 7-Segment Display (3461BS-1, 6 pins) *1
     \n- Jumper Wire *11 \n- 5V Power Source (Powerbank, laptop port or battery)
     \n\n <u>Software Needed:</u> \n Arduino IDE, Proteus (Schematic Diagram), Fritzing / Virtual Breadboard (Wiring Diagram)
     \n\n <u>Coding</u> (Arduino IDE): \n</string>
@@ -436,12 +441,10 @@
     <string name="textviewSubmenu3_2_7">\n <u>Wiring Connection (Fritzing / Virtual Breadboard):</u></string>
     <string name="connection_examples_3_2_2">connection_examples_3_2_2</string>
     <string name="textviewSubmenu3_2_8">\n <u>Video Demonstration:</u></string>
-    <string name="comment_example_5">Comment Example 5</string>
     <!-- Comment Feature 5 -->
 
     <!-- 6th Example -->
-    <string name="textviewSubmenu3_2_9">\n\n <b>3. Arduino Light Detector Flower</b>
-    \n <u>Components Needed:</u> \n- Arduino UNO R3 *1 \n- Breadboard *1 \n- Servo Motor *1
+    <string name="textviewSubmenu3_2_9"> <u>Components Needed:</u> \n- Arduino UNO R3 *1 \n- Breadboard *1 \n- Servo Motor *1
     \n- Jumper Wire *7 \n- 5V Power Source (Powerbank, laptop port or battery)
     \n\n <u>Software Needed:</u> \n Arduino IDE, Proteus (Schematic Diagram), Fritzing / Virtual Breadboard (Wiring Diagram)
     \n\n <u>Coding</u> (Arduino IDE): \n</string>
@@ -473,7 +476,7 @@
     \n
     \n  if ( sensorValue > (512+tolerance) )
     \n  {
-    \n    if (servoGrad > 0) servoGrad--;
+    \n    if (servoGrad > 0) servoGrad—;
     \n  }
     \n
     \n  myservo.write( servoGrad );
@@ -487,7 +490,8 @@
     <string name="textviewSubmenu3_2_11">\n <u>Wiring Connection (Fritzing / Virtual Breadboard):</u></string>
     <string name="connection_examples_3_2_3">connection_examples_3_2_2</string>
     <string name="textviewSubmenu3_2_12">\n <u>Video Demonstration:</u></string>
-    <string name="comment_example_6">Comment Example 6</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>
