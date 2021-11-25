@@ -11,6 +11,5 @@ public class Submenu3_3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_submenu33);
 
-        //Hello
     }
 }
