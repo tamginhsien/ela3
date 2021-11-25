@@ -43,6 +43,7 @@ public class IntroFragment extends Fragment {
         });
 
         binding.btnLink4.setOnClickListener(v -> {
+            // TODO - remove empty string
             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("")));
         });
 
@@ -59,6 +60,7 @@ public class IntroFragment extends Fragment {
         });
 
         binding.btnNoLibrary.setOnClickListener(v -> {
+            // TODO - remove empty string
             startActivity(new Intent (Intent.ACTION_VIEW, Uri.parse("")));
         });
 
@@ -67,6 +69,7 @@ public class IntroFragment extends Fragment {
         });
 
         binding.btnLibrary2.setOnClickListener(v -> {
+            // TODO - remove empty string
             startActivity(new Intent (Intent.ACTION_VIEW, Uri.parse("")));
         });
 

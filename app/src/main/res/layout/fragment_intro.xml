@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,11 +13,7 @@
         android:layout_height="match_parent"
         android:layout_margin="10dp"
         android:background="#D9d8bfd8"
-        android:padding="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent">
+        android:padding="5dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -36,19 +33,12 @@
                 android:textColor="#535D61"
                 android:textIsSelectable="true"
                 android:textSize="36sp" />
-            <!-- app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" -->
 
             <!-- Intro -->
             <TextView
                 android:id="@+id/textView_submenu1.1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:autoLink="all"
                 android:justificationMode="inter_word"
                 android:text="@string/textviewSubmenu1_1"
                 android:textColor="@color/black" />
@@ -59,6 +49,7 @@
                 android:layout_width="200dp"
                 android:layout_height="200dp"
                 android:layout_gravity="center"
+                android:layout_marginVertical="10dp"
                 android:contentDescription="@string/arduino_uno_r3"
                 app:srcCompat="@drawable/arduino_uno" />
 
@@ -76,6 +67,7 @@
                 android:layout_width="200dp"
                 android:layout_height="200dp"
                 android:layout_gravity="center"
+                android:layout_marginVertical="10dp"
                 android:contentDescription="@string/arduino_mega"
                 app:srcCompat="@drawable/arduino_mega" />
 
@@ -85,9 +77,7 @@
                 android:layout_height="wrap_content"
                 android:justificationMode="inter_word"
                 android:text="@string/arduino_mega_textview"
-                android:textColor="@color/black"
-
-                />
+                android:textColor="@color/black" />
 
             <!-- NANO -->
             <ImageView
@@ -95,6 +85,7 @@
                 android:layout_width="200dp"
                 android:layout_height="200dp"
                 android:layout_gravity="center"
+                android:layout_marginVertical="10dp"
                 android:contentDescription="@string/arduino_nano"
                 app:srcCompat="@drawable/arduino_nano" />
 
@@ -104,9 +95,7 @@
                 android:layout_height="wrap_content"
                 android:justificationMode="inter_word"
                 android:text="@string/arduino_nano_textview"
-                android:textColor="@color/black"
-
-                />
+                android:textColor="@color/black" />
 
             <!-- LEONARDO -->
             <ImageView
@@ -114,6 +103,7 @@
                 android:layout_width="200dp"
                 android:layout_height="200dp"
                 android:layout_gravity="center"
+                android:layout_marginVertical="10dp"
                 android:contentDescription="@string/arduino_leonardo"
                 app:srcCompat="@drawable/arduino_leonardo" />
 
@@ -183,7 +173,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:autoLink="all"
-                android:drawableLeft="@drawable/youtube_icon3"
+                android:drawableStart="@drawable/youtube_icon3"
+                android:drawablePadding="10dp"
                 android:onClick="arduinoidelink2"
                 android:text="Arduino IDE Installation Video" />
 
@@ -204,7 +195,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:autoLink="all"
-                android:drawableLeft="@drawable/youtube_icon3"
+                android:drawableStart="@drawable/youtube_icon3"
+                android:drawablePadding="10dp"
                 android:onClick="arduinoidelink3"
                 android:text="HEX File Location" />
 
@@ -225,7 +217,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:autoLink="all"
-                android:drawableLeft="@drawable/youtube_icon3"
+                android:drawableStart="@drawable/youtube_icon3"
+                android:drawablePadding="10dp"
                 android:onClick="arduinoidelink4"
                 android:text="Implement Arduino Code" />
 
@@ -286,8 +279,9 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:autoLink="all"
-                android:drawableLeft="@drawable/youtube_icon3"
+                android:drawableStart="@drawable/youtube_icon3"
                 android:onClick="crackproteus2"
+                android:drawablePadding="10dp"
                 android:text="Crack Installation Video" />
 
             <!-- If no Library Found in Proteus: Text -->
@@ -440,4 +434,4 @@
 
     </ScrollView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

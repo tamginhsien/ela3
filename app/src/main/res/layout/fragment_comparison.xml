@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_image_3"
-    tools:context=".Submenu2">
+    android:background="@drawable/background_image_3">
 
     <TextView
         android:id="@+id/Submenu2_Title"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#78A5BA"
         android:gravity="center"
@@ -18,63 +17,53 @@
         android:text="@string/buttonSubmenu2"
         android:textAlignment="center"
         android:textColor="#37474F"
-        android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        android:textSize="36sp" />
 
-    <Button
-        android:id="@+id/btn_mega"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
-        android:width="250dp"
-        android:height="90dp"
-        android:background="@drawable/buttondesign2"
-        android:text="@string/buttonSubmenu2_1"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Submenu2_Title"
-        app:layout_constraintVertical_bias="0.1" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_below="@id/Submenu2_Title"
+        android:layout_centerInParent="true">
 
-    <Button
-        android:id="@+id/btn_uno"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
-        android:width="250dp"
-        android:height="90dp"
-        android:background="@drawable/buttondesign2"
-        android:text="@string/buttonSubmenu2_2"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_mega"
-        app:layout_constraintVertical_bias="0.1" />
+        <Button
+            android:id="@+id/btn_mega"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="250dp"
+            android:height="100dp"
+            android:background="@drawable/buttondesign2"
+            android:text="@string/buttonSubmenu2_1"
+            android:textSize="16sp"
+            android:layout_marginVertical="30dp"/>
 
-    <Button
-        android:id="@+id/btn_nano"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
-        android:width="250dp"
-        android:height="90dp"
-        android:background="@drawable/buttondesign2"
-        android:text="@string/buttonSubmenu2_3"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_uno"
-        app:layout_constraintVertical_bias="0.1" />
+        <Button
+            android:id="@+id/btn_uno"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="250dp"
+            android:height="100dp"
+            android:background="@drawable/buttondesign2"
+            android:text="@string/buttonSubmenu2_2"
+            android:textSize="16sp"
+            android:layout_marginVertical="30dp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/btn_nano"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="250dp"
+            android:height="100dp"
+            android:background="@drawable/buttondesign2"
+            android:text="@string/buttonSubmenu2_3"
+            android:textSize="16sp"
+            android:layout_marginVertical="30dp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -38,6 +38,7 @@
         <entry key="..\:/Tam Backup/UTHM Tam/UTHM/FYP/ela2/app/src/main/res/layout/buttondesign.xml" value="0.1675213675213675" />
         <entry key="..\:/Tam Backup/UTHM Tam/UTHM/FYP/ela2/app/src/main/res/layout/titledesign.xml" value="0.15598290598290598" />
         <entry key="app/src/main/res/drawable/buttondesign1.xml" value="0.2598958333333333" />
+        <entry key="app/src/main/res/drawable/buttondesign2.xml" value="0.2598958333333333" />
         <entry key="app/src/main/res/drawable/titledesign2.xml" value="0.25885416666666666" />
         <entry key="app/src/main/res/layout-land/activity_submenu1.xml" value="0.17708333333333334" />
         <entry key="app/src/main/res/layout/activity_comment1.xml" value="0.24270833333333333" />
@@ -65,7 +66,7 @@
         <entry key="app/src/main/res/layout/fragment_example_nano.xml" value="0.24375" />
         <entry key="app/src/main/res/layout/fragment_example_uno.xml" value="0.2205056179775281" />
         <entry key="app/src/main/res/layout/fragment_image_preview.xml" value="0.24375" />
-        <entry key="app/src/main/res/layout/fragment_intro.xml" value="0.24375" />
+        <entry key="app/src/main/res/layout/fragment_intro.xml" value="0.23088307844104589" />
         <entry key="app/src/main/res/layout/fragment_main.xml" value="0.24375" />
         <entry key="app/src/main/res/layout/fragment_mega.xml" value="0.24375" />
         <entry key="app/src/main/res/layout/fragment_nano.xml" value="0.24375" />
