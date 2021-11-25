@@ -59,8 +59,9 @@
         <entry key="app/src/main/res/layout/example5_header.xml" value="0.1" />
         <entry key="app/src/main/res/layout/example6_content.xml" value="0.24375" />
         <entry key="app/src/main/res/layout/example6_header.xml" value="0.24375" />
+        <entry key="app/src/main/res/layout/fragment_about.xml" value="0.24583333333333332" />
         <entry key="app/src/main/res/layout/fragment_application.xml" value="0.24375" />
-        <entry key="app/src/main/res/layout/fragment_comment.xml" value="0.21231031768271066" />
+        <entry key="app/src/main/res/layout/fragment_comment.xml" value="0.335" />
         <entry key="app/src/main/res/layout/fragment_comparison.xml" value="0.2296875" />
         <entry key="app/src/main/res/layout/fragment_example_mega.xml" value="0.24375" />
         <entry key="app/src/main/res/layout/fragment_example_nano.xml" value="0.24375" />
@@ -71,7 +72,7 @@
         <entry key="app/src/main/res/layout/fragment_mega.xml" value="0.24375" />
         <entry key="app/src/main/res/layout/fragment_nano.xml" value="0.24375" />
         <entry key="app/src/main/res/layout/fragment_uno.xml" value="0.24375" />
-        <entry key="app/src/main/res/layout/item_comment.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/item_comment.xml" value="0.335" />
       </map>
     </option>
   </component>

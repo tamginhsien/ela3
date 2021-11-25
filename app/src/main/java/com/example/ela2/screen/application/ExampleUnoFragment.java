@@ -79,7 +79,7 @@ public class ExampleUnoFragment extends Fragment {
         });
 
         binding.expandableExample6.secondLayout.findViewById(R.id.btn_comment_6).setOnClickListener(v -> {
-            navController.navigate(ExampleUnoFragmentDirections.actionUnoComment("comments_example_5", "Example 5"));
+            navController.navigate(ExampleUnoFragmentDirections.actionUnoComment("comments_example_6", "Example 6"));
         });
 
         binding.expandableExample6.secondLayout.findViewById(R.id.schematic_examples3_2_3).setOnClickListener(v -> {
