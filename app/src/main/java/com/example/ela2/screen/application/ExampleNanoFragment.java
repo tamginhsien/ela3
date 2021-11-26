@@ -33,15 +33,40 @@ public class ExampleNanoFragment extends Fragment {
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        binding.btnComment7.setOnClickListener(v -> {
+        // Example 7
+        // expandable layout expand/collapse controller
+        binding.expandableExample7.setOnClickListener(v -> {
+            if (binding.expandableExample7.isExpanded()) {
+                binding.expandableExample7.collapse();
+            } else binding.expandableExample7.expand();
+        });
+
+        // Example 8
+        // expandable layout expand/collapse controller
+        binding.expandableExample8.setOnClickListener(v -> {
+            if (binding.expandableExample8.isExpanded()) {
+                binding.expandableExample8.collapse();
+            } else binding.expandableExample8.expand();
+        });
+
+        // Example 9
+        // expandable layout expand/collapse controller
+        binding.expandableExample9.setOnClickListener(v -> {
+            if (binding.expandableExample9.isExpanded()) {
+                binding.expandableExample9.collapse();
+            } else binding.expandableExample9.expand();
+        });
+
+        // comment button
+        binding.expandableExample7.secondLayout.findViewById(R.id.btn_comment_7).setOnClickListener(v -> {
             navController.navigate(ExampleNanoFragmentDirections.actionNanoComment("comments_example_7", "Example 7"));
         });
 
-        binding.btnComment8.setOnClickListener(v -> {
+        binding.expandableExample8.secondLayout.findViewById(R.id.btn_comment_8).setOnClickListener(v -> {
             navController.navigate(ExampleNanoFragmentDirections.actionNanoComment("comments_example_8", "Example 8"));
         });
 
-        binding.btnComment9.setOnClickListener(v -> {
+        binding.expandableExample9.secondLayout.findViewById(R.id.btn_comment_9).setOnClickListener(v -> {
             navController.navigate(ExampleNanoFragmentDirections.actionNanoComment("comments_example_9", "Example 9"));
         });
     }

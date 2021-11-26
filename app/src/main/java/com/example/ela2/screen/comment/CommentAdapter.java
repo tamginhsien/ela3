@@ -44,7 +44,7 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.CommentV
         return commentList == null? 0: commentList.size();
     }
 
-    public class CommentVH extends RecyclerView.ViewHolder {
+    public static class CommentVH extends RecyclerView.ViewHolder {
 
         ItemCommentBinding binding;
 

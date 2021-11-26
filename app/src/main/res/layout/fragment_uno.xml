@@ -105,14 +105,17 @@
                 android:onClick="ButtonClick1"
                 android:text="ARDUINO UNO MANUAL" />
 
-            <TextView
-                android:id="@+id/textView_submenu2_2_2"
+
+            <com.skydoves.expandablelayout.ExpandableLayout
+                android:id="@+id/expandable"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="start"
-                android:justificationMode="inter_word"
-                android:text="@string/textviewSubmenu2_2_2"
-                android:textColor="@color/black" />
+                app:expandable_parentLayout="@layout/layout_uno_header"
+                app:expandable_secondLayout="@layout/layout_uno_content"
+                app:expandable_showSpinner="true"
+                app:expandable_duration="300"
+                app:expandable_spinner_color="@color/black"
+                app:expandable_spinner_animate="true" />
 
 
         </LinearLayout>

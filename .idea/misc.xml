@@ -64,7 +64,7 @@
         <entry key="app/src/main/res/layout/fragment_comment.xml" value="0.335" />
         <entry key="app/src/main/res/layout/fragment_comparison.xml" value="0.2296875" />
         <entry key="app/src/main/res/layout/fragment_example_mega.xml" value="0.24375" />
-        <entry key="app/src/main/res/layout/fragment_example_nano.xml" value="0.24375" />
+        <entry key="app/src/main/res/layout/fragment_example_nano.xml" value="0.2157039711191336" />
         <entry key="app/src/main/res/layout/fragment_example_uno.xml" value="0.2205056179775281" />
         <entry key="app/src/main/res/layout/fragment_image_preview.xml" value="0.24375" />
         <entry key="app/src/main/res/layout/fragment_intro.xml" value="0.23088307844104589" />
@@ -73,6 +73,25 @@
         <entry key="app/src/main/res/layout/fragment_nano.xml" value="0.24375" />
         <entry key="app/src/main/res/layout/fragment_uno.xml" value="0.24375" />
         <entry key="app/src/main/res/layout/item_comment.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/layout_example1_content.xml" value="0.24895833333333334" />
+        <entry key="app/src/main/res/layout/layout_example1_header.xml" value="0.24895833333333334" />
+        <entry key="app/src/main/res/layout/layout_example2_content.xml" value="0.24895833333333334" />
+        <entry key="app/src/main/res/layout/layout_example2_header.xml" value="0.24895833333333334" />
+        <entry key="app/src/main/res/layout/layout_example3_content.xml" value="0.24895833333333334" />
+        <entry key="app/src/main/res/layout/layout_example3_header.xml" value="0.24895833333333334" />
+        <entry key="app/src/main/res/layout/layout_example4_header.xml" value="0.24512820512820513" />
+        <entry key="app/src/main/res/layout/layout_example7_content.xml" value="0.24895833333333334" />
+        <entry key="app/src/main/res/layout/layout_example7_header.xml" value="0.24895833333333334" />
+        <entry key="app/src/main/res/layout/layout_example8_content.xml" value="0.24895833333333334" />
+        <entry key="app/src/main/res/layout/layout_example8_header.xml" value="0.24895833333333334" />
+        <entry key="app/src/main/res/layout/layout_example9_content.xml" value="0.24895833333333334" />
+        <entry key="app/src/main/res/layout/layout_example9_header.xml" value="0.24895833333333334" />
+        <entry key="app/src/main/res/layout/layout_mega_content.xml" value="0.24895833333333334" />
+        <entry key="app/src/main/res/layout/layout_mega_header.xml" value="0.24895833333333334" />
+        <entry key="app/src/main/res/layout/layout_nano_content.xml" value="0.24895833333333334" />
+        <entry key="app/src/main/res/layout/layout_nano_header.xml" value="0.24895833333333334" />
+        <entry key="app/src/main/res/layout/layout_uno_content.xml" value="0.24512820512820513" />
+        <entry key="app/src/main/res/layout/layout_uno_header.xml" value="0.24512820512820513" />
       </map>
     </option>
   </component>

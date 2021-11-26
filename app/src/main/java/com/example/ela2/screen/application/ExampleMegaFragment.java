@@ -32,16 +32,41 @@ public class ExampleMegaFragment extends Fragment {
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        binding.btnComment1.setOnClickListener(v -> {
+        // Example 1
+        // expandable layout expand/collapse controller
+        binding.expandableExample1.setOnClickListener(v -> {
+            if (binding.expandableExample1.isExpanded()) {
+                binding.expandableExample1.collapse();
+            } else binding.expandableExample1.expand();
+        });
+
+        // Example 2
+        // expandable layout expand/collapse controller
+        binding.expandableExample2.setOnClickListener(v -> {
+            if (binding.expandableExample2.isExpanded()) {
+                binding.expandableExample2.collapse();
+            } else binding.expandableExample2.expand();
+        });
+
+        // Example 3
+        // expandable layout expand/collapse controller
+        binding.expandableExample3.setOnClickListener(v -> {
+            if (binding.expandableExample3.isExpanded()) {
+                binding.expandableExample3.collapse();
+            } else binding.expandableExample3.expand();
+        });
+
+        // comment button
+        binding.expandableExample1.secondLayout.findViewById(R.id.btn_comment_1).setOnClickListener(v -> {
             navController.navigate(ExampleMegaFragmentDirections.actionMegaComment("comments_example_1", "Example 1"));
         });
 
-        binding.btnComment2.setOnClickListener(v -> {
+        binding.expandableExample2.secondLayout.findViewById(R.id.btn_comment_2).setOnClickListener(v -> {
             navController.navigate(ExampleMegaFragmentDirections.actionMegaComment("comments_example_2", "Example 2"));
         });
 
-        binding.btnComment3.setOnClickListener(v -> {
-            navController.navigate(ExampleMegaFragmentDirections.actionMegaComment("comments_example_3", "Example 3"));
+        binding.expandableExample3.secondLayout.findViewById(R.id.btn_comment_3).setOnClickListener(v -> {
+            navController.navigate(ExampleMegaFragmentDirections.actionMegaComment("comments_example_3", "Example 2"));
         });
     }
 }

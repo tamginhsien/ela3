@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_image_2"
-    tools:context=".Submenu2_1">
+    android:background="@drawable/background_image_2">
 
     <ScrollView
         android:id="@+id/ScrollView2_1"
@@ -45,16 +44,6 @@
                 android:paddingBottom="5dp"
                 android:text="ARDUINO MEGA BOARD" />
 
-            <!--    <androidx.appcompat.widget.Toolbar
-                    android:id="@+id/toolbar"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:background="@drawable/clicktozoomimage"
-                    android:minHeight="?attr/actionBarSize"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-            -->
 
             <ImageView
                 android:id="@+id/iv_pins_arduino_mega"
@@ -78,95 +67,6 @@
                 android:text="Click the Image to get Zoom View (PDF)" />
 
 
-            <!-- <TableLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TableRow
-                    android:layout_width="fill_parent"
-                    android:layout_height="0dp"
-                    android:layout_margin="1dp"
-                    android:layout_weight="1">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/black"
-                        android:text="Firstdfgsbhdbd"
-                        android:justificationMode="inter_word"
-                        android:autoLink="all"
-                        android:layout_margin="5dp"
-                        android:layout_column="0"
-                        android:gravity="center"
-                        />
-
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="fill_parent"
-                    android:layout_height="0dp"
-                    android:layout_margin="1dp"
-                    android:layout_weight="1">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/black"
-                        android:text="Second"
-                        android:justificationMode="inter_word"
-                        android:autoLink="all"
-                        android:layout_margin="5dp"
-                        android:layout_column="0"
-                        android:gravity="center"
-                        />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/black"
-                        android:text="Second 2sjmnodpjvspodcvdcz \n\n vhvhvhvhvhvhvhvhvhvcnicnidcjdi"
-                        android:justificationMode="inter_word"
-                        android:autoLink="all"
-                        android:layout_margin="5dp"
-                        android:layout_column="1"
-                        android:gravity="center"
-                        />
-
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="fill_parent"
-                    android:layout_height="0dp"
-                    android:layout_margin="1dp"
-                    android:layout_weight="1">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/black"
-                        android:text="Third"
-                        android:justificationMode="inter_word"
-                        android:autoLink="all"
-                        android:layout_margin="5dp"
-                        android:layout_column="0"
-                        android:gravity="center"
-                        />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/black"
-                        android:text="Third3"
-                        android:justificationMode="inter_word"
-                        android:autoLink="all"
-                        android:layout_margin="5dp"
-                        android:layout_column="1"
-                        android:gravity="center"
-                        />
-
-                </TableRow>
-
-            </TableLayout> -->
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -189,14 +89,25 @@
                 android:onClick="ButtonClick1"
                 android:text="ARDUINO MEGA MANUAL" />
 
-            <TextView
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="start"-->
+<!--                android:autoLink="all"-->
+<!--                android:justificationMode="inter_word"-->
+<!--                android:text="@string/textviewSubmenu2_1_2"-->
+<!--                android:textColor="@color/black" />-->
+
+            <com.skydoves.expandablelayout.ExpandableLayout
+                android:id="@+id/expandable"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="start"
-                android:autoLink="all"
-                android:justificationMode="inter_word"
-                android:text="@string/textviewSubmenu2_1_2"
-                android:textColor="@color/black" />
+                app:expandable_parentLayout="@layout/layout_mega_header"
+                app:expandable_secondLayout="@layout/layout_mega_content"
+                app:expandable_showSpinner="true"
+                app:expandable_duration="300"
+                app:expandable_spinner_color="@color/black"
+                app:expandable_spinner_animate="true" />
 
 
         </LinearLayout>

@@ -5,10 +5,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_image_2"
-    tools:context=".Submenu1">
+    android:background="@drawable/background_image_2">
 
     <ScrollView
+        android:id="@+id/scrollview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="10dp"
@@ -45,7 +45,7 @@
 
             <!-- UNO -->
             <ImageView
-                android:id="@+id/arduino_uno_r3"
+                android:id="@+id/iv_arduino_uno_r3"
                 android:layout_width="200dp"
                 android:layout_height="200dp"
                 android:layout_gravity="center"
@@ -63,7 +63,7 @@
 
             <!-- MEGA -->
             <ImageView
-                android:id="@+id/arduino_mega"
+                android:id="@+id/iv_arduino_mega"
                 android:layout_width="200dp"
                 android:layout_height="200dp"
                 android:layout_gravity="center"
@@ -81,7 +81,7 @@
 
             <!-- NANO -->
             <ImageView
-                android:id="@+id/arduino_nano"
+                android:id="@+id/iv_arduino_nano"
                 android:layout_width="200dp"
                 android:layout_height="200dp"
                 android:layout_gravity="center"
@@ -99,7 +99,7 @@
 
             <!-- LEONARDO -->
             <ImageView
-                android:id="@+id/arduino_leonardo"
+                android:id="@+id/iv_arduino_leonardo"
                 android:layout_width="200dp"
                 android:layout_height="200dp"
                 android:layout_gravity="center"
@@ -129,7 +129,7 @@
                 android:textColor="@color/black" />
 
             <ImageView
-                android:id="@+id/arduino_ide"
+                android:id="@+id/iv_arduino_ide"
                 android:layout_width="200dp"
                 android:layout_height="200dp"
                 android:layout_gravity="center"

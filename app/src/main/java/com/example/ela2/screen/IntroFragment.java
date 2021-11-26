@@ -7,7 +7,10 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
+import androidx.navigation.fragment.NavHostFragment;
 
+import android.text.method.LinkMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,16 +23,19 @@ import com.example.ela2.databinding.FragmentMainBinding;
 public class IntroFragment extends Fragment {
 
     private FragmentIntroBinding binding;
+    private NavController navController;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         binding = FragmentIntroBinding.inflate(inflater, container, false);
+        navController = NavHostFragment.findNavController(this);
         return binding.getRoot();
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        // button on click action
         binding.btnLink1.setOnClickListener(v -> {
             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.arduino.cc/en/software")));
         });
@@ -89,6 +95,31 @@ public class IntroFragment extends Fragment {
             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.microsoft.com/en-my/p/virtual-breadboard/9nblggh4tj3w?cid=storebadge&ocid=badge&activetab=pivot:overviewtab")));
         });
 
+        // Set link movement for href
+        binding.arduinoUnoTextview.setMovementMethod(LinkMovementMethod.getInstance());
+        binding.arduinoMegaTextview.setMovementMethod(LinkMovementMethod.getInstance());
+        binding.arduinoLeonardoTextview.setMovementMethod(LinkMovementMethod.getInstance());
+        binding.arduinoNanoTextview.setMovementMethod(LinkMovementMethod.getInstance());
 
+        // image onclick to image preview
+        binding.ivArduinoUnoR3.setOnClickListener(v -> {
+            navController.navigate(IntroFragmentDirections.actionIntroImage(R.drawable.arduino_uno));
+        });
+
+        binding.ivArduinoMega.setOnClickListener(v -> {
+            navController.navigate(IntroFragmentDirections.actionIntroImage(R.drawable.arduino_mega));
+        });
+
+        binding.ivArduinoNano.setOnClickListener(v -> {
+            navController.navigate(IntroFragmentDirections.actionIntroImage(R.drawable.arduino_nano));
+        });
+
+        binding.ivArduinoLeonardo.setOnClickListener(v -> {
+            navController.navigate(IntroFragmentDirections.actionIntroImage(R.drawable.arduino_leonardo));
+        });
+
+        binding.ivArduinoIde.setOnClickListener(v -> {
+            navController.navigate(IntroFragmentDirections.actionIntroImage(R.drawable.arduino_ide));
+        });
     }
 }

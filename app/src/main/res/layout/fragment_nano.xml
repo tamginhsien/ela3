@@ -26,7 +26,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-
             <TextView
                 android:id="@+id/Submenu2_3Title"
                 android:layout_width="match_parent"
@@ -92,14 +91,25 @@
                 android:onClick="ButtonClick1"
                 android:text="ARDUINO NANO MANUAL" />
 
-            <TextView
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="start"-->
+<!--                android:autoLink="all"-->
+<!--                android:justificationMode="inter_word"-->
+<!--                android:text="@string/textviewSubmenu2_3_2"-->
+<!--                android:textColor="@color/black" />-->
+
+            <com.skydoves.expandablelayout.ExpandableLayout
+                android:id="@+id/expandable"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="start"
-                android:autoLink="all"
-                android:justificationMode="inter_word"
-                android:text="@string/textviewSubmenu2_3_2"
-                android:textColor="@color/black" />
+                app:expandable_parentLayout="@layout/layout_nano_header"
+                app:expandable_secondLayout="@layout/layout_nano_content"
+                app:expandable_showSpinner="true"
+                app:expandable_duration="300"
+                app:expandable_spinner_color="@color/black"
+                app:expandable_spinner_animate="true" />
 
 
         </LinearLayout>

@@ -172,8 +172,8 @@
     \n EEPROM: 1 KB
     \n\n Manual: \n [https://ww1.microchip.com/downloads/en/DeviceDoc/ATmega48A-PA-88A-PA-168A-PA-328-P-DS-DS40002061B.pdf]
     </string> -->
-    <string name="textviewSubmenu2_2_2">\n Suggested Project for Arduino UNO:\n
-        \n - <a href="https://www.theengineeringprojects.com/2015/12/interfacing-keypad-arduino-proteus-isis.html">Interfacing of Keypad with Arduino in Proteus ISIS</a>
+    <string name="textviewSubmenu2_2_2">
+         - <a href="https://www.theengineeringprojects.com/2015/12/interfacing-keypad-arduino-proteus-isis.html">Interfacing of Keypad with Arduino in Proteus ISIS</a>
         \n - <a href="https://www.theengineeringprojects.com/2015/04/display-adc-value-on-lcd-using-arduino-in-proteus-isis.html">Display ADC value on LCD using Arduino in Proteus</a>
         \n - <a href="https://www.theengineeringprojects.com/2015/02/ultrasonic-sensor-simulation-proteus.html">Ultrasonic Sensor Simulation in Proteus</a>
         \n - <a href="https://www.theengineeringprojects.com/2014/07/circuit-designing-lcd-arduino-proteus-isis.html">Circuit Designing of LCD With Arduino in Proteus</a>

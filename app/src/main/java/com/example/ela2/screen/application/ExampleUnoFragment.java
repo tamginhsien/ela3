@@ -36,16 +36,20 @@ public class ExampleUnoFragment extends Fragment {
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        // Example 4
+        // expandable layout expand/collapse controller
         binding.expandableExample4.setOnClickListener(v -> {
             if (binding.expandableExample4.isExpanded()) {
                 binding.expandableExample4.collapse();
             } else binding.expandableExample4.expand();
         });
 
+        // comment button
         binding.expandableExample4.secondLayout.findViewById(R.id.btn_comment_4).setOnClickListener(v -> {
             navController.navigate(ExampleUnoFragmentDirections.actionUnoComment("comments_example_4", "Example 4"));
         });
 
+        // image click to image preview
         binding.expandableExample4.secondLayout.findViewById(R.id.schematic_examples3_2_1).setOnClickListener(v -> {
             navController.navigate(ExampleUnoFragmentDirections.actionUnoImage(R.drawable.schematic_examples3_2_1));
         });
@@ -54,16 +58,20 @@ public class ExampleUnoFragment extends Fragment {
             navController.navigate(ExampleUnoFragmentDirections.actionUnoImage(R.drawable.connection_examples3_2_1));
         });
 
+        // Example 5
+        // expandable layout expand/collapse controller
         binding.expandableExample5.setOnClickListener(v -> {
             if (binding.expandableExample5.isExpanded()) {
                 binding.expandableExample5.collapse();
             } else binding.expandableExample5.expand();
         });
 
+        // comment button
         binding.expandableExample5.secondLayout.findViewById(R.id.btn_comment_5).setOnClickListener(v -> {
             navController.navigate(ExampleUnoFragmentDirections.actionUnoComment("comments_example_5", "Example 5"));
         });
 
+        // image click to image preview
         binding.expandableExample5.secondLayout.findViewById(R.id.schematic_examples3_2_2).setOnClickListener(v -> {
             navController.navigate(ExampleUnoFragmentDirections.actionUnoImage(R.drawable.schematic_examples3_2_2));
         });
@@ -72,16 +80,20 @@ public class ExampleUnoFragment extends Fragment {
             navController.navigate(ExampleUnoFragmentDirections.actionUnoImage(R.drawable.connection_examples3_2_2));
         });
 
+        // Example 6
+        // expandable layout expand/collapse controller
         binding.expandableExample6.setOnClickListener(v -> {
             if (binding.expandableExample6.isExpanded()) {
                 binding.expandableExample6.collapse();
             } else binding.expandableExample6.expand();
         });
 
+        // comment button
         binding.expandableExample6.secondLayout.findViewById(R.id.btn_comment_6).setOnClickListener(v -> {
             navController.navigate(ExampleUnoFragmentDirections.actionUnoComment("comments_example_6", "Example 6"));
         });
 
+        // image click to image preview
         binding.expandableExample6.secondLayout.findViewById(R.id.schematic_examples3_2_3).setOnClickListener(v -> {
             navController.navigate(ExampleUnoFragmentDirections.actionUnoImage(R.drawable.schematic_examples3_2_3));
         });

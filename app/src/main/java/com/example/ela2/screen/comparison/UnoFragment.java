@@ -8,9 +8,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import android.text.method.LinkMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.example.ela2.R;
 import com.example.ela2.databinding.FragmentMainBinding;
@@ -37,5 +39,14 @@ public class UnoFragment extends Fragment {
         binding.btnDownload.setOnClickListener(v -> {
             startActivity(new Intent (Intent.ACTION_VIEW, Uri.parse("https://drive.google.com/file/d/11bpiXXO8nNrNwvbqdIb6G2SZPhq6q0os/view?usp=sharing")));
         });
+
+        binding.expandable.setOnClickListener(v -> {
+            if (binding.expandable.isExpanded()) {
+                binding.expandable.collapse();
+            } else binding.expandable.expand();
+        });
+
+        TextView tvUnoContent = binding.expandable.secondLayout.findViewById(R.id.tv_uno_content);
+        tvUnoContent.setMovementMethod(LinkMovementMethod.getInstance());
     }
 }

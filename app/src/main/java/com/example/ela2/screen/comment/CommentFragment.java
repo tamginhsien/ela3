@@ -42,15 +42,18 @@ public class CommentFragment extends Fragment {
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        // get data from previous fragment
         String commentsKey = CommentFragmentArgs.fromBundle(getArguments()).getCommentsKey();
         String title = CommentFragmentArgs.fromBundle(getArguments()).getTitle();
 
-        setupRecyclerView();
         binding.tvTitle.setText(title);
+        setupRecyclerView();
 
         observeAllComments(commentsKey);
 
         binding.btnSend.setOnClickListener(v -> {
+            // when btnSend is clicked, get etComment's value and check whether it is empty.
+            // if not empty, then setComment() and also clear the current text.
             String userInput = binding.etComment.getText().toString();
 
             if(!userInput.isEmpty()) {
@@ -68,6 +71,10 @@ public class CommentFragment extends Fragment {
         binding.rvComment.setAdapter(commentAdapter);
     }
 
+    /**
+     * Function to constantly observe data changes in firestore
+     * @param dbCollection collection's key
+     */
     public void observeAllComments(String dbCollection) {
         db.collection(dbCollection).orderBy("timestamp").addSnapshotListener((snapshot, error) -> {
             if (error != null) {
@@ -94,6 +101,11 @@ public class CommentFragment extends Fragment {
         });
     }
 
+    /**
+     * Function to add comment into firestore
+     * @param dbCollection collection's key
+     * @param comment comments to be stored
+     */
     public void setComment(String dbCollection, String comment) {
         UserComment userComment = new UserComment(comment, Date.from(Instant.now()));
 
