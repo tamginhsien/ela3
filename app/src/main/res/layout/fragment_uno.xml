@@ -62,14 +62,13 @@
             <ImageView
                 android:id="@+id/iv_pins_arduino_uno"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="270dp"
                 android:layout_gravity="center"
                 android:adjustViewBounds="true"
                 android:clickable="true"
                 android:contentDescription="@string/pins_arduino_uno"
                 android:onClick="ImageClick1"
-                android:scaleType="fitXY"
-                android:src="@drawable/pins_arduino_uno" />
+                android:scaleType="fitXY" />
 
             <TextView
                 android:id="@+id/picture_description_2_2_2"

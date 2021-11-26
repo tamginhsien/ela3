@@ -48,14 +48,13 @@
             <ImageView
                 android:id="@+id/iv_pins_arduino_mega"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="270dp"
                 android:layout_gravity="center"
                 android:adjustViewBounds="true"
                 android:clickable="true"
                 android:contentDescription="@string/pins_arduino_mega"
                 android:onClick="ImageClick1"
-                android:scaleType="fitXY"
-                android:src="@drawable/pins_arduino_mega" />
+                android:scaleType="fitXY" />
 
             <TextView
                 android:layout_width="wrap_content"

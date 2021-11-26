@@ -14,6 +14,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.ela2.R;
 import com.example.ela2.databinding.FragmentMainBinding;
 import com.example.ela2.databinding.FragmentNanoBinding;
@@ -32,7 +33,7 @@ public class NanoFragment extends Fragment {
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-       binding.ivPinsArduinoMega.setOnClickListener(v -> {
+       binding.ivPinsArduinoNano.setOnClickListener(v -> {
            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://drive.google.com/file/d/1vUVK_BNdXCOZO9N3x_sRN0UisU1eRSjw/view?usp=sharing")));
        });
 
@@ -45,6 +46,8 @@ public class NanoFragment extends Fragment {
                 binding.expandable.collapse();
             } else binding.expandable.expand();
         });
+
+        Glide.with(this).load(R.drawable.pins_arduino_nano).into(binding.ivPinsArduinoNano);
 
         TextView tvMegaContent = binding.expandable.secondLayout.findViewById(R.id.tv_nano_content);
         tvMegaContent.setMovementMethod(LinkMovementMethod.getInstance());

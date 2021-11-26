@@ -14,6 +14,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.ela2.R;
 import com.example.ela2.databinding.FragmentMainBinding;
 import com.example.ela2.databinding.FragmentUnoBinding;
@@ -39,6 +40,8 @@ public class UnoFragment extends Fragment {
         binding.btnDownload.setOnClickListener(v -> {
             startActivity(new Intent (Intent.ACTION_VIEW, Uri.parse("https://drive.google.com/file/d/11bpiXXO8nNrNwvbqdIb6G2SZPhq6q0os/view?usp=sharing")));
         });
+
+        Glide.with(this).load(R.drawable.pins_arduino_uno).into(binding.ivPinsArduinoUno);
 
         binding.expandable.setOnClickListener(v -> {
             if (binding.expandable.isExpanded()) {
