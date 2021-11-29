@@ -3,22 +3,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".screen.AboutFragment">
+    tools:context=".screen.AboutFragment"
+    android:background="#6a5acd">
 
     <TextView
         android:id="@+id/title1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="This is made by xxx"
-        android:textColor="@color/black"/>
+        android:layout_marginBottom="20dp"
+        android:background="#78A5BA"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/buttonSubmenu4"
+        android:textAlignment="center"
+        android:textColor="#535D61"
+        android:textIsSelectable="true"
+        android:textSize="36sp"/>
 
     <TextView
         android:id="@+id/title2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Manual of using this app"
-        android:layout_below="@id/title1"
-        android:textColor="@color/black"/>
+        android:text="@string/about_app_2"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/title1"/>
+
+    <TextView
+        android:id="@+id/title3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/about_app_3"
+        android:layout_below="@id/title2"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
 
     <Button
         android:id="@+id/btn_download"
@@ -27,10 +48,14 @@
         android:layout_gravity="center"
         android:layout_marginBottom="5dp"
         android:autoLink="all"
-        android:layout_below="@id/title2"
+        android:layout_below="@id/title3"
         android:drawableStart="@drawable/pdf_icon_1"
-        android:onClick="ButtonClick1"
-        android:text="ARDUINO MEGA MANUAL" />
+        android:onClick="ELA_MANUAL"
+        android:text=" ELA MANUAL"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
 
 
 

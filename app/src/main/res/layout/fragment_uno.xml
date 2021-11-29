@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_image_2"
-    tools:context=".Submenu2_2">
+    >
 
 
     <ScrollView
@@ -88,7 +88,6 @@
                 android:layout_gravity="center"
                 android:layout_margin="20dp"
                 android:autoLink="all"
-                android:background="#4286b4"
                 android:justificationMode="inter_word"
                 android:text="@string/textviewSubmenu2_2_1"
                 android:textColor="@color/black" />
@@ -102,7 +101,9 @@
                 android:autoLink="all"
                 android:drawableStart="@drawable/pdf_icon_1"
                 android:onClick="ButtonClick1"
-                android:text="ARDUINO UNO MANUAL" />
+                android:text="\t ARDUINO UNO MANUAL"
+                android:layout_margin="5dp"
+                />
 
 
             <com.skydoves.expandablelayout.ExpandableLayout
@@ -114,7 +115,8 @@
                 app:expandable_showSpinner="true"
                 app:expandable_duration="300"
                 app:expandable_spinner_color="@color/black"
-                app:expandable_spinner_animate="true" />
+                app:expandable_spinner_animate="true"
+                android:layout_margin="10dp"/>
 
 
         </LinearLayout>

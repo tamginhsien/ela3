@@ -65,17 +65,21 @@
                 android:justificationMode="inter_word"
                 android:text="Click the Image to get Zoom View (PDF)" />
 
-
-            <TextView
+            <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
                 android:layout_margin="20dp"
-                android:autoLink="all"
-                android:background="#4286b4"
-                android:justificationMode="inter_word"
-                android:text="@string/textviewSubmenu2_1_1"
-                android:textColor="@color/black" />
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:text="@string/textviewSubmenu2_1_1"
+                    android:textColor="@color/black" />
+
+            </RelativeLayout>
 
             <Button
                 android:id="@+id/btn_download"
@@ -86,27 +90,29 @@
                 android:autoLink="all"
                 android:drawableStart="@drawable/pdf_icon_1"
                 android:onClick="ButtonClick1"
-                android:text="ARDUINO MEGA MANUAL" />
+                android:text="\t ARDUINO MEGA MANUAL"
+                android:layout_margin="5dp"/>
 
-<!--            <TextView-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_gravity="start"-->
-<!--                android:autoLink="all"-->
-<!--                android:justificationMode="inter_word"-->
-<!--                android:text="@string/textviewSubmenu2_1_2"-->
-<!--                android:textColor="@color/black" />-->
+            <!--            <TextView-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_gravity="start"-->
+            <!--                android:autoLink="all"-->
+            <!--                android:justificationMode="inter_word"-->
+            <!--                android:text="@string/textviewSubmenu2_1_2"-->
+            <!--                android:textColor="@color/black" />-->
 
             <com.skydoves.expandablelayout.ExpandableLayout
                 android:id="@+id/expandable"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:expandable_duration="300"
                 app:expandable_parentLayout="@layout/layout_mega_header"
                 app:expandable_secondLayout="@layout/layout_mega_content"
                 app:expandable_showSpinner="true"
-                app:expandable_duration="300"
+                app:expandable_spinner_animate="true"
                 app:expandable_spinner_color="@color/black"
-                app:expandable_spinner_animate="true" />
+                android:layout_margin="10dp"/>
 
 
         </LinearLayout>

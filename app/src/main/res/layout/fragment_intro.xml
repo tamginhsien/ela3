@@ -11,7 +11,10 @@
         android:id="@+id/scrollview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
         android:background="#D9d8bfd8"
         android:padding="5dp">
 
@@ -41,6 +44,15 @@
                 android:layout_height="wrap_content"
                 android:justificationMode="inter_word"
                 android:text="@string/textviewSubmenu1_1"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView_submenu1.1.1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:justificationMode="inter_word"
+                android:text="@string/textviewSubmenu1_1_1"
                 android:textColor="@color/black" />
 
             <!-- UNO -->
@@ -134,7 +146,8 @@
                 android:layout_height="200dp"
                 android:layout_gravity="center"
                 android:contentDescription="@string/arduino_ide"
-                app:srcCompat="@drawable/arduino_ide" />
+                app:srcCompat="@drawable/arduino_ide"
+                android:layout_margin="10dp"/>
 
             <!-- Arduino IDE Link -->
             <TextView
@@ -149,78 +162,19 @@
             <!-- Arduino IDE download button -->
             <Button
                 android:id="@+id/btn_link_1"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:autoLink="all"
-                android:background="@drawable/arduino_ide_logo"
-                android:onClick="arduinoidelink1" />
-
-            <!-- Download Video -->
-            <TextView
-                android:id="@+id/arduino_ide_textview2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:autoLink="all"
-                android:justificationMode="inter_word"
-                android:text="@string/arduino_ide_textview2"
-                android:textColor="@color/black" />
-
-            <!-- Download video button -->
-            <Button
-                android:id="@+id/btn_link_2"
                 android:layout_width="250dp"
-                android:layout_height="wrap_content"
+                android:layout_height="80dp"
                 android:layout_gravity="center"
                 android:autoLink="all"
-                android:drawableStart="@drawable/youtube_icon3"
-                android:drawablePadding="10dp"
-                android:onClick="arduinoidelink2"
-                android:text="Arduino IDE Installation Video" />
+                android:drawableStart="@drawable/arduino_ide_logo_3"
+                android:onClick="arduinoidelink1"
+                android:text=" Arduino IDE Download" />
 
-            <!-- HEX file location -->
-            <TextView
-                android:id="@+id/arduino_ide_textview3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:autoLink="all"
-                android:justificationMode="inter_word"
-                android:text="@string/arduino_ide_textview3"
-                android:textColor="@color/black" />
+            <!-- Original place for Arduino IDE download video textview & button"
 
-            <!-- HEX file location button -->
-            <Button
-                android:id="@+id/btn_link_3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:autoLink="all"
-                android:drawableStart="@drawable/youtube_icon3"
-                android:drawablePadding="10dp"
-                android:onClick="arduinoidelink3"
-                android:text="HEX File Location" />
+                 Original place for HEX files location video textview & button"
 
-            <!-- Implement Arduino Code -->
-            <TextView
-                android:id="@+id/arduino_ide_textview4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:autoLink="all"
-                android:justificationMode="inter_word"
-                android:text="@string/arduino_ide_textview4"
-                android:textColor="@color/black" />
-
-            <!-- Implement Arduino code video button -->
-            <Button
-                android:id="@+id/btn_link_4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:autoLink="all"
-                android:drawableStart="@drawable/youtube_icon3"
-                android:drawablePadding="10dp"
-                android:onClick="arduinoidelink4"
-                android:text="Implement Arduino Code" />
+                 Original place for Implement Arduino code textView & button -->
 
             <!-- Schematic Diagram Software -->
             <TextView
@@ -262,48 +216,9 @@
                 android:onClick="crackproteus1"
                 android:text="Download Crack Proteus" />
 
-            <!-- Crack Installation Video Text -->
-            <TextView
-                android:id="@+id/crack_proteus2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:autoLink="all"
-                android:justificationMode="inter_word"
-                android:text="@string/crack_proteus2"
-                android:textColor="@color/black" />
+            <!-- Original place for Crack Proteus Installation textview & button -->
 
-            <!-- Crack Installation Video Button -->
-            <Button
-                android:id="@+id/btn_crackproteus2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:autoLink="all"
-                android:drawableStart="@drawable/youtube_icon3"
-                android:onClick="crackproteus2"
-                android:drawablePadding="10dp"
-                android:text="Crack Installation Video" />
-
-            <!-- If no Library Found in Proteus: Text -->
-            <TextView
-                android:id="@+id/no_library"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:autoLink="all"
-                android:justificationMode="inter_word"
-                android:text="@string/no_library"
-                android:textColor="@color/black" />
-
-            <!-- No library found Video Button -->
-            <Button
-                android:id="@+id/btn_no_library"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:autoLink="all"
-                android:drawableLeft="@drawable/youtube_icon3"
-                android:onClick="nolibrary"
-                android:text="Video if no library found" />
+            <!-- Original place for If no library found textView & button -->
 
 
             <!-- Arduino Library Text -->
@@ -327,26 +242,7 @@
                 android:text="Download Arduino Library" />
 
 
-            <!-- Adding Arduino Library into Proteus Text -->
-            <TextView
-                android:id="@+id/arduino_library2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:autoLink="all"
-                android:justificationMode="inter_word"
-                android:text="@string/arduino_library2"
-                android:textColor="@color/black" />
-
-            <!-- Adding Arduino Library Video Button -->
-            <Button
-                android:id="@+id/btn_library_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:autoLink="all"
-                android:drawableLeft="@drawable/youtube_icon3"
-                android:onClick="arduinolibrary2"
-                android:text="Video adding Arduino Library" />
+            <!-- Original place for Adding Arduino Library textView & button -->
 
             <!-- KiCAD -->
             <TextView
@@ -429,6 +325,138 @@
                 android:autoLink="all"
                 android:onClick="virtualbreadboard"
                 android:text="Download Virtual Breadboard" />
+
+            <!-- VIDEO GUIDE -->
+
+            <!-- Arduino IDE Download Video -->
+            <TextView
+                android:id="@+id/arduino_ide_textview2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:justificationMode="inter_word"
+                android:text="@string/arduino_ide_textview2"
+                android:textColor="@color/black" />
+
+            <!-- Arduino IDE Download video button -->
+            <Button
+                android:id="@+id/btn_link_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:autoLink="all"
+                android:drawableStart="@drawable/youtube_icon3"
+                android:drawablePadding="10dp"
+                android:onClick="arduinoidelink2"
+                android:text="Arduino IDE Installation Video" />
+
+            <!-- Crack Proteus Installation Video Text -->
+            <TextView
+                android:id="@+id/crack_proteus2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:justificationMode="inter_word"
+                android:text="@string/crack_proteus2"
+                android:textColor="@color/black" />
+
+            <!-- Crack Proteus Installation Video Button -->
+            <Button
+                android:id="@+id/btn_crackproteus2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:autoLink="all"
+                android:drawableStart="@drawable/youtube_icon3"
+                android:drawablePadding="10dp"
+                android:onClick="crackproteus2"
+                android:text="Crack Installation Video" />
+
+            <!-- HEX file location -->
+            <TextView
+                android:id="@+id/arduino_ide_textview3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:justificationMode="inter_word"
+                android:text="@string/arduino_ide_textview3"
+                android:textColor="@color/black" />
+
+            <!-- HEX file location Video button -->
+            <Button
+                android:id="@+id/btn_link_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:autoLink="all"
+                android:drawableStart="@drawable/youtube_icon3"
+                android:drawablePadding="10dp"
+                android:onClick="arduinoidelink3"
+                android:text="HEX File Location" />
+
+            <!-- Adding Arduino Library into Proteus Text -->
+            <TextView
+                android:id="@+id/arduino_library2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:justificationMode="inter_word"
+                android:text="@string/arduino_library2"
+                android:textColor="@color/black" />
+
+            <!-- Adding Arduino Library Video Button -->
+            <Button
+                android:id="@+id/btn_library_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:autoLink="all"
+                android:drawableLeft="@drawable/youtube_icon3"
+                android:onClick="arduinolibrary2"
+                android:text="Video adding Arduino Library" />
+
+            <!-- If no Library Found in Proteus: Text -->
+            <TextView
+                android:id="@+id/no_library"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:justificationMode="inter_word"
+                android:text="@string/no_library"
+                android:textColor="@color/black" />
+
+            <!-- No library found Video Button -->
+            <Button
+                android:id="@+id/btn_no_library"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:autoLink="all"
+                android:drawableLeft="@drawable/youtube_icon3"
+                android:onClick="nolibrary"
+                android:text="Video if no library found" />
+
+            <!-- Implement Arduino Code -->
+            <TextView
+                android:id="@+id/arduino_ide_textview4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:justificationMode="inter_word"
+                android:text="@string/arduino_ide_textview4"
+                android:textColor="@color/black" />
+
+            <!-- Implement Arduino code video button -->
+            <Button
+                android:id="@+id/btn_link_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:autoLink="all"
+                android:drawableStart="@drawable/youtube_icon3"
+                android:drawablePadding="10dp"
+                android:onClick="arduinoidelink4"
+                android:text="Implement Arduino Code" />
 
         </LinearLayout>
 

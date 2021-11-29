@@ -1,7 +1,9 @@
 
 package com.example.ela2.screen.application;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.annotation.DrawableRes;
@@ -44,19 +46,27 @@ public class ExampleUnoFragment extends Fragment {
             } else binding.expandableExample4.expand();
         });
 
-        // comment button
-        binding.expandableExample4.secondLayout.findViewById(R.id.btn_comment_4).setOnClickListener(v -> {
-            navController.navigate(ExampleUnoFragmentDirections.actionUnoComment("comments_example_4", "Example 4"));
-        });
-
         // image click to image preview
         binding.expandableExample4.secondLayout.findViewById(R.id.schematic_examples3_2_1).setOnClickListener(v -> {
             navController.navigate(ExampleUnoFragmentDirections.actionUnoImage(R.drawable.schematic_examples3_2_1));
         });
-
+        // image click to image preview
         binding.expandableExample4.secondLayout.findViewById(R.id.connection_examples3_2_1).setOnClickListener(v -> {
             navController.navigate(ExampleUnoFragmentDirections.actionUnoImage(R.drawable.connection_examples3_2_1));
         });
+
+        //Example 4 Demonstration Video Button
+        // TODO - Remember to add in the Uri of Demonstration Video
+        binding.expandableExample4.secondLayout.findViewById(R.id.btn_example_4_video).setOnClickListener(v -> {
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("")));
+        });
+
+        // comment button example 4
+        binding.expandableExample4.secondLayout.findViewById(R.id.btn_comment_4).setOnClickListener(v -> {
+            navController.navigate(ExampleUnoFragmentDirections.actionUnoComment("comments_example_4", "Example 4"));
+        });
+
+
 
         // Example 5
         // expandable layout expand/collapse controller
@@ -66,19 +76,27 @@ public class ExampleUnoFragment extends Fragment {
             } else binding.expandableExample5.expand();
         });
 
-        // comment button
-        binding.expandableExample5.secondLayout.findViewById(R.id.btn_comment_5).setOnClickListener(v -> {
-            navController.navigate(ExampleUnoFragmentDirections.actionUnoComment("comments_example_5", "Example 5"));
-        });
-
         // image click to image preview
         binding.expandableExample5.secondLayout.findViewById(R.id.schematic_examples3_2_2).setOnClickListener(v -> {
             navController.navigate(ExampleUnoFragmentDirections.actionUnoImage(R.drawable.schematic_examples3_2_2));
         });
-
+        // image click to image preview
         binding.expandableExample5.secondLayout.findViewById(R.id.connection_examples_3_2_2).setOnClickListener(v -> {
             navController.navigate(ExampleUnoFragmentDirections.actionUnoImage(R.drawable.connection_examples3_2_2));
         });
+
+        //Example 5 Demonstration Video Button
+        // TODO - Remember to add in the Uri of Demonstration Video
+        binding.expandableExample5.secondLayout.findViewById(R.id.btn_example_5_video).setOnClickListener(v -> {
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("")));
+        });
+
+        // comment button example 5
+        binding.expandableExample5.secondLayout.findViewById(R.id.btn_comment_5).setOnClickListener(v -> {
+            navController.navigate(ExampleUnoFragmentDirections.actionUnoComment("comments_example_5", "Example 5"));
+        });
+
+
 
         // Example 6
         // expandable layout expand/collapse controller
@@ -88,18 +106,26 @@ public class ExampleUnoFragment extends Fragment {
             } else binding.expandableExample6.expand();
         });
 
-        // comment button
-        binding.expandableExample6.secondLayout.findViewById(R.id.btn_comment_6).setOnClickListener(v -> {
-            navController.navigate(ExampleUnoFragmentDirections.actionUnoComment("comments_example_6", "Example 6"));
-        });
-
         // image click to image preview
         binding.expandableExample6.secondLayout.findViewById(R.id.schematic_examples3_2_3).setOnClickListener(v -> {
             navController.navigate(ExampleUnoFragmentDirections.actionUnoImage(R.drawable.schematic_examples3_2_3));
         });
-
+        // image click to image preview
         binding.expandableExample6.secondLayout.findViewById(R.id.connection_examples_3_2_3).setOnClickListener(v -> {
             navController.navigate(ExampleUnoFragmentDirections.actionUnoImage(R.drawable.connection_examples3_2_3));
         });
+
+        //Example 6 Demonstration Video Button
+        // TODO - Remember to add in the Uri of Demonstration Video
+        binding.expandableExample6.secondLayout.findViewById(R.id.btn_example_6_video).setOnClickListener(v -> {
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("")));
+        });
+
+        // comment button example 6
+        binding.expandableExample6.secondLayout.findViewById(R.id.btn_comment_6).setOnClickListener(v -> {
+            navController.navigate(ExampleUnoFragmentDirections.actionUnoComment("comments_example_6", "Example 6"));
+        });
+
+
     }
 }

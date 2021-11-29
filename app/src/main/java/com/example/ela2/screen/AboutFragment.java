@@ -1,5 +1,7 @@
 package com.example.ela2.screen;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -29,5 +31,9 @@ public class AboutFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        binding.btnDownload.setOnClickListener(v -> {
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://drive.google.com/file/d/1WnOC6oK5cHxq8FVE9it_2oMeZ_vtquBy/view?usp=sharing")));
+        });
     }
 }

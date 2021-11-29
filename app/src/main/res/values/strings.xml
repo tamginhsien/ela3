@@ -3,29 +3,31 @@
     <string name="app_name">ELA</string>
     <string name="TextViewTitle1">Welcome to</string>
     <string name="TextViewTitle2"><![CDATA[E-Learning On Arduino & Its Applications]]></string>
-    <string name="buttonSubmenu1">INTRODUCTION</string>
+    <string name="buttonSubmenu1">INTRO</string>
     <string name="buttonSubmenu2">COMPARISON</string>
     <string name="buttonSubmenu3">APPLICATION</string>
     <string name="title_activity_menu2">MainActivity</string>
-    <string name="buttonSubmenu4">About the App</string>
+    <string name="buttonSubmenu4">ABOUT THE APP</string>
 
 
     <!-- Submenu 1: Introduction of Arduino -->
     <string name="textviewSubmenu1_1"><b>1. What is Arduino?</b>
-        \n Basically, <b>Arduino</b> is an electronic platform that available on both software
+        \n\n Basically, <b>Arduino</b> is an electronic platform that available on both software
         (Arduino IDE) and hardware (Arduino Board). It is open-source and it operated by giving
         instructions (which written with Arduino IDE) to microcontroller of the Arduino board.
-        \n <u>Arduino original inventors:</u>
+        \n\n\t <u>Arduino original inventors:</u>
         \n <b>Massimo Banzi</b> and <b>David Cuartielles</b> at the
         <b>Interaction Design Institute Ivrea (Ivrea, Italy)</b> in 2005.
         \n Arduino software (IDE) was created by <b>David Mellis</b>;
         Inventors joined later:
-        \n <b>Gianluca Martino</b> and <b>Tom Igoe</b>
-        \n\n <b>2.  Arduino Hardware (Arduino Board)</b>
+        \n <b>Gianluca Martino</b> and <b>Tom Igoe</b> </string>
+    <string name="textviewSubmenu1_1_1">
+        \n<b>2.  Arduino Hardware (Arduino Board)</b>\n
         \n Arduino Board is an electronic circuit board which embedded with microcontroller which
         it can be used to read inputs (such as light received by light sensors, finger triggered on
         button) and produce outputs (such as turn on LED, activate motor).
-        \n Usually it used in electronic project as a main component to control its whole activity. \n</string>
+        \n Usually it used in electronic project as a main component to control its whole activity. \n
+        \n\n <b>Popular types of Arduino boards:</b> \n</string>
     <string name="arduinounor3">arduino_unor3</string>
     <string name="arduino_uno_r3">arduino_unor3</string>
     <string name="arduino_uno_textview1"><b>Arduino UNO R3</b>
@@ -34,16 +36,17 @@
         \n [Cytron Malaysia]
         \n <a href="https://my.cytron.io/p-starter-kit-for-arduino-uno">[Starter Kit]</a>
         \n <a href="https://my.cytron.io/p-arduino-uno-rev3-main-board">[Board]</a>
+        \n [Shopee]
         \n <a href="https://shopee.com.my/product/33091591/466533399?smtt=0.19388095-1637001249.3">[Shopee]</a>  \n</string>
     <string name="arduino_mega">arduino_mega</string>
-    <string name="arduino_mega_textview"> <b>Arduino Mega 2560 R3</b>
+    <string name="arduino_mega_textview"> <b>Arduino MEGA 2560 R3</b>
         \n Suggested Link to buy:
         \n <a href="https://store.arduino.cc/usa/mega-2560-r3">[Arduino Official]</a>
         \n <a href="https://my.cytron.io/p-arduino-mega-2560-r3-main-board">[Cytron Malaysia]
         \n <a href="https://shopee.com.my/product/126211897/1919705808?smtt=0.19388095-1637001788.3.">[Shopee]</a>    \n</a>
     </string>
     <string name="arduino_nano">arduino_nano</string>
-    <string name="arduino_nano_textview"> <b>Arduino Nano</b>
+    <string name="arduino_nano_textview"> <b>Arduino NANO</b>
         \n Suggested Link to buy:
         \n <a href="https://store.arduino.cc/usa/arduino-nano">[Arduino Official]</a>
         \n <a href="https://my.cytron.io/p-arduino-nano-main-board">[Cytron Malaysia]
@@ -54,15 +57,15 @@
         \n <a href="https://store.arduino.cc/usa/leonardo">[Arduino Official]  \n</a></string>
 
     <!-- Arduino IDE -->
-    <string name="textviewSubmenu1.3">\n <b>3.  Arduino Software (Arduino IDE)</b> </string>
+    <string name="textviewSubmenu1.3">\n <b>3.  Arduino Software (Arduino IDE)</b>\n </string>
     <string name="arduino_ide">arduino ide</string>
     <string name="arduino_ide_textview1">The implementation of Arduino software, Arduino IDE is used to
     give command Arduino board by coding in Arduino programming language. It can connect to Arduino
     hardware (Arduino board) \n
-        \n <u>Arduino IDE Download Links:</u> \n (About 200MB) \n\n </string>
+        \n\n <u>Arduino IDE Download Links:</u> \n (About 200MB) \n\n </string>
     <!-- Arduino IDE button here -->
     <string name="arduino_ide_textview2">
-    \n\n <u>Arduino IDE Download Video:</u> \n\n </string>
+    \n\n <u><b>Arduino IDE Download Video:</b></u> \n\n </string>
     <!-- Download video button here -->
     <string name="arduino_ide_textview3">
         \n\n <u>Set HEX files location video guide:</u> \n\n </string>
@@ -81,11 +84,11 @@
     <string name="crack_proteus2">
         \n\n Crack Installation Guide Video: \n\n  </string>
     <string name="no_library">
-        \n\n\n If no Library Found in Proteus: \n\n </string>
+        \n\n\n <u>If no Library Found in Proteus:</u> \n\n </string>
     <string name="arduino_library1">
         \n\n\n Arduino Library of Proteus: \n\n  </string>
     <string name="arduino_library2">
-        \n\n Installation Video of Adding Arduino Library into Proteus: \n\n </string>
+        \n\n <u>Installation Video of Adding Arduino Library into Proteus:</u> \n\n </string>
     <string name="KiCAD">
         \n\n\n <u>KiCAD</u>
         \n (About 1.2GB)
@@ -111,7 +114,7 @@
     <string name="buttonSubmenu2_2">Arduino UNO</string>
     <string name="buttonSubmenu2_3">Arduino NANO</string>
 
-    <!-- Submenu 1.1: Arduino MEGA -->
+    <!-- Submenu 2.1: Arduino MEGA -->
     <string name="pins_arduino_mega">pins_arduino_mega</string>
     <string name="textviewSubmenu2_1_1">\n <b>Specification and Manual :</b> </string>
     <string name="textviewSubmenu2_1_2">\n Suggested Project for Arduino MEGA:\n
@@ -199,11 +202,40 @@
     <string name="buttonSubmenu3_3">Examples of \n <b>ARDUINO NANO</b></string>
 
     <!-- Submenu 3.1: Examples of Arduino MEGA -->
-    <string name="textviewSubmenu3_1_1">1.</string>
+    <!-- Example 1 -->
+    <string name="textviewSubmenu3_1_1">1. Capacitive Resistor Piano
+    \n Coding (Arduino IDE):</string>
     <string name="textviewCoding3_1_1">[Coding put here]</string>
-    <string name="textviewSubmenu3_1_2">Schematic Diagram (Plot in Proteus)</string>
-    <string name="textviewSubmenu3_1_3">Wiring Connection</string>
-    <string name="textviewSubmenu3_1_4">Video Demonstration:</string>
+    <string name="textviewSubmenu3_1_2">Schematic Diagram (Proteus)</string>
+    <string name="schematic_examples3_1_1">Schematic_of_Capacitive_Resistor</string>
+    <string name="textviewSubmenu3_1_3">Wiring Connection (Fritzing / Virtual Breadboard): </string>
+    <string name="connection_examples_3_1_1">connection_examples_3_1_1</string>
+    <string name="textviewSubmenu3_1_4">\n Video Demonstration:</string>
+    <string name="video_example_1">Example 1 Video</string>
+
+    <!-- Example 2 -->
+    <string name="textviewSubmenu3_1_5">2. Example 2
+    \n Coding [Arduino IDE]</string>
+    <string name="textViewCoding3_1_2">[Coding put here]</string>
+    <string name="textviewSubmenu3_1_6">Schematic Diagram (Proteus)</string>
+    <string name="schematic_examples3_1_2">Schematic_of_Capacitive_Resistor</string>
+    <string name="textviewSubmenu3_1_7">Wiring Connection (Fritzing / Virtual Breadboard): </string>
+    <string name="connection_examples_3_1_2">connection_examples_3_1_2</string>
+    <string name="textviewSubmenu3_1_8">\n Video Demonstration:</string>
+    <string name="video_example_2">Example 2 Video</string>
+
+    <!-- Example 3 -->
+    <string name="textviewSubmenu3_1_9">3. Example 3
+    \n Coding [Arduino IDE]</string>
+    <string name="textViewCoding3_1_3">[Coding put here]</string>
+    <string name="textviewSubmenu3_1_10">Schematic Diagram (Proteus)</string>
+    <string name="schematic_examples3_1_3">Schematic_of_Capacitive_Resistor</string>
+    <string name="textviewSubmenu3_1_11">Wiring Connection (Fritzing / Virtual Breadboard): </string>
+    <string name="connection_examples_3_1_3">connection_examples_3_1_3</string>
+    <string name="textviewSubmenu3_1_12">\n Video Demonstration:</string>
+    <string name="video_example_3">Example 3 Video</string>
+
+    <!-- Comment Button String -->
     <string name="comment_example_1">Comment (Example 1)</string>
     <string name="comment_example_2">Comment (Example 2)</string>
     <string name="comment_example_3">Comment (Example 3)</string>
@@ -213,14 +245,15 @@
     <string name="comment_example_7">Comment (Example 7)</string>
     <string name="comment_example_8">Comment (Example 8)</string>
     <string name="comment_example_9">Comment (Example 9)</string>
-    <!-- Comment Feature 1 -->
+    <!-- Comment Feature 1
     <string name="send_button1">Comment</string>
     <string name="hint_enter_comment1">Pls Enter Comments</string>
-    <string name="rec_comment1">---Comment--- \n\n\n</string>
+    <string name="rec_comment1">Comment \n\n\n</string> -->
+
 
     <!-- Submenu 3.2: Examples of Arduino UNO -->
 
-    <!-- 4th Example -->
+    <!-- Example 4 -->
     <string name="textviewSubmenu3_2_1"> <u>Components needed:</u> \n- Arduino UNO R3 *1 \n- Breadboard *1 \n- General Purpose Transistor NPN *1
     \n- LED light bulb *1 \n- 1k ohm Resistor *2 \n- Jumper Wires *1 \n- 5V Power Source (Powerbank, laptop port of battery)
     \n\n <u>Software needed :</u> \n Arduino IDE, Proteus (Schematic Diagram), Fritzing / Virtual Breadboard (Wiring Diagram).
@@ -245,11 +278,12 @@
     <string name="schematic_examples3_2_1">Schematic_of_Blinking_with_Transistor</string>
     <string name="textviewSubmenu3_2_3">\n <u>Wiring Connection (Fritzing / Virtual Breadboard):</u></string>
     <string name="connection_examples_3_2_1">connection_examples_3_2_1</string>
-    <string name="textviewSubmenu3_2_4">\n\n <u>Video Demonstration:</u> \n https://www.youtube.com/watch?v=UElw1EXf3gw \n\n</string>
-    <!-- Comment Feature 4 -->
+    <string name="textviewSubmenu3_2_4">\n\n <u>Video Demonstration:</u> </string>
+    <string name="video_example_4">Example 4 Video</string>
+    <!-- Comment Feature 4
     <string name="send_button4">Comment</string>
     <string name="hint_enter_comment4">Pls type in Comments</string>
-    <string name="rec_comment4">---Comment--- \n\n\n</string>
+    <string name="rec_comment4">-Comment- \n\n\n</string> -->
 
     <!-- 5th Example -->
     <string name="textviewSubmenu3_2_5"> <u>Components Needed:</u> \n- Arduino UNO R3 *1 \n- Breadboard *1 \n- 7-Segment Display (3461BS-1, 6 pins) *1
@@ -441,14 +475,13 @@
     <string name="textviewSubmenu3_2_7">\n <u>Wiring Connection (Fritzing / Virtual Breadboard):</u></string>
     <string name="connection_examples_3_2_2">connection_examples_3_2_2</string>
     <string name="textviewSubmenu3_2_8">\n <u>Video Demonstration:</u></string>
-    <!-- Comment Feature 5 -->
+    <string name="video_example_5">Example 5 Video</string>
 
     <!-- 6th Example -->
     <string name="textviewSubmenu3_2_9"> <u>Components Needed:</u> \n- Arduino UNO R3 *1 \n- Breadboard *1 \n- Servo Motor *1
     \n- Jumper Wire *7 \n- 5V Power Source (Powerbank, laptop port or battery)
     \n\n <u>Software Needed:</u> \n Arduino IDE, Proteus (Schematic Diagram), Fritzing / Virtual Breadboard (Wiring Diagram)
     \n\n <u>Coding</u> (Arduino IDE): \n</string>
-    1
     <string name="textviewCoding3_2_3"><![CDATA[
     #include <Servo.h>
     \n
@@ -490,8 +523,48 @@
     <string name="textviewSubmenu3_2_11">\n <u>Wiring Connection (Fritzing / Virtual Breadboard):</u></string>
     <string name="connection_examples_3_2_3">connection_examples_3_2_2</string>
     <string name="textviewSubmenu3_2_12">\n <u>Video Demonstration:</u></string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="video_example_6">Example 6 Video</string>
 
+    <!-- TODO: Remove or change this placeholder text
+    <string name="hello_blank_fragment">Hello blank fragment</string> -->
+
+    <!-- Submenu 3.3: Examples of Arduino MEGA -->
+    <!-- Example 7 -->
+    <string name="textviewSubmenu3_3_1">1. Example 7
+    \n Coding (Arduino IDE):</string>
+    <string name="textViewCoding3_3_1">[Coding put here]</string>
+    <string name="textviewSubmenu3_3_2">Schematic Diagram (Proteus)</string>
+    <string name="schematic_examples3_3_1">Schematic_of_Capacitive_Resistor</string>
+    <string name="textviewSubmenu3_3_3">Wiring Connection (Fritzing / Virtual Breadboard): </string>
+    <string name="connection_examples_3_3_1">connection_examples_3_3_1</string>
+    <string name="textviewSubmenu3_3_4">\n Video Demonstration:</string>
+    <string name="video_example_7">Example 7 Video</string>
+
+    <!-- Example 8 -->
+    <string name="textviewSubmenu3_3_5">2. Example 8
+    \n Coding [Arduino IDE]</string>
+    <string name="textViewCoding3_3_2">[Coding put here]</string>
+    <string name="textviewSubmenu3_3_6">Schematic Diagram (Proteus)</string>
+    <string name="schematic_examples3_3_2">Schematic_of_Capacitive_Resistor</string>
+    <string name="textviewSubmenu3_3_7">Wiring Connection (Fritzing / Virtual Breadboard): </string>
+    <string name="connection_examples_3_3_2">connection_examples_3_3_2</string>
+    <string name="textviewSubmenu3_3_8">\n Video Demonstration:</string>
+    <string name="video_example_8">Example 8 Video</string>
+
+    <!-- Example 9 -->
+    <string name="textviewSubmenu3_3_9">3. Example 9
+    \n Coding [Arduino IDE]</string>
+    <string name="textViewCoding3_3_3">[Coding put here]</string>
+    <string name="textviewSubmenu3_3_10">Schematic Diagram (Proteus)</string>
+    <string name="schematic_examples3_3_3">Schematic_of_Capacitive_Resistor</string>
+    <string name="textviewSubmenu3_3_11">Wiring Connection (Fritzing / Virtual Breadboard): </string>
+    <string name="connection_examples_3_3_3">connection_examples_3_3_3</string>
+    <string name="textviewSubmenu3_3_12">\n Video Demonstration:</string>
+    <string name="video_example_9">Example 9 Video</string>
+
+    <!-- About the App -->
+    <string name="about_app_1">About the app</string>
+    <string name="about_app_2">This is made by xxx</string>
+    <string name="about_app_3"><b>Manual of using this app</b></string>
 
 </resources>

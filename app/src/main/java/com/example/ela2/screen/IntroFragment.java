@@ -36,61 +36,75 @@ public class IntroFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         // button on click action
+        //Arduino IDE download button
         binding.btnLink1.setOnClickListener(v -> {
             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.arduino.cc/en/software")));
         });
 
+        //Arduino IDE download video button
         binding.btnLink2.setOnClickListener(v -> {
             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://youtu.be/NxH5RNbIxBk")));
         });
 
+        //HEX file location video button
         binding.btnLink3.setOnClickListener(v -> {
             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=oXjWl8tbyiA")));
         });
 
+        //How to implement Arduino code to Proteus video button
         binding.btnLink4.setOnClickListener(v -> {
             // TODO - remove empty string
-            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("")));
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://youtu.be/8wjWfwXtCrY")));
         });
 
+        //Official Proteus Download button
         binding.btnProteusofficial.setOnClickListener(v -> {
             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.labcenter.com/downloads/")));
         });
 
+        //Crack Proteus Download button
         binding.btnCrackproteus1.setOnClickListener(v -> {
             startActivity(new Intent (Intent.ACTION_VIEW, Uri.parse("https://getintopc.com/?s=proteus")));
         });
 
+        //Crack Proteus Download video button
         binding.btnCrackproteus2.setOnClickListener(v -> {
             startActivity(new Intent (Intent.ACTION_VIEW, Uri.parse("https://youtu.be/2cw9oQbmlzs")));
         });
 
+        //No library Found video button
         binding.btnNoLibrary.setOnClickListener(v -> {
             // TODO - remove empty string
-            startActivity(new Intent (Intent.ACTION_VIEW, Uri.parse("")));
+            startActivity(new Intent (Intent.ACTION_VIEW, Uri.parse("https://youtu.be/5hULXu8gxlY")));
         });
 
+        //Arduino Library Download button
         binding.btnLibrary1.setOnClickListener(v -> {
             startActivity(new Intent (Intent.ACTION_VIEW, Uri.parse("https://drive.google.com/file/d/1eN78XItzolO85AH83Q5xP44Eao2c-vuQ/view?usp=sharing")));
         });
 
+        //Adding Arduino Library video button
         binding.btnLibrary2.setOnClickListener(v -> {
             // TODO - remove empty string
-            startActivity(new Intent (Intent.ACTION_VIEW, Uri.parse("")));
+            startActivity(new Intent (Intent.ACTION_VIEW, Uri.parse("https://youtu.be/W8M8VHQGhfw")));
         });
 
+        //Official KiCAD Download button
         binding.btnKicad.setOnClickListener(v -> {
             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.kicad.org/download/")));
         });
 
+        //Official Fritzing Download button
         binding.btnFritzing1.setOnClickListener(v -> {
             startActivity(new Intent (Intent.ACTION_VIEW, Uri.parse("https://fritzing.org/download/")));
         });
 
+        //Crack Fritzing download button
         binding.btnFritzing2.setOnClickListener(v -> {
             startActivity(new Intent (Intent.ACTION_VIEW, Uri.parse("https://drive.google.com/file/d/1qciDMZit1D2NbIRbiPLO5KiO_qbW5iA_/view?usp=sharing")));
         });
 
+        //Official Virtual Breadboard download button
         binding.btnVirtualbreadboard.setOnClickListener(v -> {
             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.microsoft.com/en-my/p/virtual-breadboard/9nblggh4tj3w?cid=storebadge&ocid=badge&activetab=pivot:overviewtab")));
         });

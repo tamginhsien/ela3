@@ -7,62 +7,72 @@
     android:background="@color/color_pink_background">
 
     <TextView
-        android:id="@+id/textView_submenu3.2.1"
+        android:id="@+id/textView_submenu3.3.1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:justificationMode="inter_word"
-        android:text="@string/textviewSubmenu3_2_1"
+        android:text="@string/textviewSubmenu3_3_1"
         android:textColor="@color/black" />
 
     <TextView
-        android:id="@+id/textView_coding3.2.1"
+        android:id="@+id/textView_coding3.3.1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
         android:justificationMode="inter_word"
-        android:text="@string/textviewCoding3_2_1"
+        android:text="@string/textViewCoding3_3_1"
         android:textColor="@color/black"
         android:textIsSelectable="true" />
 
     <TextView
-        android:id="@+id/textView_submenu3.2.2"
+        android:id="@+id/textView_submenu3.3.2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:justificationMode="inter_word"
-        android:text="@string/textviewSubmenu3_2_2"
+        android:text="@string/textviewSubmenu3_3_2"
         android:textColor="@color/black" />
 
     <ImageView
-        android:id="@+id/schematic_examples3.2.1"
+        android:id="@+id/schematic_examples3.3.1"
         android:layout_width="match_parent"
         android:layout_height="220dp"
-        android:contentDescription="@string/schematic_examples3_2_1"
+        android:contentDescription="@string/schematic_examples3_3_1"
         android:src="@drawable/schematic_examples3_2_1" />
 
     <TextView
-        android:id="@+id/textView_submenu3.2.3"
+        android:id="@+id/textView_submenu3.3.3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:justificationMode="inter_word"
-        android:text="@string/textviewSubmenu3_2_3"
+        android:text="@string/textviewSubmenu3_3_3"
         android:textColor="@color/black" />
 
     <ImageView
-        android:id="@+id/connection_examples3.2.1"
+        android:id="@+id/connection_examples3.3.1"
         android:layout_width="match_parent"
         android:layout_height="220dp"
         android:layout_gravity="center"
-        android:contentDescription="@string/connection_examples_3_2_1"
+        android:contentDescription="@string/connection_examples_3_3_1"
         android:src="@drawable/connection_examples3_2_1" />
 
     <TextView
-        android:id="@+id/textView_submenu3.2.4"
+        android:id="@+id/textView_submenu3.3.4"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:autoLink="web"
         android:justificationMode="inter_word"
-        android:text="@string/textviewSubmenu3_2_4"
+        android:text="@string/textviewSubmenu3_3_4"
         android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btn_example_7_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/video_example_7"
+        android:textSize="16sp"
+        android:drawableStart="@drawable/youtube_icon3"
+        android:layout_margin="10dp"
+        android:autoLink="all"/>
 
     <Button
         android:id="@+id/btn_comment_7"

@@ -65,6 +65,17 @@
         android:textColor="@color/black" />
 
     <Button
+        android:id="@+id/btn_example_4_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/video_example_4"
+        android:textSize="16sp"
+        android:drawableStart="@drawable/youtube_icon3"
+        android:layout_margin="10dp"
+        android:autoLink="all"
+        />
+
+    <Button
         android:id="@+id/btn_comment_4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
