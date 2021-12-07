@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="10dp"
-    android:background="@color/color_pink_background">
+    android:background="#D9D8BFD8">
 
     <TextView
         android:id="@+id/textView_submenu3.3.5"
@@ -18,10 +18,10 @@
         android:id="@+id/textView_coding3.3.2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
+        android:background="@color/black"
         android:justificationMode="inter_word"
         android:text="@string/textViewCoding3_3_2"
-        android:textColor="@color/black"
+        android:textColor="#add8e6"
         android:textIsSelectable="true" />
 
     <TextView
@@ -71,14 +71,17 @@
         android:text="@string/video_example_8"
         android:textSize="16sp"
         android:drawableStart="@drawable/youtube_icon3"
+        android:background="@color/white"
         android:layout_margin="10dp"
-        android:autoLink="all"/>
+        android:autoLink="all"
+        android:foreground="?attr/selectableItemBackground"/>
 
     <Button
         android:id="@+id/btn_comment_8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/comment_example_8"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:foreground="?attr/selectableItemBackground"/>
 
 </LinearLayout>

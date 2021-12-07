@@ -37,24 +37,30 @@
         \n <a href="https://my.cytron.io/p-starter-kit-for-arduino-uno">[Starter Kit]</a>
         \n <a href="https://my.cytron.io/p-arduino-uno-rev3-main-board">[Board]</a>
         \n [Shopee]
-        \n <a href="https://shopee.com.my/product/33091591/466533399?smtt=0.19388095-1637001249.3">[Shopee]</a>  \n</string>
+        \n <a href="https://shopee.com.my/product/33091591/466533399?smtt=0.19388095-1637001249.3">[Board]</a>
+        \n</string>
     <string name="arduino_mega">arduino_mega</string>
     <string name="arduino_mega_textview"> <b>Arduino MEGA 2560 R3</b>
         \n Suggested Link to buy:
         \n <a href="https://store.arduino.cc/usa/mega-2560-r3">[Arduino Official]</a>
-        \n <a href="https://my.cytron.io/p-arduino-mega-2560-r3-main-board">[Cytron Malaysia]
-        \n <a href="https://shopee.com.my/product/126211897/1919705808?smtt=0.19388095-1637001788.3.">[Shopee]</a>    \n</a>
-    </string>
+        \n [Cytron Malaysia]
+        \n <a href="https://my.cytron.io/p-arduino-mega-2560-r3-main-board">[Board]</a>
+        \n [Shopee]
+        \n <a href="https://shopee.com.my/product/126211897/1919705808?smtt=0.19388095-1637001788.3.">[Board]</a>
+        \n</string>
     <string name="arduino_nano">arduino_nano</string>
     <string name="arduino_nano_textview"> <b>Arduino NANO</b>
         \n Suggested Link to buy:
         \n <a href="https://store.arduino.cc/usa/arduino-nano">[Arduino Official]</a>
-        \n <a href="https://my.cytron.io/p-arduino-nano-main-board">[Cytron Malaysia]
-        \n <a href="https://shopee.com.my/product/6674515/33163331?smtt=0.19388095-1637001648.3.">[Shopee]</a>    \n</a></string>
+        \n [Cytron Malaysia]
+        \n <a href="https://my.cytron.io/p-arduino-nano-main-board">[Main Board]</a>
+        \n [Shopee]
+        \n <a href="https://shopee.com.my/product/33287405/461918182?smtt=0.19388095-1638635369.3">[Board]</a>
+        \n</string>
     <string name="arduino_leonardo">arduino_leonardo</string>
     <string name="arduino_leonardo_textview"> <b>Arduino Leonardo</b>
     \n Suggested Link to buy:
-        \n <a href="https://store.arduino.cc/usa/leonardo">[Arduino Official]  \n</a></string>
+        \n <a href="https://store.arduino.cc/usa/leonardo">[Arduino Official]</a> \n</string>
 
     <!-- Arduino IDE -->
     <string name="textviewSubmenu1.3">\n <b>3.  Arduino Software (Arduino IDE)</b>\n </string>
@@ -65,7 +71,9 @@
         \n\n <u>Arduino IDE Download Links:</u> \n (About 200MB) \n\n </string>
     <!-- Arduino IDE button here -->
     <string name="arduino_ide_textview2">
-    \n\n <u><b>Arduino IDE Download Video:</b></u> \n\n </string>
+
+    \n\n <b>Guidance Video:</b>
+        \n <u>Arduino IDE Download Video:</u> \n\n </string>
     <!-- Download video button here -->
     <string name="arduino_ide_textview3">
         \n\n <u>Set HEX files location video guide:</u> \n\n </string>
@@ -82,7 +90,7 @@
     <string name="crack_proteus1">
         \n\n Crack (Alternatives) Download Links: \n\n  </string>
     <string name="crack_proteus2">
-        \n\n Crack Installation Guide Video: \n\n  </string>
+        \n\n <u>Crack Installation Guide Video:</u> \n\n  </string>
     <string name="no_library">
         \n\n\n <u>If no Library Found in Proteus:</u> \n\n </string>
     <string name="arduino_library1">
@@ -117,8 +125,14 @@
     <!-- Submenu 2.1: Arduino MEGA -->
     <string name="pins_arduino_mega">pins_arduino_mega</string>
     <string name="textviewSubmenu2_1_1">\n <b>Specification and Manual :</b> </string>
-    <string name="textviewSubmenu2_1_2">\n Suggested Project for Arduino MEGA:\n
-
+    <string name="textviewSubmenu2_1_2">
+        - <a href="https://create.arduino.cc/projecthub/Hack-star-Arduino/learn-arduino-port-manipulation-2022-10f">Learn Arduino Port Manipulation - 2022</a>
+        \n - <a href="https://create.arduino.cc/projecthub/danut-leon-zup/ethernet-arduino-lcd-interface-to-node-red-t">Ethernet Arduino LCD Interface to Node Red Thermostat BMP180</a>
+        \n - <a href="https://create.arduino.cc/projecthub/seeyouu/lcd-with-ds3231-real-time-clock-module-402344">LCD with DS3231: Real Time Clock Module</a>
+        \n - <a href="https://create.arduino.cc/projecthub/theottermaster/pinwheel-twister-e5f91d">Pinwheel Twister</a>
+        \n - <a href="https://create.arduino.cc/projecthub/surendarsaravana/smart-dustbin-b92162">Smart Dustbin</a>
+        \n - <a href="https://create.arduino.cc/projecthub/javagoza/mega-2560-touch-breakout-game-425337">Mega 2560 Touch Breakout Game</a>
+        \n - <a href="https://create.arduino.cc/projecthub/Sergey_Urusov/arduino-mega-chess-d54383">Arduino MEGA Chess</a>
     </string>
 
     <!-- Submenu 2.2: Arduino UNO -->
@@ -176,24 +190,26 @@
     \n\n Manual: \n [https://ww1.microchip.com/downloads/en/DeviceDoc/ATmega48A-PA-88A-PA-168A-PA-328-P-DS-DS40002061B.pdf]
     </string> -->
     <string name="textviewSubmenu2_2_2">
-         - <a href="https://www.theengineeringprojects.com/2015/12/interfacing-keypad-arduino-proteus-isis.html">Interfacing of Keypad with Arduino in Proteus ISIS</a>
-        \n - <a href="https://www.theengineeringprojects.com/2015/04/display-adc-value-on-lcd-using-arduino-in-proteus-isis.html">Display ADC value on LCD using Arduino in Proteus</a>
-        \n - <a href="https://www.theengineeringprojects.com/2015/02/ultrasonic-sensor-simulation-proteus.html">Ultrasonic Sensor Simulation in Proteus</a>
-        \n - <a href="https://www.theengineeringprojects.com/2014/07/circuit-designing-lcd-arduino-proteus-isis.html">Circuit Designing of LCD With Arduino in Proteus</a>
-        \n - <a href="https://www.theengineeringprojects.com/2017/08/ultrasonic-sensor-arduino-interfacing.html">Ultrasonic Sensor Arduino Interfacing</a>
-        \n - <a href="https://www.theengineeringprojects.com/2015/09/interfacing-lm35-arduino-proteus-isis.html">Interfacing of LM35 with Arduino in Proteus ISIS</a>
-        \n - <a href="https://www.theengineeringprojects.com/2015/03/interfacing-of-seven-segment-with-arduino-in-proteus.html">Interfacing of Seven Segment with Arduino in Proteus</a>
-        \n - <a href="https://www.theengineeringprojects.com/2015/06/interfacing-pir-sensor-arduino.html">Interfacing PIR sensor with Arduino</a>
-        \n - <a href="https://www.theengineeringprojects.com/2016/07/interfacing-flame-sensor-arduino.html">Interfacing of Flame Sensor with Arduino</a>
-        \n - <a href="https://www.theengineeringprojects.com/2015/11/control-servo-motor-arduino-proteus.html">Control Servo Motor with Arduino in Proteus</a>
+         - <a href="https://www.makeuseof.com/tag/make-buzz-wire-game-arduino/">Make a Buzz Wire Game with an Arduino</a>
+        \n - <a href="https://www.makeuseof.com/tag/make-midi-controller-arduino/">Arduino MIDI Controller</a>
+        \n - <a href="https://create.arduino.cc/projecthub/muhammedazhar/make-your-first-arduino-robot-the-best-be">Arduino Robot</a>
+        \n - <a href="https://create.arduino.cc/projecthub/muhammed-shameel-k-v/simple-obstacle-sensor-with-ardui">Simple Obstacle Basic</a>
+        \n - <a href="https://create.arduino.cc/projecthub/circuito-io-team/giftduino-the-perfect-arduino-gift-box-67083">Perfect Arduino Gift Box</a>
+        \n - <a href="https://create.arduino.cc/projecthub/SBR/working-with-shift-register-22902c">Working with Shift Register</a>
     </string>
 
     <!-- Submenu 2.3: Arduino NANO -->
     <string name="pins_arduino_nano">pins_arduino_nano</string>
     <string name="textviewSubmenu2_3_1">\n <b>Specification and Manual :</b> </string>
-    <string name="textviewSubmenu2_3_2">\n Suggested Project for Arduino NANO:\n
-
+    <string name="textviewSubmenu2_3_2">
+         - <a href="https://create.arduino.cc/projecthub/kutluhan-aktar/nano-weather-shield-v1-1-f65b7a">NANO Weather Sheild V1.1</a>
+        \n - <a href="https://create.arduino.cc/projecthub/xing-hackweek/formula-led-b4cd78">Formula LED</a>
+        \n - <a href="https://create.arduino.cc/projecthub/TheTNR/smart-coffee-table-with-nano-and-hx711-0a0f0e">Smart Coffee Table with NANO and HX711</a>
+        \n - <a href="https://create.arduino.cc/projecthub/Niranjan_niru/find-me-deb4a8">Item Locator with Arduino NANO</a>
+        \n - <a href="https://create.arduino.cc/projecthub/suhail_jr/ir-remote-controlled-home-automation-629106">IR Remote Controlled Home Automation</a>
+        \n - <a href="https://create.arduino.cc/projecthub/suhail_jr/ir-remote-controlled-home-automation-629106">Ultrasonic Tripwire</a>
     </string>
+
 
 
     <!-- Submenu 3: Application of Arduino -->
@@ -204,8 +220,93 @@
     <!-- Submenu 3.1: Examples of Arduino MEGA -->
     <!-- Example 1 -->
     <string name="textviewSubmenu3_1_1">1. Capacitive Resistor Piano
-    \n Coding (Arduino IDE):</string>
-    <string name="textviewCoding3_1_1">[Coding put here]</string>
+    \n\n Coding (Arduino IDE):</string>
+    <string name="textviewCoding3_1_1">
+        <![CDATA[
+    \n // Import the Capacit
+    iveSensor Library.
+    \n #include <CapacitiveSensor.h>
+    \n
+    \n
+    \n #define speaker 11
+    \n
+    \n
+    \n// Set the Send Pin & Receive Pin.
+    \nCapacitiveSensor   cs_2_3 = CapacitiveSensor(2,3);
+    \nCapacitiveSensor   cs_2_4 = CapacitiveSensor(2,4);
+    \nCapacitiveSensor   cs_2_5 = CapacitiveSensor(2,5);
+    \nCapacitiveSensor   cs_2_6 = CapacitiveSensor(2,6);
+    \nCapacitiveSensor   cs_2_7 = CapacitiveSensor(2,7);
+    \nCapacitiveSensor   cs_2_8 = CapacitiveSensor(2,8);
+    \nCapacitiveSensor   cs_2_9 = CapacitiveSensor(2,9);
+    \nCapacitiveSensor   cs_2_10 = CapacitiveSensor(2,10);
+    \n
+    \n
+    \n void setup()
+    \n {
+    \n  cs_2_6.set_CS_AutocaL_Millis(0xFFFFFFFF);     // turn off autocalibrate on channel 1
+    \n
+    \n  // Arduino start communicate with computer.
+    \n  Serial.begin(9600);
+    \n}
+    \n
+    \n void loop()
+    \n {
+    \n  // Set a timer.
+    \n  long start = millis();
+    \n
+    \n  // Set the sensitivity of the sensors.
+    \n  long total1 =  cs_2_3.capacitiveSensor(3000);
+    \n  long total2 =  cs_2_4.capacitiveSensor(3000);
+    \n  long total3 =  cs_2_5.capacitiveSensor(3000);
+    \n  long total4 =  cs_2_6.capacitiveSensor(3000);
+    \n  long total5 =  cs_2_7.capacitiveSensor(3000);
+    \n  long total6 =  cs_2_8.capacitiveSensor(3000);
+    \n  long total7 =  cs_2_9.capacitiveSensor(3000);
+    \n  long total8 =  cs_2_10.capacitiveSensor(3000);
+    \n
+    \n
+    \n  Serial.print(millis() - start);        // check on performance in milliseconds
+    \n  Serial.print("\t");                    // tab character for debug windown spacing
+    \n
+    \n  Serial.print(total1);                  // print sensor output 1
+    \n  Serial.print("\t");                    // Leave some space before print the next output
+    \n  Serial.print(total2);                  // print sensor output 2
+    \n  Serial.print("\t");                    // Leave some space before print the next output
+    \n  Serial.print(total3);                  // print sensor output 3
+    \n  Serial.print("\t");                    // Leave some space before print the next output
+    \n  Serial.print(total4);                  // print sensor output 4
+    \n  Serial.print("\t");                    // Leave some space before print the next output
+    \n  Serial.print(total5);                  // print sensor output 5
+    \n  Serial.print("\t");                    // Leave some space before print the next output
+    \n  Serial.print(total6);                  // print sensor output 6
+    \n  Serial.print("\t");                    // Leave some space before print the next output
+    \n  Serial.print(total7);                   // print sensor output 7
+    \n                                          // Leave some space before print the next output
+    \n  Serial.print("\t");
+    \n  Serial.println(total8);                 // print sensor output 8
+    \n                                         // "println" - "ln" represent as "line", system will jump to next line after print the output.
+    \n
+    \n
+    \n  // When hand is touched the sensor, the speaker will produce a tone.
+    \n  // Threshold is set so that the sensor won't be too sensitive.
+    \n  if (total1 > 500) tone(speaker,131);   // frequency
+    \n  if (total2 > 500) tone(speaker,147);   // you can see https://www.arduino.cc/en/Tutorial/toneMelody if you want to change frequency
+    \n  if (total3 > 500) tone(speaker,165);
+    \n  if (total4 > 500) tone(speaker,175);
+    \n  if (total5 > 500) tone(speaker,196);
+    \n  if (total6 > 500) tone(speaker,220);
+    \n  if (total7 > 500) tone(speaker,247);
+    \n  if (total8 > 500) tone(speaker,262);
+    \n
+    \n  // When hand didn't touch on it, no tone is produced.
+    \n  if (total1<=500  &  total2<=500  &  total3<=500 & total4<=500  &  total5<=500  &  total6<=500 &  total7<=500 &  total8<=500)
+    \n    noTone(speaker);
+    \n
+    \n  delay(10);                             // arbitrary delay to limit data to serial port
+    \n}
+    \n ]]>
+    </string>
     <string name="textviewSubmenu3_1_2">Schematic Diagram (Proteus)</string>
     <string name="schematic_examples3_1_1">Schematic_of_Capacitive_Resistor</string>
     <string name="textviewSubmenu3_1_3">Wiring Connection (Fritzing / Virtual Breadboard): </string>
@@ -290,21 +391,11 @@
     \n- Jumper Wire *11 \n- 5V Power Source (Powerbank, laptop port or battery)
     \n\n <u>Software Needed:</u> \n Arduino IDE, Proteus (Schematic Diagram), Fritzing / Virtual Breadboard (Wiring Diagram)
     \n\n <u>Coding</u> (Arduino IDE): \n</string>
-    <string name="textviewCoding3_2_2"><![CDATA[
-    /*
+    <string name="textviewCoding3_2_2">
+        <![CDATA[
+    \n /*
     \n Showing number 0-9 on a Common Anode 7-segment LED display
     \n Displays the numbers 0-9 on the display, with one second in between.
-    \n      A
-    \n     ---
-    \n F |    | B
-    \n   | G  |
-    \n     ---
-    \n E |    | C
-    \n   |    |
-    \n     ---
-    \n     D
-    \n */
-    \n
     \n // Pin 2-8 is connected to the 7 segments of the display.
     \n
     \n int pinA = 2;
@@ -468,8 +559,8 @@
     \n */
     \n
     \n }
-    \n
-    \n ]]></string>
+    ]]>
+    </string>
     <string name="textviewSubmenu3_2_6">\n <u>Schematic Diagram</u> (Proteus):</string>
     <string name="schematic_examples3_2_2">Schematic_of_4 Digit 7 Segment LED Display</string>
     <string name="textviewSubmenu3_2_7">\n <u>Wiring Connection (Fritzing / Virtual Breadboard):</u></string>
@@ -564,7 +655,14 @@
 
     <!-- About the App -->
     <string name="about_app_1">About the app</string>
-    <string name="about_app_2">This is made by xxx</string>
-    <string name="about_app_3"><b>Manual of using this app</b></string>
+    <string name="about_app_2">This Android based mobile application is developed by TAM GIN HSIEN
+        for Final Year Project (FYP) in Universiti Tun Hussein Onn Malaysia (UTHM). </string>
+    <string name="about_app_3">
+    \n\n The importance of this application (ELA) is to:\n
+    \n -\t  Give users on what Arduino (Arduino board and Arduino IDE) exactly is.
+    \n -\t  Provide the Guide on how to simulate the Arduino project in Proteus.
+    \n -\t  Provide the examples of Arduino project to users and Arduino beginners.
+    \n -\t  Teach Arduino beginners on how to build an Arduino project.\n </string>
+    <string name="about_app_4"><b>Manual of using this app</b></string>
 
 </resources>

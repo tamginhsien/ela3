@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".screen.AboutFragment"
-    android:background="#6a5acd">
+    android:background="#6495ed">
 
     <TextView
         android:id="@+id/title1"
@@ -28,7 +28,9 @@
         android:textColor="@color/white"
         android:layout_margin="10dp"
         android:layout_marginBottom="10dp"
-        android:layout_below="@id/title1"/>
+        android:layout_below="@id/title1"
+        android:textAlignment="center"
+        android:justificationMode="inter_word"/>
 
     <TextView
         android:id="@+id/title3"
@@ -39,6 +41,18 @@
         android:textColor="@color/white"
         android:layout_margin="10dp"
         android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:justificationMode="inter_word"/>
+
+    <TextView
+        android:id="@+id/title4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/about_app_4"
+        android:layout_below="@id/title3"
+        android:textColor="@color/white"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"/>
 
     <Button
@@ -48,7 +62,7 @@
         android:layout_gravity="center"
         android:layout_marginBottom="5dp"
         android:autoLink="all"
-        android:layout_below="@id/title3"
+        android:layout_below="@id/title4"
         android:drawableStart="@drawable/pdf_icon_1"
         android:onClick="ELA_MANUAL"
         android:text=" ELA MANUAL"

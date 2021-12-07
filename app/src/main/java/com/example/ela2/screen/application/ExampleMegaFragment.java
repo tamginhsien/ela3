@@ -48,13 +48,13 @@ public class ExampleMegaFragment extends Fragment {
         });
         // image click to image preview
         binding.expandableExample1.secondLayout.findViewById(R.id.connection_examples3_1_1).setOnClickListener(v -> {
-            navController.navigate(ExampleMegaFragmentDirections.actionMegaImage(R.drawable.connection_examples3_2_1));
+            navController.navigate(ExampleMegaFragmentDirections.actionMegaImage(R.drawable.connection_examples3_1_1));
         });
 
         //Example 1 Demonstration Video Button
         // TODO - Remember to add in the Uri of Demonstration Video
         binding.expandableExample1.secondLayout.findViewById(R.id.btn_example_1_video).setOnClickListener(v -> {
-            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=7wtfhZwyrcc")));
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://youtu.be/A0JoCosAPT8")));
                 });
 
         // comment button example 1
@@ -78,13 +78,13 @@ public class ExampleMegaFragment extends Fragment {
         });
         // image click to image preview
         binding.expandableExample2.secondLayout.findViewById(R.id.connection_examples3_1_2).setOnClickListener(v -> {
-            navController.navigate(ExampleMegaFragmentDirections.actionMegaImage(R.drawable.connection_examples3_2_2));
+            navController.navigate(ExampleMegaFragmentDirections.actionMegaImage(R.drawable.connection_examples3_1_2));
         });
 
         //Example 2 Demonstration Video Button
         // TODO - Remember to add in the Uri of Demonstration Video
         binding.expandableExample2.secondLayout.findViewById(R.id.btn_example_2_video).setOnClickListener(v -> {
-            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("")));
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://youtu.be/A0JoCosAPT8")));
         });
 
         // comment button example 2
@@ -114,7 +114,7 @@ public class ExampleMegaFragment extends Fragment {
         //Example 3 Demonstration Video Button
         // TODO - Remember to add in the Uri of Demonstration Video
         binding.expandableExample3.secondLayout.findViewById(R.id.btn_example_3_video).setOnClickListener(v -> {
-            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("")));
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://youtu.be/A0JoCosAPT8")));
         });
 
         // comment button example 3
