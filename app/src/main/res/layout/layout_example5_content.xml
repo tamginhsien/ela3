@@ -15,12 +15,11 @@
         android:textColor="@color/black" />
 
     <TextView
-        android:id="@+id/textView_coding3.2.2"
+        android:id="@+id/textView_coding3_2_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/black"
         android:justificationMode="inter_word"
-        android:text="@string/textviewCoding3_2_2"
         android:textColor="#add8e6"
         android:textIsSelectable="true" />
 

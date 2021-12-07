@@ -2,14 +2,11 @@
 package com.example.ela2.screen.application;
 
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 
-import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.fragment.NavHostFragment;
@@ -17,15 +14,17 @@ import androidx.navigation.fragment.NavHostFragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
+import com.example.ela2.Utils;
 import com.example.ela2.R;
 import com.example.ela2.databinding.FragmentExampleUnoBinding;
-import com.example.ela2.databinding.FragmentMainBinding;
 
 public class ExampleUnoFragment extends Fragment {
 
     private FragmentExampleUnoBinding binding;
     private NavController navController;
+    private final Utils utils = new Utils();
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -66,8 +65,6 @@ public class ExampleUnoFragment extends Fragment {
             navController.navigate(ExampleUnoFragmentDirections.actionUnoComment("comments_example_4", "Example 4"));
         });
 
-
-
         // Example 5
         // expandable layout expand/collapse controller
         binding.expandableExample5.setOnClickListener(v -> {
@@ -85,6 +82,9 @@ public class ExampleUnoFragment extends Fragment {
             navController.navigate(ExampleUnoFragmentDirections.actionUnoImage(R.drawable.connection_examples3_2_2));
         });
 
+        TextView tv322 = binding.expandableExample5.secondLayout.findViewById(R.id.textView_coding3_2_2);
+        tv322.setText(utils.getCodeFromTxt(requireContext(), R.raw.coding3_2_2));
+
         //Example 5 Demonstration Video Button
         // TODO - Remember to add in the Uri of Demonstration Video
         binding.expandableExample5.secondLayout.findViewById(R.id.btn_example_5_video).setOnClickListener(v -> {
@@ -95,8 +95,6 @@ public class ExampleUnoFragment extends Fragment {
         binding.expandableExample5.secondLayout.findViewById(R.id.btn_comment_5).setOnClickListener(v -> {
             navController.navigate(ExampleUnoFragmentDirections.actionUnoComment("comments_example_5", "Example 5"));
         });
-
-
 
         // Example 6
         // expandable layout expand/collapse controller

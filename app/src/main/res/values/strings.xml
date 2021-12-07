@@ -219,93 +219,91 @@
 
     <!-- Submenu 3.1: Examples of Arduino MEGA -->
     <!-- Example 1 -->
-    <string name="textviewSubmenu3_1_1">1. Capacitive Resistor Piano
-    \n\n Coding (Arduino IDE):</string>
+    <string name="textviewSubmenu3_1_1">1. Capacitive Resistor Piano\n\n Coding (Arduino IDE):</string>
     <string name="textviewCoding3_1_1">
-        <![CDATA[
-    \n // Import the Capacit
-    iveSensor Library.
-    \n #include <CapacitiveSensor.h>
-    \n
-    \n
-    \n #define speaker 11
-    \n
-    \n
-    \n// Set the Send Pin & Receive Pin.
-    \nCapacitiveSensor   cs_2_3 = CapacitiveSensor(2,3);
-    \nCapacitiveSensor   cs_2_4 = CapacitiveSensor(2,4);
-    \nCapacitiveSensor   cs_2_5 = CapacitiveSensor(2,5);
-    \nCapacitiveSensor   cs_2_6 = CapacitiveSensor(2,6);
-    \nCapacitiveSensor   cs_2_7 = CapacitiveSensor(2,7);
-    \nCapacitiveSensor   cs_2_8 = CapacitiveSensor(2,8);
-    \nCapacitiveSensor   cs_2_9 = CapacitiveSensor(2,9);
-    \nCapacitiveSensor   cs_2_10 = CapacitiveSensor(2,10);
-    \n
-    \n
-    \n void setup()
-    \n {
-    \n  cs_2_6.set_CS_AutocaL_Millis(0xFFFFFFFF);     // turn off autocalibrate on channel 1
-    \n
-    \n  // Arduino start communicate with computer.
-    \n  Serial.begin(9600);
-    \n}
-    \n
-    \n void loop()
-    \n {
-    \n  // Set a timer.
-    \n  long start = millis();
-    \n
-    \n  // Set the sensitivity of the sensors.
-    \n  long total1 =  cs_2_3.capacitiveSensor(3000);
-    \n  long total2 =  cs_2_4.capacitiveSensor(3000);
-    \n  long total3 =  cs_2_5.capacitiveSensor(3000);
-    \n  long total4 =  cs_2_6.capacitiveSensor(3000);
-    \n  long total5 =  cs_2_7.capacitiveSensor(3000);
-    \n  long total6 =  cs_2_8.capacitiveSensor(3000);
-    \n  long total7 =  cs_2_9.capacitiveSensor(3000);
-    \n  long total8 =  cs_2_10.capacitiveSensor(3000);
-    \n
-    \n
-    \n  Serial.print(millis() - start);        // check on performance in milliseconds
-    \n  Serial.print("\t");                    // tab character for debug windown spacing
-    \n
-    \n  Serial.print(total1);                  // print sensor output 1
-    \n  Serial.print("\t");                    // Leave some space before print the next output
-    \n  Serial.print(total2);                  // print sensor output 2
-    \n  Serial.print("\t");                    // Leave some space before print the next output
-    \n  Serial.print(total3);                  // print sensor output 3
-    \n  Serial.print("\t");                    // Leave some space before print the next output
-    \n  Serial.print(total4);                  // print sensor output 4
-    \n  Serial.print("\t");                    // Leave some space before print the next output
-    \n  Serial.print(total5);                  // print sensor output 5
-    \n  Serial.print("\t");                    // Leave some space before print the next output
-    \n  Serial.print(total6);                  // print sensor output 6
-    \n  Serial.print("\t");                    // Leave some space before print the next output
-    \n  Serial.print(total7);                   // print sensor output 7
-    \n                                          // Leave some space before print the next output
-    \n  Serial.print("\t");
-    \n  Serial.println(total8);                 // print sensor output 8
-    \n                                         // "println" - "ln" represent as "line", system will jump to next line after print the output.
-    \n
-    \n
-    \n  // When hand is touched the sensor, the speaker will produce a tone.
-    \n  // Threshold is set so that the sensor won't be too sensitive.
-    \n  if (total1 > 500) tone(speaker,131);   // frequency
-    \n  if (total2 > 500) tone(speaker,147);   // you can see https://www.arduino.cc/en/Tutorial/toneMelody if you want to change frequency
-    \n  if (total3 > 500) tone(speaker,165);
-    \n  if (total4 > 500) tone(speaker,175);
-    \n  if (total5 > 500) tone(speaker,196);
-    \n  if (total6 > 500) tone(speaker,220);
-    \n  if (total7 > 500) tone(speaker,247);
-    \n  if (total8 > 500) tone(speaker,262);
-    \n
-    \n  // When hand didn't touch on it, no tone is produced.
-    \n  if (total1<=500  &  total2<=500  &  total3<=500 & total4<=500  &  total5<=500  &  total6<=500 &  total7<=500 &  total8<=500)
-    \n    noTone(speaker);
-    \n
-    \n  delay(10);                             // arbitrary delay to limit data to serial port
-    \n}
-    \n ]]>
+<!--       <![CDATA[-->
+<!--    \n // Import the CapacitiveSensor Library.-->
+<!--    \n #include <CapacitiveSensor.h>-->
+<!--    \n-->
+<!--    \n-->
+<!--    \n #define speaker 11-->
+<!--    \n-->
+<!--    \n-->
+<!--    \n// Set the Send Pin & Receive Pin.-->
+<!--    \nCapacitiveSensor   cs_2_3 = CapacitiveSensor(2,3);-->
+<!--    \nCapacitiveSensor   cs_2_4 = CapacitiveSensor(2,4);-->
+<!--    \nCapacitiveSensor   cs_2_5 = CapacitiveSensor(2,5);-->
+<!--    \nCapacitiveSensor   cs_2_6 = CapacitiveSensor(2,6);-->
+<!--    \nCapacitiveSensor   cs_2_7 = CapacitiveSensor(2,7);-->
+<!--    \nCapacitiveSensor   cs_2_8 = CapacitiveSensor(2,8);-->
+<!--    \nCapacitiveSensor   cs_2_9 = CapacitiveSensor(2,9);-->
+<!--    \nCapacitiveSensor   cs_2_10 = CapacitiveSensor(2,10);-->
+<!--    \n-->
+<!--    \n-->
+<!--    \n void setup()-->
+<!--    \n {-->
+<!--    \n  cs_2_6.set_CS_AutocaL_Millis(0xFFFFFFFF);     // turn off autocalibrate on channel 1-->
+<!--    \n-->
+<!--    \n  // Arduino start communicate with computer.-->
+<!--    \n  Serial.begin(9600);-->
+<!--    \n}-->
+<!--    \n-->
+<!--    \n void loop()-->
+<!--    \n {-->
+<!--    \n  // Set a timer.-->
+<!--    \n  long start = millis();-->
+<!--    \n-->
+<!--    \n  // Set the sensitivity of the sensors.-->
+<!--    \n  long total1 =  cs_2_3.capacitiveSensor(3000);-->
+<!--    \n  long total2 =  cs_2_4.capacitiveSensor(3000);-->
+<!--    \n  long total3 =  cs_2_5.capacitiveSensor(3000);-->
+<!--    \n  long total4 =  cs_2_6.capacitiveSensor(3000);-->
+<!--    \n  long total5 =  cs_2_7.capacitiveSensor(3000);-->
+<!--    \n  long total6 =  cs_2_8.capacitiveSensor(3000);-->
+<!--    \n  long total7 =  cs_2_9.capacitiveSensor(3000);-->
+<!--    \n  long total8 =  cs_2_10.capacitiveSensor(3000);-->
+<!--    \n-->
+<!--    \n-->
+<!--    \n  Serial.print(millis() - start);        // check on performance in milliseconds-->
+<!--    \n  Serial.print("\t");                    // tab character for debug window spacing-->
+<!--    \n-->
+<!--    \n  Serial.print(total1);                  // print sensor output 1-->
+<!--    \n  Serial.print("\t");                    // Leave some space before print the next output-->
+<!--    \n  Serial.print(total2);                  // print sensor output 2-->
+<!--    \n  Serial.print("\t");                    // Leave some space before print the next output-->
+<!--    \n  Serial.print(total3);                  // print sensor output 3-->
+<!--    \n  Serial.print("\t");                    // Leave some space before print the next output-->
+<!--    \n  Serial.print(total4);                  // print sensor output 4-->
+<!--    \n  Serial.print("\t");                    // Leave some space before print the next output-->
+<!--    \n  Serial.print(total5);                  // print sensor output 5-->
+<!--    \n  Serial.print("\t");                    // Leave some space before print the next output-->
+<!--    \n  Serial.print(total6);                  // print sensor output 6-->
+<!--    \n  Serial.print("\t");                    // Leave some space before print the next output-->
+<!--    \n  Serial.print(total7);                   // print sensor output 7-->
+<!--    \n                                          // Leave some space before print the next output-->
+<!--    \n  Serial.print("\t");-->
+<!--    \n  Serial.println(total8);                 // print sensor output 8-->
+<!--    \n                                         // "println" - "ln" represent as "line", system will jump to next line after print the output.-->
+<!--    \n-->
+<!--    \n-->
+<!--    \n  // When hand is touched the sensor, the speaker will produce a tone.-->
+<!--    \n  // Threshold is set so that the sensor won't be too sensitive.-->
+<!--    \n  if (total1 > 500) tone(speaker,131);   // frequency-->
+<!--    \n  if (total2 > 500) tone(speaker,147);   // you can see https://www.arduino.cc/en/Tutorial/toneMelody if you want to change frequency-->
+<!--    \n  if (total3 > 500) tone(speaker,165);-->
+<!--    \n  if (total4 > 500) tone(speaker,175);-->
+<!--    \n  if (total5 > 500) tone(speaker,196);-->
+<!--    \n  if (total6 > 500) tone(speaker,220);-->
+<!--    \n  if (total7 > 500) tone(speaker,247);-->
+<!--    \n  if (total8 > 500) tone(speaker,262);-->
+<!--    \n-->
+<!--    \n  // When hand didn't touch on it, no tone is produced.-->
+<!--    \n  if (total1<=500  \&  total2<=500  \&  total3<=500 \& total4<=500  \&  total5<=500  \&  total6<=500 \&  total7<=500 \& total8<=500)-->
+<!--    \n    noTone(speaker);-->
+<!--    \n-->
+<!--    \n  delay(10);                             // arbitrary delay to limit data to serial port-->
+<!--    \n}-->
+<!--    ]]>-->
     </string>
     <string name="textviewSubmenu3_1_2">Schematic Diagram (Proteus)</string>
     <string name="schematic_examples3_1_1">Schematic_of_Capacitive_Resistor</string>
