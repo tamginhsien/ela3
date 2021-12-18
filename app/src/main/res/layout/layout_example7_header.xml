@@ -9,7 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:text="1. Lie Detector"
+        android:text="1. Polygraph with Serial Plotter"
         android:textColor="@color/black"
         android:textStyle="bold"/>
 

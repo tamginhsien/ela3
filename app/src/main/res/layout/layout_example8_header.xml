@@ -9,7 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:text="2. CPU and RAM Usage Monitor"
+        android:text="2. Windows CPU and RAM Monitoring"
         android:textColor="@color/black"
         android:textStyle="bold"/>
 

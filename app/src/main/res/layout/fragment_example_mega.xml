@@ -10,12 +10,12 @@
         android:id="@+id/Submenu3_1Title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/titledesign2"
+        android:background="@drawable/buttondesign2"
         android:gravity="center"
         android:padding="5dp"
         android:text="@string/buttonSubmenu3_1"
         android:textAlignment="center"
-        android:textColor="#535D61"
+        android:textColor="#000000"
         android:textIsSelectable="true"
         android:textSize="36sp" />
 
@@ -25,12 +25,14 @@
         android:layout_height="match_parent"
         android:layout_below="@id/Submenu3_1Title"
         android:layout_margin="5dp"
-        android:padding="10dp">
+        android:padding="10dp"
+        android:background="#F24682B4">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            >
 
             <com.skydoves.expandablelayout.ExpandableLayout
                 android:id="@+id/expandable_example1"

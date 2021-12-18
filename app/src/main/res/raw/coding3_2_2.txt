@@ -1,5 +1,5 @@
-Showing number 0-9 on a Common Anode 7-segment LED display
-Displays the numbers 0-9 on the display, with one second in between.
+// Showing number 0-9 on a Common Anode 7-segment LED display
+// Displays the numbers 0-9 on the display, with one second in between.
 // Pin 2-8 is connected to the 7 segments of the display.
 
 int pinA = 2;
@@ -14,7 +14,7 @@ int D2 = 10;
 int D3 = 11;
 int D4 = 12;
 
-the setup routine runs once when you press reset:
+//the setup routine runs once when you press reset:
 
 void setup() {
     // initialize the digital pins as outputs.

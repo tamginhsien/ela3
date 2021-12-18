@@ -62,7 +62,7 @@ public class ExampleNanoFragment extends Fragment {
         //Example 7 Demonstration Video Button
         // TODO - Remember to add in the Uri of Demonstration Video
         binding.expandableExample7.secondLayout.findViewById(R.id.btn_example_7_video).setOnClickListener(v -> {
-            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://youtu.be/A0JoCosAPT8")));
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://youtu.be/d6MoIg0VJOM")));
         });
 
         // comment button example 7
@@ -96,7 +96,7 @@ public class ExampleNanoFragment extends Fragment {
         //Example 8 Demonstration Video Button
         // TODO - Remember to add in the Uri of Demonstration Video
         binding.expandableExample8.secondLayout.findViewById(R.id.btn_example_8_video).setOnClickListener(v -> {
-            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://youtu.be/A0JoCosAPT8")));
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://youtu.be/d-Em3nUdov0")));
         });
 
         // comment button example 8
@@ -130,7 +130,7 @@ public class ExampleNanoFragment extends Fragment {
         //Example 9 Demonstration Video Button
         // TODO - Remember to add in the Uri of Demonstration Video
         binding.expandableExample9.secondLayout.findViewById(R.id.btn_example_9_video).setOnClickListener(v -> {
-            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://youtu.be/A0JoCosAPT8")));
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://youtu.be/QUSUySVf8Bg")));
         });
 
         // comment button example 9

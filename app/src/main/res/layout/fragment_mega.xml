@@ -29,12 +29,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
-                android:background="#78A5BA"
+                android:background="@drawable/buttondesign2"
                 android:gravity="center"
                 android:padding="5dp"
                 android:text="@string/buttonSubmenu2_1"
                 android:textAlignment="center"
-                android:textColor="#535D61"
+                android:textColor="#000000"
                 android:textSize="36sp" />
 
             <TextView
@@ -90,6 +90,7 @@
                 android:layout_marginBottom="5dp"
                 android:autoLink="all"
                 android:drawableStart="@drawable/pdf_icon_1"
+                android:background="@color/white"
                 android:onClick="ButtonClick1"
                 android:text="\t ARDUINO MEGA MANUAL"
                 android:layout_margin="5dp"/>

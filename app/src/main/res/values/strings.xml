@@ -66,21 +66,10 @@
     <string name="textviewSubmenu1.3">\n <b>3.  Arduino Software (Arduino IDE)</b>\n </string>
     <string name="arduino_ide">arduino ide</string>
     <string name="arduino_ide_textview1">The implementation of Arduino software, Arduino IDE is used to
-    give command Arduino board by coding in Arduino programming language. It can connect to Arduino
-    hardware (Arduino board) \n
+    give command Arduino board by coding in Arduino programming language \n(C++). It can connect to Arduino
+    hardware. (Arduino board) \n
         \n\n <u>Arduino IDE Download Links:</u> \n (About 200MB) \n</string>
     <!-- Arduino IDE button here -->
-    <string name="arduino_ide_textview2">
-
-    \n\n <u><b>5. Guidance Video:</b></u> \n\n
-        \n <u>Arduino IDE Download Video:</u> \n </string>
-    <!-- Download video button here -->
-    <string name="arduino_ide_textview3">
-        \n\n <u>Set HEX files location video guide:</u> \n </string>
-    <!-- HEX files location video button here -->
-    <string name="arduino_ide_textview4">
-        \n\n <u>Video how to implement Arduino code to Proteus (with HEX files):</u> \n </string>
-    <!-- Video button here -->
 
     <!-- Schematic Diagram Software -->
     <string name="textviewSubmenu1.4.1">
@@ -89,14 +78,8 @@
         \n Official Download Links: \n </string>
     <string name="crack_proteus1">
         \n\n Crack (Alternatives) Download Links: \n  </string>
-    <string name="crack_proteus2">
-        \n\n <u>Crack Installation Guide Video:</u> \n  </string>
-    <string name="no_library">
-        \n\n <u>If no Library Found in Proteus:</u> \n </string>
     <string name="arduino_library1">
         \n\n Arduino Library of Proteus: \n </string>
-    <string name="arduino_library2">
-        \n\n <u>Installation Video of Adding Arduino Library into Proteus:</u> \n </string>
     <string name="KiCAD">
         \n\n\n <u>KiCAD</u>
         \n (About 1.2GB)
@@ -115,6 +98,27 @@
         \n (About 152MB)
         \n Official (Free, Windows): \n
     </string>
+
+    <!-- Guidance Video -->
+    <string name="arduino_ide_textview2">
+    \n\n <u><b>5. Guidance Video:</b></u> \n\n
+        \n <u>Arduino IDE Installation Video:</u> \n </string>
+    <!-- Arduino IDE Download Video Button here -->
+    <string name="crack_proteus2">
+        \n\n <u>Crack Proteus Installation Video:</u> \n  </string>
+    <!-- Crack Proteus Download Video Button Here -->
+    <string name="arduino_ide_textview3">
+        \n\n <u>Video on How to Set HEX files location:</u> \n </string>
+    <!-- HEX files location video button here -->
+    <string name="arduino_library2">
+        \n\n <u>Video on How to add Arduino Library into Proteus:</u> \n </string>
+    <!-- Download Video Button Here -->
+    <string name="no_library">
+        \n\n <u>If no Library Found in Proteus (Solution):</u> \n </string>
+    <!-- Video Button Here -->
+    <string name="arduino_ide_textview4">
+        \n\n <u>Video on How to implement Arduino code to Proteus (with HEX files):</u> \n </string>
+    <!-- Video button here -->
 
 
     <!-- Submenu 2: Comparison of Different Types of Arduino -->
@@ -220,14 +224,14 @@
     <!-- Submenu 3.1: Examples of Arduino MEGA -->
     <!-- Example 1 -->
     <string name="textviewSubmenu3_1_1">1. Capacitive Resistor Piano \n
-        \n <u>Components Needed:</u>
+        \n <b><u>Components Needed:</u></b>
         \n - Arduino MEGA R3 2560 *1
         \n - Breadboard *1
         \n - 1M Resistor *7
         \n - Speaker *7
         \n - Male-to-Male Jumper Wire *18
         \n [Can be any speaker (buzzer, laptop speaker), just the sound quality would be different]
-    \n\n <u>Software needed :</u>
+        \n\n <b><u>Software needed :</u></b>
         \n - Arduino IDE,
         \n - Proteus (Schematic Diagram),
         \n - Fritzing / Virtual Breadboard (Wiring Diagram).
@@ -319,23 +323,23 @@
 <!--    \n}-->
 <!--    ]]>-->
     </string>
-    <string name="textviewSubmenu3_1_2">\n Schematic Diagram (Proteus)</string>
+    <string name="textviewSubmenu3_1_2">\n <b><u>Schematic Diagram (Proteus)</u></b></string>
     <string name="schematic_examples3_1_1">Schematic_of_Capacitive_Resistor</string>
-    <string name="textviewSubmenu3_1_3">Wiring Connection (Fritzing / Virtual Breadboard): </string>
+    <string name="textviewSubmenu3_1_3">\n <b><u>Wiring Connection (Fritzing / Virtual Breadboard): </u></b></string>
     <string name="connection_examples_3_1_1">connection_examples_3_1_1</string>
-    <string name="textviewSubmenu3_1_4">\n Video Demonstration:</string>
+    <string name="textviewSubmenu3_1_4">\n <b><u>Video Demonstration:</u></b></string>
     <string name="video_example_1">Example 1 Video</string>
-    <string name="codingtitle3_1_1">\n <u>Arduino Coding (Arduino IDE):</u> \n</string>
+    <string name="codingtitle3_1_1">\n <b><u>Arduino Coding (Arduino IDE):</u></b> \n</string>
 
     <!-- Example 2 -->
     <string name="textviewSubmenu3_1_5">2. Water Level Sensor \n
-        \n <u>Components Needed:</u>
+        \n <b><u>Components Needed:</u></b>
         \n - Arduino MEGA R3 2560 *1
         \n - Breadboard * 1
         \n - Water Level Sensor *4
         \n - Male-to-Male Jumper Wires *13
         \n - 5V Power Source (Powerbank, laptop port or battery)
-    \n\n <u>Software needed :</u>
+    \n\n <b><u>Software needed :</u></b>
         \n - Arduino IDE,
         \n - Proteus (Schematic Diagram),
         \n - Fritzing / Virtual Breadboard (Wiring Diagram).
@@ -343,17 +347,17 @@
     <string name="textViewCoding3_1_2">
         [Coding put here]
     </string>
-    <string name="textviewSubmenu3_1_6">Schematic Diagram (Proteus)</string>
+    <string name="textviewSubmenu3_1_6">\n <b><u>Schematic Diagram (Proteus)</u></b></string>
     <string name="schematic_examples3_1_2">Schematic_of_Capacitive_Resistor</string>
-    <string name="textviewSubmenu3_1_7">Wiring Connection (Fritzing / Virtual Breadboard): </string>
+    <string name="textviewSubmenu3_1_7">\n <b><u>Wiring Connection (Fritzing / Virtual Breadboard): </u></b></string>
     <string name="connection_examples_3_1_2">connection_examples_3_1_2</string>
-    <string name="textviewSubmenu3_1_8">\n Video Demonstration:</string>
+    <string name="textviewSubmenu3_1_8">\n <b><u>Video Demonstration:</u></b></string>
     <string name="video_example_2">Example 2 Video</string>
-    <string name="codingtitle3_1_2">\n <u>Arduino Coding (Arduino IDE):</u> \n</string>
+    <string name="codingtitle3_1_2">\n <b><u>Arduino Coding (Arduino IDE):</u></b> \n</string>
 
     <!-- Example 3 -->
     <string name="textviewSubmenu3_1_9">3. Countdown Timer \n
-        \n <u>Components Needed:</u>
+        \n <b><u>Components Needed:</u></b>
         \n - Arduino MEGA R3 2560 *1
         \n - Breadboard * 1
         \n - 7-Segment 4-Digit Common Anode (CA) Display (3461BS-1, 6 pins) *1
@@ -361,21 +365,22 @@
         \n - Buzzer *1
         \n - Male-to-Male Jumper Wires *21
         \n - 5V Power Source (Powerbank, laptop port or battery)
-    \n\n <u>Software needed :</u>
+    \n\n <b><u>Software needed :</u></b>
         \n Arduino IDE,
         \n Proteus (Schematic Diagram),
         \n Fritzing / Virtual Breadboard (Wiring Diagram).
     \n\n</string>
     <string name="textViewCoding3_1_3">[Coding put here]</string>
-    <string name="textviewSubmenu3_1_10">Schematic Diagram (Proteus)</string>
+    <string name="textviewSubmenu3_1_10">\n <b><u>Schematic Diagram (Proteus)</u></b></string>
     <string name="schematic_examples3_1_3">Schematic_of_Capacitive_Resistor</string>
-    <string name="textviewSubmenu3_1_11">Wiring Connection (Fritzing / Virtual Breadboard): </string>
+    <string name="textviewSubmenu3_1_11">\n <b><u>Wiring Connection (Fritzing / Virtual Breadboard): </u></b></string>
     <string name="connection_examples_3_1_3">connection_examples_3_1_3</string>
-    <string name="textviewSubmenu3_1_12">\n Video Demonstration:</string>
+    <string name="textviewSubmenu3_1_12">\n <b><u>Video Demonstration:</u></b></string>
     <string name="video_example_3">Example 3 Video</string>
-    <string name="codingtitle3_1_3">\n <u>Arduino Coding (Arduino IDE):</u> \n</string>
+    <string name="codingtitle3_1_3">\n <b><u>Arduino Coding (Arduino IDE):</u></b> \n</string>
 
     <!-- Comment Button String -->
+    <string name="comment_description">\n <u><b>Comment:</b></u></string>
     <string name="comment_example_1">Comment (Example 1)</string>
     <string name="comment_example_2">Comment (Example 2)</string>
     <string name="comment_example_3">Comment (Example 3)</string>
@@ -395,7 +400,7 @@
 
     <!-- Example 4 -->
     <string name="textviewSubmenu3_2_1"> 1. Blinking with Transistor \n
-        \n <u>Components needed:</u>
+        \n <b><u>Components Needed:</u></b>
         \n- Arduino UNO R3 *1
         \n- Breadboard *1
         \n- General Purpose Transistor NPN *1
@@ -403,7 +408,7 @@
         \n- 1k ohm Resistor *2
         \n- Jumper Wires *1
         \n- 5V Power Source (Powerbank, laptop port of battery)
-    \n\n <u>Software needed :</u>
+    \n\n <b><u>Software needed :</u></b>
         \n - Arduino IDE,
         \n - Proteus (Schematic Diagram),
         \n - Fritzing / Virtual Breadboard (Wiring Diagram).
@@ -411,13 +416,13 @@
     <string name="textviewCoding3_2_1">
 
     </string>
-    <string name="textviewSubmenu3_2_2"> \n <u>Schematic Diagram</u> (Proteus):</string>
+    <string name="textviewSubmenu3_2_2"> \n <b><u>Schematic Diagram (Proteus)</u></b></string>
     <string name="schematic_examples3_2_1">Schematic_of_Blinking_with_Transistor</string>
-    <string name="textviewSubmenu3_2_3">\n <u>Wiring Connection (Fritzing / Virtual Breadboard):</u></string>
+    <string name="textviewSubmenu3_2_3">\n <b><u>Wiring Connection (Fritzing / Virtual Breadboard): </u></b></string>
     <string name="connection_examples_3_2_1">connection_examples_3_2_1</string>
-    <string name="textviewSubmenu3_2_4">\n\n <u>Video Demonstration:</u> </string>
+    <string name="textviewSubmenu3_2_4">\n <b><u>Video Demonstration:</u></b></string>
     <string name="video_example_4">Example 4 Video</string>
-    <string name="codingtitle3_2_1">\n <u>Arduino Coding (Arduino IDE):</u> \n</string>
+    <string name="codingtitle3_2_1">\n <b><u>Arduino Coding (Arduino IDE):</u></b> \n</string>
     <!-- Comment Feature 4
     <string name="send_button4">Comment</string>
     <string name="hint_enter_comment4">Pls type in Comments</string>
@@ -425,13 +430,13 @@
 
     <!-- 5th Example -->
     <string name="textviewSubmenu3_2_5"> 2. 4-Digit 7-Segment LED Display \n
-        \n <u>Components Needed:</u>
+        \n <b><u>Components Needed:</u></b>
         \n- Arduino UNO R3 *1
         \n- Breadboard *1
         \n- 7-Segment 4-Digit Common Anode (CA) Display (3461BS-1, 6 pins) *1
         \n- Jumper Wire *11
         \n- 5V Power Source (Powerbank, laptop port or battery)
-   \n\n <u>Software needed :</u>
+   \n\n <b><u>Software needed :</u></b>
         \n - Arduino IDE,
         \n - Proteus (Schematic Diagram),
         \n - Fritzing / Virtual Breadboard (Wiring Diagram).
@@ -606,24 +611,24 @@
 <!--    \n }-->
 <!--    ]]>-->
     </string>
-    <string name="textviewSubmenu3_2_6">\n <u>Schematic Diagram</u> (Proteus):</string>
+    <string name="textviewSubmenu3_2_6">\\n <b><u>Schematic Diagram (Proteus)</u></b></string>
     <string name="schematic_examples3_2_2">Schematic_of_4 Digit 7 Segment LED Display</string>
-    <string name="textviewSubmenu3_2_7">\n <u>Wiring Connection (Fritzing / Virtual Breadboard):</u></string>
+    <string name="textviewSubmenu3_2_7">\n <b><u>Wiring Connection (Fritzing / Virtual Breadboard): </u></b></string>
     <string name="connection_examples_3_2_2">connection_examples_3_2_2</string>
-    <string name="textviewSubmenu3_2_8">\n <u>Video Demonstration:</u></string>
+    <string name="textviewSubmenu3_2_8">\n <b><u>Video Demonstration:</u></b></string>
     <string name="video_example_5">Example 5 Video</string>
-    <string name="codingtitle3_2_2">\n <u>Arduino Coding (Arduino IDE):</u> \n</string>
+    <string name="codingtitle3_2_2">\n <b><u>Arduino Coding (Arduino IDE):</u></b> \n</string>
 
     <!-- 6th Example -->
     <string name="textviewSubmenu3_2_9"> 3. Light Detecting Servo Motor \n
-        \n <u>Components Needed:</u>
+        \n <b><u>Components Needed:</u></b>
         \n- Arduino UNO R3 *1
         \n- Breadboard *1
         \n- Light Dependent Resistor (LDR) *2
         \n- Servo Motor *1
         \n- Jumper Wire *7
         \n- 5V Power Source (Powerbank, laptop port or battery)
-    \n\n <u>Software needed :</u>
+    \n\n <b><u>Software needed :</u></b>
         \n - Arduino IDE,
         \n - Proteus (Schematic Diagram),
         \n - Fritzing / Virtual Breadboard (Wiring Diagram).
@@ -664,21 +669,21 @@
     \n }
     \n
     ]]></string>
-    <string name="textviewSubmenu3_2_10">\n <u>Schematic Diagram</u> (Proteus):</string>
+    <string name="textviewSubmenu3_2_10">\n <b><u>Schematic Diagram (Proteus)</u></b></string>
     <string name="schematic_examples3_2_3">Schematic_of_4 Digit 7 Segment LED Display</string>
-    <string name="textviewSubmenu3_2_11">\n <u>Wiring Connection (Fritzing / Virtual Breadboard):</u></string>
+    <string name="textviewSubmenu3_2_11">\n <b><u>Wiring Connection (Fritzing / Virtual Breadboard): </u></b></string>
     <string name="connection_examples_3_2_3">connection_examples_3_2_2</string>
-    <string name="textviewSubmenu3_2_12">\n <u>Video Demonstration:</u></string>
+    <string name="textviewSubmenu3_2_12">\n <b><u>Video Demonstration:</u></b></string>
     <string name="video_example_6">Example 6 Video</string>
-    <string name="codingtitle3_2_3">\n <u>Arduino Coding (Arduino IDE):</u> \n</string>
+    <string name="codingtitle3_2_3">\n <b><u>Arduino Coding (Arduino IDE):</u></b> \n</string>
 
     <!-- TODO: Remove or change this placeholder text
     <string name="hello_blank_fragment">Hello blank fragment</string> -->
 
     <!-- Submenu 3.3: Examples of Arduino MEGA -->
     <!-- Example 7 -->
-    <string name="textviewSubmenu3_3_1">1. Lie Detector \n
-    \n <u>Components Needed:</u>
+    <string name="textviewSubmenu3_3_1">1. Polygraph with Serial Plotter \n
+    \n <b><u>Components Needed:</u></b>
         \n - Arduino NANO R3 *1
         \n - Breadboard * 1
         \n - 5mm Red LED *1
@@ -687,65 +692,66 @@
         \n - 2k Resistor *1
         \n - Male-to-Male Jumper Wires * 11
         \n - 5V Power Source (Powerbank, laptop port or battery)
-    \n\n <u>Software needed :</u>
+    \n\n <b><u>Software needed :</u></b>
         \n - Arduino IDE,
         \n - Proteus (Schematic Diagram),
         \n - Fritzing / Virtual Breadboard (Wiring Diagram).
     \n\n</string>
     <string name="textViewCoding3_3_1">[Coding put here]</string>
-    <string name="textviewSubmenu3_3_2">Schematic Diagram (Proteus)</string>
+    <string name="textviewSubmenu3_3_2">\n <b><u>Schematic Diagram (Proteus)</u></b></string>
     <string name="schematic_examples3_3_1">Schematic_of_Capacitive_Resistor</string>
-    <string name="textviewSubmenu3_3_3">Wiring Connection (Fritzing / Virtual Breadboard): </string>
+    <string name="textviewSubmenu3_3_3">\n <b><u>Wiring Connection (Fritzing / Virtual Breadboard): </u></b></string>
     <string name="connection_examples_3_3_1">connection_examples_3_3_1</string>
-    <string name="textviewSubmenu3_3_4">\n Video Demonstration:</string>
+    <string name="textviewSubmenu3_3_4">\n <b><u>Video Demonstration:</u></b></string>
     <string name="video_example_7">Example 7 Video</string>
-    <string name="codingtitle3_3_1">\n <u>Arduino Coding (Arduino IDE):</u> \n</string>
+    <string name="codingtitle3_3_1">\n <b><u>Arduino Coding (Arduino IDE):</u></b> \n</string>
 
     <!-- Example 8 -->
-    <string name="textviewSubmenu3_3_5">2. CPU and RAM Usage Monitor \n
-    \n <u>Components Needed:</u>
+    <string name="textviewSubmenu3_3_5">2. Windows CPU and RAM Monitoring \n
+    \n <b><u>Components Needed:</u></b>
         \n - Arduino NANO R3 *1
         \n - Breadboard * 1
         \n - 16x2 White on Blue Character LCD
         \n   with I2C / IIC Module * 1
         \n - Male-to-Female Jumper Wires * 4
         \n - 5V Power Source (Powerbank, laptop port or battery)
-    \n\n <u>Software needed :</u>
+    \n\n <b><u>Software needed :</u></b>
         \n - Arduino IDE,
         \n - Proteus (Schematic Diagram),
         \n - Fritzing / Virtual Breadboard (Wiring Diagram).
     \n\n</string>
     <string name="textViewCoding3_3_2">[Coding put here]</string>
-    <string name="textviewSubmenu3_3_6">Schematic Diagram (Proteus)</string>
+    <string name="textviewSubmenu3_3_6">\n <b><u>Schematic Diagram (Proteus)</u></b></string>
     <string name="schematic_examples3_3_2">Schematic_of_Capacitive_Resistor</string>
-    <string name="textviewSubmenu3_3_7">Wiring Connection (Fritzing / Virtual Breadboard): </string>
+    <string name="textviewSubmenu3_3_7">\n <b><u>Wiring Connection (Fritzing / Virtual Breadboard): </u></b></string>
     <string name="connection_examples_3_3_2">connection_examples_3_3_2</string>
-    <string name="textviewSubmenu3_3_8">\n Video Demonstration:</string>
+    <string name="textviewSubmenu3_3_8">\n <b><u>Video Demonstration:</u></b></string>
     <string name="video_example_8">Example 8 Video</string>
-    <string name="codingtitle3_3_2">\n <u>Arduino Coding (Arduino IDE):</u> \n</string>
+    <string name="codingtitle3_3_2">\n <b><u>Arduino Coding (Arduino IDE):</u></b> \n</string>
 
     <!-- Example 9 -->
     <string name="textviewSubmenu3_3_9">3. Ultrasonic Sensor \n
-    \n <u>Components Needed:</u>
+    \n <b><u>Components Needed:</u></b>
         \n - Arduino NANO R3 * 1
         \n - Breadboard * 1
         \n - Buzzer * 1
         \n - Ultrasonic Sensor (HC-SR04) * 1
         \n - Male-to-Male Jumper Wires * 8
         \n - 5V Power Source (Powerbank, laptop port or battery)
-    \n\n <u>Software needed :</u>
+    \n\n <b><u>Software needed :</u></b>
         \n - Arduino IDE,
         \n - Proteus (Schematic Diagram),
         \n - Fritzing / Virtual Breadboard (Wiring Diagram).
     \n\n</string>
     <string name="textViewCoding3_3_3">[Coding put here]</string>
-    <string name="textviewSubmenu3_3_10">Schematic Diagram (Proteus)</string>
+    <string name="textviewSubmenu3_3_10">\n <b><u>Schematic Diagram (Proteus)</u></b></string>
     <string name="schematic_examples3_3_3">Schematic_of_Capacitive_Resistor</string>
-    <string name="textviewSubmenu3_3_11">Wiring Connection (Fritzing / Virtual Breadboard): </string>
+    <string name="textviewSubmenu3_3_11">\n <b><u>Wiring Connection (Fritzing / Virtual Breadboard): </u></b> </string>
     <string name="connection_examples_3_3_3">connection_examples_3_3_3</string>
-    <string name="textviewSubmenu3_3_12">\n Video Demonstration:</string>
+    <string name="textviewSubmenu3_3_12">\n <b><u>Video Demonstration:</u></b></string>
     <string name="video_example_9">Example 9 Video</string>
-    <string name="codingtitle3_3_3">\n <u>Arduino Coding (Arduino IDE):</u> \n</string>
+    <string name="codingtitle3_3_3">\n <b><u>Arduino Coding (Arduino IDE):</u></b> \n</string>
+
 
     <!-- About the App -->
     <string name="about_app_1">About the app</string>

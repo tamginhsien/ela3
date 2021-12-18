@@ -6,13 +6,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_image_3"
-    tools:context=".Submenu3">
+    >
 
     <TextView
         android:id="@+id/Submenu3Title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#78A5BA"
+        android:background="@drawable/titledesign2"
         android:gravity="center"
         android:padding="5dp"
         android:text="@string/buttonSubmenu3"
