@@ -15,7 +15,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
-        android:background="#D9d8bfd8"
+        android:background="#F2add8e6"
         android:padding="5dp">
 
         <LinearLayout
@@ -45,6 +45,14 @@
                 android:justificationMode="inter_word"
                 android:text="@string/textviewSubmenu1_1"
                 android:textColor="@color/black" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:id="@+id/separator1"
+                android:visibility="visible"
+                android:layout_margin="5dp"
+                android:background="#000080"/>
 
             <TextView
                 android:id="@+id/textView_submenu1.1.1"
@@ -129,6 +137,15 @@
 
                 />
 
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:id="@+id/separator2"
+                android:visibility="visible"
+                android:layout_margin="5dp"
+                android:background="#000080"/>
+
+
             <!-- Arduino IDE -->
             <!-- Title -->
             <TextView
@@ -166,6 +183,8 @@
                 android:layout_height="80dp"
                 android:layout_gravity="center"
                 android:autoLink="all"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="5dp"
                 android:drawableStart="@drawable/arduino_ide_logo_3"
                 android:onClick="arduinoidelink1"
                 android:text=" Arduino IDE Download" />
@@ -175,6 +194,14 @@
                  Original place for HEX files location video textview & button"
 
                  Original place for Implement Arduino code textView & button -->
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:id="@+id/separator3"
+                android:visibility="visible"
+                android:layout_margin="5dp"
+                android:background="#000080"/>
 
             <!-- Schematic Diagram Software -->
             <TextView
@@ -238,11 +265,13 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:autoLink="all"
+                android:layout_marginBottom="5dp"
                 android:onClick="arduinolibrary1"
                 android:text="Download Arduino Library" />
 
 
             <!-- Original place for Adding Arduino Library textView & button -->
+
 
             <!-- KiCAD -->
             <TextView
@@ -260,10 +289,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="5dp"
                 android:autoLink="all"
                 android:onClick="KiCAD"
                 android:text="Download Official KiCAD" />
 
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:id="@+id/separator4"
+                android:visibility="visible"
+                android:layout_margin="5dp"
+                android:background="#000080"/>
 
             <!-- Wiring Connection Software -->
             <!-- Official Fritzing Download Text -->
@@ -323,8 +362,18 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:autoLink="all"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="5dp"
                 android:onClick="virtualbreadboard"
                 android:text="Download Virtual Breadboard" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:id="@+id/separator5"
+                android:visibility="visible"
+                android:layout_margin="5dp"
+                android:background="#000080"/>
 
             <!-- VIDEO GUIDE -->
 
@@ -345,8 +394,10 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:autoLink="all"
+                android:foreground="?attr/selectableItemBackground"
                 android:drawableStart="@drawable/youtube_icon3"
                 android:drawablePadding="10dp"
+                android:background="@color/white"
                 android:onClick="arduinoidelink2"
                 android:text="Arduino IDE Installation Video" />
 
@@ -367,9 +418,11 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:autoLink="all"
+                android:foreground="?attr/selectableItemBackground"
                 android:drawableStart="@drawable/youtube_icon3"
                 android:drawablePadding="10dp"
                 android:onClick="crackproteus2"
+                android:background="@color/white"
                 android:text="Crack Installation Video" />
 
             <!-- HEX file location -->
@@ -389,9 +442,11 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:autoLink="all"
+                android:foreground="?attr/selectableItemBackground"
                 android:drawableStart="@drawable/youtube_icon3"
                 android:drawablePadding="10dp"
                 android:onClick="arduinoidelink3"
+                android:background="@color/white"
                 android:text="HEX File Location" />
 
             <!-- Adding Arduino Library into Proteus Text -->
@@ -411,8 +466,10 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:autoLink="all"
+                android:foreground="?attr/selectableItemBackground"
                 android:drawableLeft="@drawable/youtube_icon3"
                 android:onClick="arduinolibrary2"
+                android:background="@color/white"
                 android:text="Video adding Arduino Library" />
 
             <!-- If no Library Found in Proteus: Text -->
@@ -432,8 +489,10 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:autoLink="all"
+                android:foreground="?attr/selectableItemBackground"
                 android:drawableLeft="@drawable/youtube_icon3"
                 android:onClick="nolibrary"
+                android:background="@color/white"
                 android:text="Video if no library found" />
 
             <!-- Implement Arduino Code -->
@@ -453,9 +512,11 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:autoLink="all"
+                android:foreground="?attr/selectableItemBackground"
                 android:drawableStart="@drawable/youtube_icon3"
                 android:drawablePadding="10dp"
                 android:onClick="arduinoidelink4"
+                android:background="@color/white"
                 android:text="Implement Arduino Code" />
 
         </LinearLayout>

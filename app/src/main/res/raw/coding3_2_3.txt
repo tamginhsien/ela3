@@ -1,0 +1,33 @@
+#include <Servo.h>
+
+int photodiode = A0;
+int servo = 9;
+
+int diodeValue = 0;
+int servoGrad = 90;
+int tolerance = 40;
+
+Servo myservo;
+
+void setup() {
+  pinMode( photodiode, INPUT);
+  myservo.attach( servo );
+  myservo.write( servoGrad );
+}
+
+void loop() {
+  sensorValue = analogRead(sensorPin);
+  if ( diodeValue < (512-tolerance) )
+  {
+    if (servoGrad < 180) servoGrad++;
+  }
+
+  if ( diodeValue > (512+tolerance) )
+  {
+    if (servoGrad > 0) servoGrad--;
+  }
+
+  myservo.write( servoGrad );
+
+  delay(100);
+}

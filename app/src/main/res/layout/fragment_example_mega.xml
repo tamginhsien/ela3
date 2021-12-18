@@ -52,7 +52,8 @@
                 app:expandable_showSpinner="true"
                 app:expandable_duration="300"
                 app:expandable_spinner_color="@color/black"
-                app:expandable_spinner_animate="true" />
+                app:expandable_spinner_animate="true"
+                />
 
             <com.skydoves.expandablelayout.ExpandableLayout
                 android:id="@+id/expandable_example3"

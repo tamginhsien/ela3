@@ -9,7 +9,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.example.ela2"
+        applicationId "dev.uthm.ela"
         minSdkVersion 26
         targetSdkVersion 31
         versionCode 1

@@ -32,8 +32,9 @@ public class AboutFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        //About the App Manual
         binding.btnDownload.setOnClickListener(v -> {
-            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://drive.google.com/file/d/1WnOC6oK5cHxq8FVE9it_2oMeZ_vtquBy/view?usp=sharing")));
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://drive.google.com/file/d/1rpx2dPb-4W3O-KxREM_zdLg9e7aL-nlU/view?usp=sharing")));
         });
     }
 }

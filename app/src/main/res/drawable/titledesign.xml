@@ -4,13 +4,13 @@
     android:shape="rectangle"
     >
     <stroke
-        android:color="#87ceeb"
+        android:color="#b88882"
         android:width="2dp"/>
     <corners
         android:radius="10dp"/>
     <gradient
         android:startColor="#4169e1"
-        android:endColor="#000000"/>
+        android:endColor="#4682b4"/>
     <!-- 87ceeb -->
 
 

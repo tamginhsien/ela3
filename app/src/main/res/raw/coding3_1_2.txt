@@ -1,0 +1,228 @@
+// Sensor pins
+#define sensorPower1 13
+#define sensorPower2 12
+#define sensorPower3 11
+#define sensorPower4 10
+#define sensorPin1 A0
+#define sensorPin2 A1
+#define sensorPin3 A2
+#define sensorPin4 A3
+
+// Value for storing water level
+int val1 = 0;
+int val2 = 0;
+int val3 = 0;
+int val4 = 0;
+
+void setup() {
+  // Set D7 as an OUTPUT
+  pinMode(sensorPower1, OUTPUT);
+  pinMode(sensorPower2, OUTPUT);
+  pinMode(sensorPower3, OUTPUT);
+  pinMode(sensorPower4, OUTPUT);
+
+  // Set to LOW so no power flows through the sensor
+  digitalWrite(sensorPower1, LOW);
+  digitalWrite(sensorPower2, LOW);
+  digitalWrite(sensorPower3, LOW);
+  digitalWrite(sensorPower4, LOW);
+
+  Serial.begin(9600);
+}
+
+void loop() {
+  //get the reading from the function below and print it
+  int value1 = readSensor1();
+  int value2 = readSensor2();
+  int value3 = readSensor3();
+  int value4 = readSensor4();
+
+  //SENSOR1
+  if (value1 < 300)
+  {
+    Serial.print("Water level1=0cm\n");
+  }
+    else if (value1 >= 300 && value1 < 370)
+  {
+    Serial.print("Water level1=0.5cm\n");
+  }
+    else if (value1 >= 370 && value1 < 415)
+  {
+    Serial.print("Water level1=1cm\n");
+  }
+    else if (value1 >= 415 && value1 < 450)
+  {
+    Serial.print("Water level1=1.5cm\n");
+  }
+    else if (value1 >= 450 && value1 < 482)
+  {
+    Serial.print("Water level1=2cm\n");
+  }
+    else if (value1 >= 482 && value1 < 515)
+  {
+    Serial.print("Water level1=2.5cm\n");
+  }
+    else if (value1 >= 515 && value1 < 535)
+  {
+    Serial.print("Water level1=3cm\n");
+  }
+    else if (value1 >= 535 && value1 < 555)
+  {
+    Serial.print("Water level1=3.5cm\n");
+  }
+      else if (value1 >= 555)
+  {
+    Serial.print("Water level1=4cm\n");
+  }
+
+ //SENSOR2
+    if (value2 < 390)
+  {
+    Serial.print("Water level2=0cm\n");
+  }
+    else if (value2 >= 390 && value2 < 440)
+  {
+    Serial.print("Water level2=0.5cm\n");
+  }
+    else if (value2 >= 440 && value2 < 465)
+  {
+    Serial.print("Water level2=1cm\n");
+  }
+    else if (value2 >= 465 && value2 < 495)
+  {
+    Serial.print("Water level2=1.5cm\n");
+  }
+    else if (value2 >= 495 && value2 < 518)
+  {
+    Serial.print("Water level2=2cm\n");
+  }
+    else if (value2 >= 518 && value2 < 530)
+  {
+    Serial.print("Water level2=2.5cm\n");
+  }
+    else if (value2 >= 530 && value2 < 537)
+  {
+    Serial.print("Water level2=3cm\n");
+  }
+    else if (value2 >= 537 && value2 < 547)
+  {
+    Serial.print("Water level2=3.5cm\n");
+  }
+      else if (value2 >= 547)
+  {
+    Serial.print("Water level2=4cm\n");
+  }
+
+  //SENSOR3
+    if (value3 < 345)
+  {
+    Serial.print("Water level3=0cm\n");
+  }
+    else if (value3 >= 345 && value3 < 405)
+  {
+    Serial.print("Water level3=0.5cm\n");
+  }
+    else if (value3 >= 405 && value3 < 468)
+  {
+    Serial.print("Water level3=1cm\n");
+  }
+    else if (value3 >= 468 && value3 < 491)
+  {
+    Serial.print("Water level3=1.5cm\n");
+  }
+    else if (value3 >= 491 && value3 < 508)
+  {
+    Serial.print("Water level3=2cm\n");
+  }
+    else if (value3 >= 508 && value3 < 524)
+  {
+    Serial.print("Water level3=2.5cm\n");
+  }
+    else if (value3 >= 524 && value3 < 540)
+  {
+    Serial.print("Water level3=3cm\n");
+  }
+    else if (value3 >= 540 && value3 < 557)
+  {
+    Serial.print("Water level3=3.5cm\n");
+  }
+      else if (value3 >= 557)
+  {
+    Serial.print("Water level3=4cm\n");
+  }
+
+//SENSOR 4
+  if (value4 < 400)
+  {
+    Serial.print("Water level4=0cm\n");
+  }
+    else if (value4 >= 400 && value4 < 435)
+  {
+    Serial.print("Water level4=0.5cm\n");
+  }
+    else if (value4 >= 435 && value4 < 470)
+  {
+    Serial.print("Water level4=1cm\n");
+  }
+    else if (value4 >= 470 && value4 < 509)
+  {
+    Serial.print("Water level4=1.5cm\n");
+  }
+    else if (value4 >= 509 && value4 < 535)
+  {
+    Serial.print("Water level4=2cm\n");
+  }
+    else if (value4 >= 535 && value4 < 548)
+  {
+    Serial.print("Water level4=2.5cm\n");
+  }
+    else if (value4 >= 548 && value4 < 559)
+  {
+    Serial.print("Water level4=3cm\n");
+  }
+    else if (value4 >= 559 && value4 < 568)
+  {
+    Serial.print("Water level4=3.5cm\n");
+  }
+      else if (value4 >= 568)
+  {
+    Serial.print("Water level4=4cm\n");
+  }
+
+
+  delay(1000);
+}
+
+//This is a function used to get the reading
+int readSensor1()
+{
+  digitalWrite(sensorPower1, HIGH);  // Turn the sensor ON
+  delay(10);              // wait 10 milliseconds
+  val1 = analogRead(sensorPin1);    // Read the analog value form sensor
+  digitalWrite(sensorPower1, LOW);   // Turn the sensor OFF
+  return val1;             // send current reading
+}
+int readSensor2()
+{
+  digitalWrite(sensorPower2, HIGH);  // Turn the sensor ON
+  delay(10);              // wait 10 milliseconds
+  val2 = analogRead(sensorPin2);    // Read the analog value form sensor
+  digitalWrite(sensorPower2, LOW);   // Turn the sensor OFF
+  return val2;             // send current reading
+}
+int readSensor3()
+{
+  digitalWrite(sensorPower3, HIGH);  // Turn the sensor ON
+  delay(10);              // wait 10 milliseconds
+  val3 = analogRead(sensorPin3);    // Read the analog value form sensor
+  digitalWrite(sensorPower3, LOW);   // Turn the sensor OFF
+  return val3;             // send current reading
+}
+int readSensor4()
+{
+  digitalWrite(sensorPower4, HIGH);  // Turn the sensor ON
+  delay(10);              // wait 10 milliseconds
+  val4 = analogRead(sensorPin4);    // Read the analog value form sensor
+  digitalWrite(sensorPower4, LOW);   // Turn the sensor OFF
+  return val4;             // send current reading
+}

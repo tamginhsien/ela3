@@ -13,8 +13,10 @@ import androidx.navigation.fragment.NavHostFragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.example.ela2.R;
+import com.example.ela2.Utils;
 import com.example.ela2.databinding.FragmentExampleNanoBinding;
 import com.example.ela2.databinding.FragmentMainBinding;
 
@@ -23,6 +25,7 @@ public class ExampleNanoFragment extends Fragment {
 
     private FragmentExampleNanoBinding binding;
     private NavController navController;
+    private final Utils utils = new Utils();
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -45,17 +48,21 @@ public class ExampleNanoFragment extends Fragment {
 
         // image click to image preview
         binding.expandableExample7.secondLayout.findViewById(R.id.schematic_examples3_3_1).setOnClickListener(v -> {
-            navController.navigate(ExampleNanoFragmentDirections.actionNanoImage(R.drawable.schematic_examples3_2_1));
+            navController.navigate(ExampleNanoFragmentDirections.actionNanoImage(R.drawable.schematic_examples3_3_1));
         });
         // image click to image preview
         binding.expandableExample7.secondLayout.findViewById(R.id.connection_examples3_3_1).setOnClickListener(v -> {
-            navController.navigate(ExampleNanoFragmentDirections.actionNanoImage(R.drawable.connection_examples3_2_1));
+            navController.navigate(ExampleNanoFragmentDirections.actionNanoImage(R.drawable.connection_examples3_3_1));
         });
+
+        //Coding Example 7
+        TextView tv331 = binding.expandableExample7.secondLayout.findViewById(R.id.textView_coding3_3_1);
+        tv331.setText(utils.getCodeFromTxt(requireContext(), R.raw.coding3_3_1));
 
         //Example 7 Demonstration Video Button
         // TODO - Remember to add in the Uri of Demonstration Video
         binding.expandableExample7.secondLayout.findViewById(R.id.btn_example_7_video).setOnClickListener(v -> {
-            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("")));
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://youtu.be/A0JoCosAPT8")));
         });
 
         // comment button example 7
@@ -75,17 +82,21 @@ public class ExampleNanoFragment extends Fragment {
 
         // image click to image preview
         binding.expandableExample8.secondLayout.findViewById(R.id.schematic_examples3_3_2).setOnClickListener(v -> {
-            navController.navigate(ExampleNanoFragmentDirections.actionNanoImage(R.drawable.schematic_examples3_2_2));
+            navController.navigate(ExampleNanoFragmentDirections.actionNanoImage(R.drawable.schematic_examples3_3_2));
         });
         // image click to image preview
         binding.expandableExample8.secondLayout.findViewById(R.id.connection_examples_3_3_2).setOnClickListener(v -> {
-            navController.navigate(ExampleNanoFragmentDirections.actionNanoImage(R.drawable.connection_examples3_2_2));
+            navController.navigate(ExampleNanoFragmentDirections.actionNanoImage(R.drawable.connection_examples3_3_2));
         });
+
+        //Coding Example 8
+        TextView tv332 = binding.expandableExample8.secondLayout.findViewById(R.id.textView_coding3_3_2);
+        tv332.setText(utils.getCodeFromTxt(requireContext(), R.raw.coding3_3_2));
 
         //Example 8 Demonstration Video Button
         // TODO - Remember to add in the Uri of Demonstration Video
         binding.expandableExample8.secondLayout.findViewById(R.id.btn_example_8_video).setOnClickListener(v -> {
-            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("")));
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://youtu.be/A0JoCosAPT8")));
         });
 
         // comment button example 8
@@ -105,17 +116,21 @@ public class ExampleNanoFragment extends Fragment {
 
         // image click to image preview
         binding.expandableExample9.secondLayout.findViewById(R.id.schematic_examples3_3_3).setOnClickListener(v -> {
-            navController.navigate(ExampleNanoFragmentDirections.actionNanoImage(R.drawable.schematic_examples3_2_3));
+            navController.navigate(ExampleNanoFragmentDirections.actionNanoImage(R.drawable.schematic_examples3_3_3));
         });
         // image click to image preview
         binding.expandableExample9.secondLayout.findViewById(R.id.connection_examples_3_3_3).setOnClickListener(v -> {
-            navController.navigate(ExampleNanoFragmentDirections.actionNanoImage(R.drawable.connection_examples3_2_3));
+            navController.navigate(ExampleNanoFragmentDirections.actionNanoImage(R.drawable.connection_examples3_3_3));
         });
+
+        //Coding Example 9
+        TextView tv333 = binding.expandableExample9.secondLayout.findViewById(R.id.textView_coding3_3_3);
+        tv333.setText(utils.getCodeFromTxt(requireContext(), R.raw.coding3_3_3));
 
         //Example 9 Demonstration Video Button
         // TODO - Remember to add in the Uri of Demonstration Video
         binding.expandableExample9.secondLayout.findViewById(R.id.btn_example_9_video).setOnClickListener(v -> {
-            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("")));
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://youtu.be/A0JoCosAPT8")));
         });
 
         // comment button example 9

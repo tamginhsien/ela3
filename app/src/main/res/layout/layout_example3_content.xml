@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="10dp"
-    android:background="#D9D8BFD8">
+    android:background="#F2D8BFD8">
 
     <TextView
         android:id="@+id/textView_submenu3.2.9"
@@ -14,15 +14,6 @@
         android:text="@string/textviewSubmenu3_1_9"
         android:textColor="@color/black" />
 
-    <TextView
-        android:id="@+id/textView_coding3.1.3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/black"
-        android:justificationMode="inter_word"
-        android:text="@string/textViewCoding3_1_3"
-        android:textColor="#add8e6"
-        android:textIsSelectable="true" />
 
     <TextView
         android:id="@+id/textView_submenu3.1.10"
@@ -37,7 +28,7 @@
         android:layout_width="match_parent"
         android:layout_height="220dp"
         android:contentDescription="@string/schematic_examples3_1_3"
-        android:src="@drawable/schematic_examples3_2_3" />
+        android:src="@drawable/schematic_examples3_1_3" />
 
     <TextView
         android:id="@+id/textView_submenu3.1.11"
@@ -53,7 +44,7 @@
         android:layout_height="220dp"
         android:layout_gravity="center"
         android:contentDescription="@string/connection_examples_3_1_3"
-        android:src="@drawable/connection_examples3_2_3" />
+        android:src="@drawable/connection_examples3_1_3" />
 
     <TextView
         android:id="@+id/textView_submenu3.1.12"
@@ -83,6 +74,23 @@
         android:layout_height="wrap_content"
         android:text="@string/comment_example_3"
         android:textSize="16sp"
-        android:foreground="?attr/selectableItemBackground"/>
+        android:foreground="?attr/selectableItemBackground"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/codingtitle3_1_3"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/textView_coding3.1.3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:justificationMode="inter_word"
+        android:textColor="#add8e6"
+        android:textIsSelectable="true" />
 
 </LinearLayout>

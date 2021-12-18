@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="10dp"
-        android:background="#D9d8bfd8"
+        android:background="#F2d8bfd8"
         android:padding="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -107,6 +107,7 @@
                 app:expandable_secondLayout="@layout/layout_nano_content"
                 app:expandable_showSpinner="true"
                 app:expandable_duration="300"
+                android:background="@color/white"
                 app:expandable_spinner_color="@color/black"
                 app:expandable_spinner_animate="true"
                 android:layout_margin="10dp"/>

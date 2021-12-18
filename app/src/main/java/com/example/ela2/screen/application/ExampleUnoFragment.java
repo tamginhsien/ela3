@@ -54,16 +54,21 @@ public class ExampleUnoFragment extends Fragment {
             navController.navigate(ExampleUnoFragmentDirections.actionUnoImage(R.drawable.connection_examples3_2_1));
         });
 
+        //Coding Example 4
+        TextView tv321 = binding.expandableExample4.secondLayout.findViewById(R.id.textView_coding3_2_1);
+        tv321.setText(utils.getCodeFromTxt(requireContext(), R.raw.coding3_2_1));
+
         //Example 4 Demonstration Video Button
         // TODO - Remember to add in the Uri of Demonstration Video
         binding.expandableExample4.secondLayout.findViewById(R.id.btn_example_4_video).setOnClickListener(v -> {
-            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("")));
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://youtu.be/VqfPNENyrEs")));
         });
 
         // comment button example 4
         binding.expandableExample4.secondLayout.findViewById(R.id.btn_comment_4).setOnClickListener(v -> {
             navController.navigate(ExampleUnoFragmentDirections.actionUnoComment("comments_example_4", "Example 4"));
         });
+
 
         // Example 5
         // expandable layout expand/collapse controller
@@ -82,13 +87,15 @@ public class ExampleUnoFragment extends Fragment {
             navController.navigate(ExampleUnoFragmentDirections.actionUnoImage(R.drawable.connection_examples3_2_2));
         });
 
+        // TODO - Add Set Text
+        //Coding Example 5
         TextView tv322 = binding.expandableExample5.secondLayout.findViewById(R.id.textView_coding3_2_2);
         tv322.setText(utils.getCodeFromTxt(requireContext(), R.raw.coding3_2_2));
 
         //Example 5 Demonstration Video Button
         // TODO - Remember to add in the Uri of Demonstration Video
         binding.expandableExample5.secondLayout.findViewById(R.id.btn_example_5_video).setOnClickListener(v -> {
-            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("")));
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://youtu.be/CitcX6gJQRs")));
         });
 
         // comment button example 5
@@ -113,10 +120,14 @@ public class ExampleUnoFragment extends Fragment {
             navController.navigate(ExampleUnoFragmentDirections.actionUnoImage(R.drawable.connection_examples3_2_3));
         });
 
+        //Coding Example 6
+        TextView tv323 = binding.expandableExample6.secondLayout.findViewById(R.id.textView_coding3_2_3);
+        tv323.setText(utils.getCodeFromTxt(requireContext(), R.raw.coding3_2_3));
+
         //Example 6 Demonstration Video Button
         // TODO - Remember to add in the Uri of Demonstration Video
         binding.expandableExample6.secondLayout.findViewById(R.id.btn_example_6_video).setOnClickListener(v -> {
-            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("")));
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://youtu.be/mSvN8ngRW9I")));
         });
 
         // comment button example 6

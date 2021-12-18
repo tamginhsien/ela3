@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="10dp"
-    android:background="#D9D8BFD8"
+    android:background="#F2D8BFD8"
     android:orientation="vertical">
 
     <TextView
@@ -14,14 +14,6 @@
         android:text="@string/textviewSubmenu3_2_5"
         android:textColor="@color/black" />
 
-    <TextView
-        android:id="@+id/textView_coding3_2_2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/black"
-        android:justificationMode="inter_word"
-        android:textColor="#add8e6"
-        android:textIsSelectable="true" />
 
     <TextView
         android:id="@+id/textView_submenu3.2.6"
@@ -82,7 +74,24 @@
         android:layout_height="wrap_content"
         android:text="@string/comment_example_5"
         android:textSize="16sp"
-        android:foreground="?attr/selectableItemBackground"/>
+        android:foreground="?attr/selectableItemBackground"
+        android:layout_margin="10dp"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/codingtitle3_2_2"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/textView_coding3_2_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:justificationMode="inter_word"
+        android:textColor="#add8e6"
+        android:textIsSelectable="true"
+        android:paddingVertical="10dp"/>
 
 </LinearLayout>

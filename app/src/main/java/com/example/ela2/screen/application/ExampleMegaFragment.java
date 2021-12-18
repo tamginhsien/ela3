@@ -13,8 +13,10 @@ import androidx.navigation.fragment.NavHostFragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.example.ela2.R;
+import com.example.ela2.Utils;
 import com.example.ela2.databinding.FragmentExampleMegaBinding;
 import com.example.ela2.databinding.FragmentMainBinding;
 
@@ -23,6 +25,7 @@ public class ExampleMegaFragment extends Fragment {
 
     private FragmentExampleMegaBinding binding;
     private NavController navController;
+    private final Utils utils = new Utils();
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -44,12 +47,16 @@ public class ExampleMegaFragment extends Fragment {
 
         // image click to image preview
         binding.expandableExample1.secondLayout.findViewById(R.id.schematic_examples3_1_1).setOnClickListener(v -> {
-            navController.navigate(ExampleMegaFragmentDirections.actionMegaImage(R.drawable.schematic_examples3_2_1));
+            navController.navigate(ExampleMegaFragmentDirections.actionMegaImage(R.drawable.schematic_examples3_1_1));
         });
         // image click to image preview
         binding.expandableExample1.secondLayout.findViewById(R.id.connection_examples3_1_1).setOnClickListener(v -> {
             navController.navigate(ExampleMegaFragmentDirections.actionMegaImage(R.drawable.connection_examples3_1_1));
         });
+
+        //Coding Example 1
+        TextView tv311 = binding.expandableExample1.secondLayout.findViewById(R.id.textView_coding3_1_1);
+        tv311.setText(utils.getCodeFromTxt(requireContext(), R.raw.coding3_1_1));
 
         //Example 1 Demonstration Video Button
         // TODO - Remember to add in the Uri of Demonstration Video
@@ -74,17 +81,21 @@ public class ExampleMegaFragment extends Fragment {
 
         // image click to image preview
         binding.expandableExample2.secondLayout.findViewById(R.id.schematic_examples3_1_2).setOnClickListener(v -> {
-            navController.navigate(ExampleMegaFragmentDirections.actionMegaImage(R.drawable.schematic_examples3_2_2));
+            navController.navigate(ExampleMegaFragmentDirections.actionMegaImage(R.drawable.schematic_examples3_1_2));
         });
         // image click to image preview
         binding.expandableExample2.secondLayout.findViewById(R.id.connection_examples3_1_2).setOnClickListener(v -> {
             navController.navigate(ExampleMegaFragmentDirections.actionMegaImage(R.drawable.connection_examples3_1_2));
         });
 
+        //Coding Example 2
+        TextView tv312 = binding.expandableExample2.secondLayout.findViewById(R.id.textView_coding3_1_2);
+        tv312.setText(utils.getCodeFromTxt(requireContext(), R.raw.coding3_1_2));
+
         //Example 2 Demonstration Video Button
         // TODO - Remember to add in the Uri of Demonstration Video
         binding.expandableExample2.secondLayout.findViewById(R.id.btn_example_2_video).setOnClickListener(v -> {
-            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://youtu.be/A0JoCosAPT8")));
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://youtu.be/rdadoMGVQoQ")));
         });
 
         // comment button example 2
@@ -104,17 +115,21 @@ public class ExampleMegaFragment extends Fragment {
 
         // image click to image preview
         binding.expandableExample3.secondLayout.findViewById(R.id.schematic_examples3_1_3).setOnClickListener(v -> {
-            navController.navigate(ExampleMegaFragmentDirections.actionMegaImage(R.drawable.schematic_examples3_2_3));
+            navController.navigate(ExampleMegaFragmentDirections.actionMegaImage(R.drawable.schematic_examples3_1_3));
         });
         // image click to image preview
         binding.expandableExample3.secondLayout.findViewById(R.id.connection_examples3_1_3).setOnClickListener(v -> {
-            navController.navigate(ExampleMegaFragmentDirections.actionMegaImage(R.drawable.connection_examples3_2_3));
+            navController.navigate(ExampleMegaFragmentDirections.actionMegaImage(R.drawable.connection_examples3_1_3));
         });
+
+        //Coding Example 3
+        TextView tv313 = binding.expandableExample3.secondLayout.findViewById(R.id.textView_coding3_1_3);
+        tv313.setText(utils.getCodeFromTxt(requireContext(), R.raw.coding3_1_3));
 
         //Example 3 Demonstration Video Button
         // TODO - Remember to add in the Uri of Demonstration Video
         binding.expandableExample3.secondLayout.findViewById(R.id.btn_example_3_video).setOnClickListener(v -> {
-            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://youtu.be/A0JoCosAPT8")));
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://youtu.be/5Ryw650tDwY")));
         });
 
         // comment button example 3

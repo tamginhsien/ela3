@@ -8,9 +8,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:511523890093:android:43512219343a830279f724",
+        "mobilesdk_app_id": "1:511523890093:android:df9af1cb8cc98aa679f724",
         "android_client_info": {
-          "package_name": "com.example.ela2"
+          "package_name": "dev.uthm.ela"
         }
       },
       "oauth_client": [

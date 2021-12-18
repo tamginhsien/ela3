@@ -64,9 +64,12 @@
         android:autoLink="all"
         android:layout_below="@id/title4"
         android:drawableStart="@drawable/pdf_icon_1"
+        android:background="@color/white"
         android:onClick="ELA_MANUAL"
         android:text=" ELA MANUAL"
+        android:textColor="@color/black"
         android:gravity="center"
+        android:foreground="?attr/selectableItemBackground"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         />
