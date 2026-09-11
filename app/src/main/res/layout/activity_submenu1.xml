@@ -1,454 +1,395 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_image_2"
-    tools:context=".Submenu1">
+    android:background="#F5F7FA">
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00979D"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="Introduction to Arduino"
+            app:titleTextColor="@android:color/white" />
+    </com.google.android.material.appbar.AppBarLayout>
 
-    <ScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#D9d8bfd8"
-        android:padding="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_margin="10dp">
-
-
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="16dp">
 
-            <TextView
-                android:id="@+id/Submenu1Title"
+            <!-- Card 1: What is Arduino? -->
+            <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#78A5BA"
-                android:gravity="center"
-                android:padding="5dp"
-                android:text="@string/buttonSubmenu1"
-                android:textAlignment="center"
-                android:textColor="#535D61"
-                android:textSize="36sp"
-                android:textIsSelectable="true"
-                android:layout_marginBottom="20dp"/>
-            <!-- app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" -->
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@android:color/white">
 
-            <!-- Intro -->
-            <TextView
-                android:id="@+id/textView_submenu1.1"
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1. What is Arduino?"
+                        android:textColor="#00979D"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="12dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Arduino is an open-source electronics platform based on easy-to-use hardware and software. It is intended for anyone making interactive projects.\n\nThe Arduino board reads inputs (like light on a sensor, a finger on a button, or a Twitter message) and turns it into an output (activating a motor, turning on an LED, or publishing something online).\n\nYou tell your board what to do by sending a set of instructions to the microcontroller on the board using the Arduino Software (IDE).\n\nInventors:\nMassimo Banzi, David Cuartielles, Tom Igoe, Gianluca Martino, and David Mellis in 2005 at the Interaction Design Institute Ivrea in Italy."
+                        android:textColor="#444444"
+                        android:textSize="15sp"
+                        android:lineSpacingExtra="4dp"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Card 2: Arduino Boards -->
+            <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:text="@string/textviewSubmenu1_1"
-                android:justificationMode="inter_word"
-                android:autoLink="all"
-                    />
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@android:color/white">
 
-            <!-- UNO -->
-            <ImageView
-                android:id="@+id/arduino_uno_r3"
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                android:layout_gravity="center"
-                android:contentDescription="@string/arduino_uno_r3"
-                app:srcCompat="@drawable/arduino_uno" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
 
-            <TextView
-                android:id="@+id/arduino_uno_textview"
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2. Arduino Hardware Boards"
+                        android:textColor="#00979D"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="The physical circuit board acts as the brain of your electronics projects. Below are the most common models used by beginners and professionals alike."
+                        android:textColor="#444444"
+                        android:textSize="15sp"
+                        android:lineSpacingExtra="4dp"
+                        android:layout_marginBottom="24dp"/>
+
+                    <!-- UNO -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:src="@drawable/arduino_uno"
+                        android:scaleType="fitCenter" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Arduino UNO R3"
+                        android:textColor="#333333"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"/>
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none"
+                        android:layout_marginBottom="24dp">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <com.google.android.material.button.MaterialButton
+                                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Official Store"
+                                android:onClick="openLink"
+                                android:tag="https://store.arduino.cc/usa/arduino-uno-rev3"
+                                android:layout_marginEnd="8dp" />
+                            <com.google.android.material.button.MaterialButton
+                                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Cytron (MY)"
+                                android:onClick="openLink"
+                                android:tag="https://my.cytron.io/p-arduino-uno-rev3-main-board"
+                                android:layout_marginEnd="8dp" />
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <!-- MEGA -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:src="@drawable/arduino_mega"
+                        android:scaleType="fitCenter" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Arduino MEGA 2560"
+                        android:textColor="#333333"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"/>
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none"
+                        android:layout_marginBottom="24dp">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <com.google.android.material.button.MaterialButton
+                                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Official Store"
+                                android:onClick="openLink"
+                                android:tag="https://store.arduino.cc/mega-2560-r3"
+                                android:layout_marginEnd="8dp" />
+                            <com.google.android.material.button.MaterialButton
+                                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Cytron (MY)"
+                                android:onClick="openLink"
+                                android:tag="https://my.cytron.io/p-arduino-mega-2560-rev3-main-board"
+                                android:layout_marginEnd="8dp" />
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <!-- NANO -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:src="@drawable/arduino_nano"
+                        android:scaleType="fitCenter" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Arduino NANO"
+                        android:textColor="#333333"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"/>
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <com.google.android.material.button.MaterialButton
+                                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Official Store"
+                                android:onClick="openLink"
+                                android:tag="https://store.arduino.cc/arduino-nano"
+                                android:layout_marginEnd="8dp" />
+                            <com.google.android.material.button.MaterialButton
+                                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Cytron (MY)"
+                                android:onClick="openLink"
+                                android:tag="https://my.cytron.io/p-maker-nano"
+                                android:layout_marginEnd="8dp" />
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Card 3: Arduino Software (IDE) -->
+            <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:text="@string/arduino_uno_textview1"
-                android:justificationMode="inter_word"
-                    />
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@android:color/white">
 
-            <!-- MEGA -->
-            <ImageView
-                android:id="@+id/arduino_mega"
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                android:layout_gravity="center"
-                android:contentDescription="@string/arduino_mega"
-                app:srcCompat="@drawable/arduino_mega" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
 
-            <TextView
-                android:id="@+id/arduino_mega_textview"
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="3. Arduino Software (IDE)"
+                        android:textColor="#00979D"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="12dp"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:src="@drawable/arduino_ide"
+                        android:scaleType="fitCenter"
+                        android:layout_marginBottom="16dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="The open-source Arduino Software (IDE) makes it easy to write code and upload it to the board. It runs on Windows, Mac OS X, and Linux."
+                        android:textColor="#444444"
+                        android:textSize="15sp"
+                        android:lineSpacingExtra="4dp"
+                        android:layout_marginBottom="16dp"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Download Arduino IDE"
+                        android:onClick="openLink"
+                        android:tag="https://www.arduino.cc/en/software"
+                        app:cornerRadius="8dp"
+                        android:backgroundTint="#00979D"
+                        android:layout_marginBottom="8dp"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Watch: How to Install"
+                        android:onClick="openLink"
+                        android:tag="https://www.youtube.com/watch?v=NxH5RNbIxBk"
+                        android:layout_marginBottom="8dp"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Watch: Finding the HEX File"
+                        android:onClick="openLink"
+                        android:tag="https://www.youtube.com/watch?v=oXjWl8tbyiA" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Card 4: Simulation & Wiring Tools -->
+            <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:text="@string/arduino_mega_textview"
-                android:justificationMode="inter_word"
+                android:layout_marginBottom="32dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@android:color/white">
 
-                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
 
-            <!-- NANO -->
-            <ImageView
-                android:id="@+id/arduino_nano"
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                android:layout_gravity="center"
-                android:contentDescription="@string/arduino_nano"
-                app:srcCompat="@drawable/arduino_nano" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="4. Simulation &amp; Wiring Tools"
+                        android:textColor="#00979D"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="12dp"/>
 
-            <TextView
-                android:id="@+id/arduino_nano_textview"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:text="@string/arduino_nano_textview"
-                android:justificationMode="inter_word"
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="If you don't have physical hardware, you can use these software tools to simulate circuits and create wiring diagrams."
+                        android:textColor="#444444"
+                        android:textSize="15sp"
+                        android:lineSpacingExtra="4dp"
+                        android:layout_marginBottom="24dp"/>
 
-                    />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Proteus Professional (Simulation)"
+                        android:textColor="#333333"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="8dp"/>
+                    <com.google.android.material.button.MaterialButton
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Watch: Add Arduino Library"
+                        android:onClick="openLink"
+                        android:tag="https://www.youtube.com/watch?v=W8M8VHQGhfw"
+                        android:layout_marginBottom="8dp"/>
+                    <com.google.android.material.button.MaterialButton
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Watch: Implement Code"
+                        android:onClick="openLink"
+                        android:tag="https://www.youtube.com/watch?v=8wjWfwXtCrY"
+                        android:layout_marginBottom="24dp"/>
 
-            <!-- LEONARDO -->
-            <ImageView
-                android:id="@+id/arduino_leonardo"
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                android:layout_gravity="center"
-                android:contentDescription="@string/arduino_leonardo"
-                app:srcCompat="@drawable/arduino_leonardo" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Wokwi (Free Online Simulator)"
+                        android:textColor="#333333"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="8dp"/>
+                    <com.google.android.material.button.MaterialButton
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Open Wokwi Simulator"
+                        android:onClick="openLink"
+                        android:tag="https://wokwi.com"
+                        android:layout_marginBottom="24dp"/>
 
-            <TextView
-                android:id="@+id/arduino_leonardo_textview"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:text="@string/arduino_leonardo_textview"
-                android:justificationMode="inter_word"
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fritzing (Wiring Diagrams)"
+                        android:textColor="#333333"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="8dp"/>
+                    <com.google.android.material.button.MaterialButton
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Download Fritzing"
+                        android:onClick="openLink"
+                        android:tag="https://fritzing.org/download/" />
 
-                    />
-
-            <!-- Arduino IDE -->
-            <!-- Title -->
-            <TextView
-                android:id="@+id/textView_submenu1.3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:text="@string/textviewSubmenu1.3"
-                android:justificationMode="inter_word"
-                android:autoLink="all"
-                    />
-
-            <ImageView
-                android:id="@+id/arduino_ide"
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                android:layout_gravity="center"
-                android:contentDescription="@string/arduino_ide"
-                app:srcCompat="@drawable/arduino_ide"
-                    />
-
-            <!-- Arduino IDE Link -->
-            <TextView
-                android:id="@+id/arduino_ide_textview1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:text="@string/arduino_ide_textview1"
-                android:justificationMode="inter_word"
-                android:autoLink="all"
-                />
-
-            <!-- Arduino IDE download button -->
-            <Button
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:autoLink="all"
-                android:background="@drawable/arduino_ide_logo"
-                android:onClick="arduinoidelink1" />
-
-            <!-- Download Video -->
-            <TextView
-                android:id="@+id/arduino_ide_textview2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:text="@string/arduino_ide_textview2"
-                android:justificationMode="inter_word"
-                android:autoLink="all"
-                />
-
-            <!-- Download video button -->
-            <Button
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:drawableLeft="@drawable/youtube_icon3"
-                android:autoLink="all"
-                android:text="Arduino IDE Installation Video"
-                android:onClick="arduinoidelink2" />
-
-            <!-- HEX file location -->
-            <TextView
-                android:id="@+id/arduino_ide_textview3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:text="@string/arduino_ide_textview3"
-                android:justificationMode="inter_word"
-                android:autoLink="all"
-                />
-
-            <!-- HEX file location button -->
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:autoLink="all"
-                android:drawableLeft="@drawable/youtube_icon3"
-                android:text="HEX File Location"
-                android:onClick="arduinoidelink3" />
-
-            <!-- Implement Arduino Code -->
-            <TextView
-                android:id="@+id/arduino_ide_textview4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:text="@string/arduino_ide_textview4"
-                android:justificationMode="inter_word"
-                android:autoLink="all"
-                />
-
-            <!-- Implement Arduino code video button -->
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:drawableLeft="@drawable/youtube_icon3"
-                android:autoLink="all"
-                android:text="Implement Arduino Code"
-                android:onClick="arduinoidelink4" />
-
-            <!-- Schematic Diagram Software -->
-            <TextView
-                android:id="@+id/schematic_diagram_software"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:text="@string/textviewSubmenu1.4.1"
-                android:justificationMode="inter_word"
-                android:autoLink="all"
-                />
-
-            <!-- Official Download button -->
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:autoLink="all"
-                android:text="Download Official Proteus"
-                android:onClick="proteusofficial" />
-
-            <!-- Crack (Alternatives) Download Text -->
-            <TextView
-                android:id="@+id/crack_proteus1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:text="@string/crack_proteus1"
-                android:justificationMode="inter_word"
-                android:autoLink="all"
-                />
-
-            <!-- Crack (Alternatives) Download Button -->
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:autoLink="all"
-                android:text="Download Crack Proteus"
-                android:onClick="crackproteus1" />
-
-            <!-- Crack Installation Video Text -->
-            <TextView
-                android:id="@+id/crack_proteus2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:text="@string/crack_proteus2"
-                android:justificationMode="inter_word"
-                android:autoLink="all"
-                />
-
-            <!-- Crack Installation Video Button -->
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:autoLink="all"
-                android:text="Crack Installation Video"
-                android:onClick="crackproteus2"
-                android:drawableLeft="@drawable/youtube_icon3"
-                />
-
-            <!-- If no Library Found in Proteus: Text -->
-            <TextView
-                android:id="@+id/no_library"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:text="@string/no_library"
-                android:justificationMode="inter_word"
-                android:autoLink="all"
-                />
-
-            <!-- No library found Video Button -->
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:autoLink="all"
-                android:text="Video if no library found"
-                android:onClick="nolibrary"
-                android:drawableLeft="@drawable/youtube_icon3"
-                />
-
-
-            <!-- Arduino Library Text -->
-            <TextView
-                android:id="@+id/arduino_library1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:text="@string/arduino_library1"
-                android:justificationMode="inter_word"
-                android:autoLink="all"
-                />
-
-            <!-- Arduino Library Download Button -->
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:autoLink="all"
-                android:text="Download Arduino Library"
-                android:onClick="arduinolibrary1" />
-
-
-            <!-- Adding Arduino Library into Proteus Text -->
-            <TextView
-                android:id="@+id/arduino_library2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:text="@string/arduino_library2"
-                android:justificationMode="inter_word"
-                android:autoLink="all"
-                />
-
-            <!-- Adding Arduino Library Video Button -->
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:autoLink="all"
-                android:text="Video adding Arduino Library"
-                android:onClick="arduinolibrary2"
-                android:drawableLeft="@drawable/youtube_icon3"
-                />
-
-            <!-- KiCAD -->
-            <TextView
-                android:id="@+id/KiCAD"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:text="@string/KiCAD"
-                android:justificationMode="inter_word"
-                android:autoLink="all"
-                />
-
-            <!-- Official KiCAD Download Button -->
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:autoLink="all"
-                android:text="Download Official KiCAD"
-                android:onClick="KiCAD" />
-
-
-            <!-- Wiring Connection Software -->
-            <!-- Official Fritzing Download Text -->
-            <TextView
-                android:id="@+id/wiring_connection_software"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:text="@string/textviewSubmenu1.5"
-                android:justificationMode="inter_word"
-                android:autoLink="all"
-                />
-
-            <!-- Official Fritzing Download Button -->
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:autoLink="all"
-                android:text="Download Official Fritzing"
-                android:onClick="fritzing1" />
-
-            <!-- Crack Fritzing Download Text -->
-            <TextView
-                android:id="@+id/crack_fritzing"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:text="@string/crack_fritzing"
-                android:justificationMode="inter_word"
-                android:autoLink="all"
-                />
-
-            <!-- Crack Fritzing Download Button -->
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:autoLink="all"
-                android:text="Download Fritzing ZIP"
-                android:onClick="fritzing2" />
-
-            <!-- Virtual Breadboard Download Text -->
-            <TextView
-                android:id="@+id/virtualbreadboard"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:text="@string/virtualbreadboard"
-                android:justificationMode="inter_word"
-                android:autoLink="all"
-                />
-
-            <!-- Virtual Breadboard Download Button -->
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:autoLink="all"
-                android:text="Download Virtual Breadboard"
-                android:onClick="virtualbreadboard" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
 
         </LinearLayout>
-
-    </ScrollView>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

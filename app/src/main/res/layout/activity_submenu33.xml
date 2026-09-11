@@ -1,9 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Submenu3_3">
+    android:background="#F5F7FA">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00979D"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="Arduino NANO Examples"
+            app:titleTextColor="@android:color/white" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Example 7 -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@android:color/white">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Example 7: Polygraph with Serial Plotter" android:textColor="#00979D" android:textSize="20sp" android:textStyle="bold" android:layout_marginBottom="12dp"/>
+                    
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Arduino Code:" android:textColor="#333333" android:textSize="16sp" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/code_ex_7" android:background="#F0F0F0" android:padding="12dp" android:textColor="#555555" android:typeface="monospace" android:layout_marginBottom="16dp"/>
+                    
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Wiring Diagram:" android:textColor="#333333" android:textSize="16sp" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+                    <ImageView android:layout_width="match_parent" android:layout_height="250dp" android:src="@drawable/connection_examples3_3_1" android:scaleType="fitCenter" android:layout_marginBottom="16dp" />
+                    
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Video Tutorial:" android:textColor="#333333" android:textSize="16sp" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:autoLink="web" android:text="https://www.youtube.com/watch?v=d6MoIg0VJOM" android:textColor="#444444" android:layout_marginBottom="16dp"/>
+
+                    <com.google.android.material.button.MaterialButton android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Discussion / Comments" android:onClick="openComments" android:tag="Example 7 (NANO)" app:cornerRadius="8dp" android:backgroundTint="#00979D" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Example 8 -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@android:color/white">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Example 8: Windows CPU &amp; RAM Monitoring" android:textColor="#00979D" android:textSize="20sp" android:textStyle="bold" android:layout_marginBottom="12dp"/>
+                    
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Arduino Code:" android:textColor="#333333" android:textSize="16sp" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/code_ex_8" android:background="#F0F0F0" android:padding="12dp" android:textColor="#555555" android:typeface="monospace" android:layout_marginBottom="16dp"/>
+                    
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Wiring Diagram:" android:textColor="#333333" android:textSize="16sp" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+                    <ImageView android:layout_width="match_parent" android:layout_height="250dp" android:src="@drawable/connection_examples3_3_2" android:scaleType="fitCenter" android:layout_marginBottom="16dp" />
+                    
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Video Tutorial:" android:textColor="#333333" android:textSize="16sp" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:autoLink="web" android:text="https://www.youtube.com/watch?v=d-Em3nUdov0" android:textColor="#444444" android:layout_marginBottom="16dp"/>
+
+                    <com.google.android.material.button.MaterialButton android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Discussion / Comments" android:onClick="openComments" android:tag="Example 8 (NANO)" app:cornerRadius="8dp" android:backgroundTint="#00979D" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Example 9 -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@android:color/white">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Example 9: Ultrasonic Sensor" android:textColor="#00979D" android:textSize="20sp" android:textStyle="bold" android:layout_marginBottom="12dp"/>
+                    
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Arduino Code:" android:textColor="#333333" android:textSize="16sp" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/code_ex_9" android:background="#F0F0F0" android:padding="12dp" android:textColor="#555555" android:typeface="monospace" android:layout_marginBottom="16dp"/>
+                    
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Wiring Diagram:" android:textColor="#333333" android:textSize="16sp" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+                    <ImageView android:layout_width="match_parent" android:layout_height="250dp" android:src="@drawable/connection_examples3_3_3" android:scaleType="fitCenter" android:layout_marginBottom="16dp" />
+                    
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Video Tutorial:" android:textColor="#333333" android:textSize="16sp" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:autoLink="web" android:text="https://www.youtube.com/watch?v=QUSUySVf8Bg" android:textColor="#444444" android:layout_marginBottom="16dp"/>
+
+                    <com.google.android.material.button.MaterialButton android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Discussion / Comments" android:onClick="openComments" android:tag="Example 9 (NANO)" app:cornerRadius="8dp" android:backgroundTint="#00979D" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

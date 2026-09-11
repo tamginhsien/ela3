@@ -1,217 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_image_2"
+    android:background="#F5F7FA"
     tools:context=".Submenu2_3">
 
-    <ScrollView
-        android:id="@+id/ScrollView2_3"
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00979D"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="Arduino NANO"
+            app:titleTextColor="@android:color/white" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#D9d8bfd8"
-        android:padding="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_margin="10dp"
-        app:layout_constraintVertical_bias="0.5">
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="16dp">
 
-
-            <TextView
-                android:id="@+id/Submenu2_3Title"
+            <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#78A5BA"
-                android:gravity="center"
-                android:padding="5dp"
-                android:text="@string/buttonSubmenu2_3"
-                android:textAlignment="center"
-                android:textColor="#535D61"
-                android:textSize="36sp"
-                android:layout_marginBottom="20dp"
-                />
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="ARDUINO NANO BOARD"
-                android:layout_gravity="center"
-                android:paddingBottom="5dp"
-                />
-
-            <!--    <androidx.appcompat.widget.Toolbar
-                    android:id="@+id/toolbar"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:background="@drawable/clicktozoomimage"
-                    android:minHeight="?attr/actionBarSize"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-            -->
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
 
-            <ImageView
-                android:id="@+id/pins_arduino_mega"
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ARDUINO NANO BOARD"
+                        android:textAlignment="center"
+                        android:textColor="#333333"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="16dp"/>
+
+                    <ImageView
+                        android:id="@+id/schematic_examples2_3_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:contentDescription="Arduino NANO Board"
+                        android:src="@drawable/arduino_nano"
+                        android:onClick="ImageClick1"
+                        android:scaleType="fitCenter" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Click the image for Zoom View (PDF)"
+                        android:textAlignment="center"
+                        android:textColor="#666666"
+                        android:textSize="14sp"
+                        android:layout_marginTop="8dp"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:contentDescription="@string/pins_arduino_nano"
-                android:src="@drawable/pins_arduino_nano"
-                android:adjustViewBounds="true"
-                android:scaleType="fitXY"
-                android:clickable="true"
-                android:onClick="ImageClick1"
-                />
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Click the Image to get Zoom View (PDF)"
-                android:justificationMode="inter_word"
-                android:autoLink="all"
-                android:layout_margin="5dp"
-                />
-
-
-            <!-- <TableLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TableRow
-                    android:layout_width="fill_parent"
-                    android:layout_height="0dp"
-                    android:layout_margin="1dp"
-                    android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/black"
-                        android:text="Firstdfgsbhdbd"
-                        android:justificationMode="inter_word"
-                        android:autoLink="all"
-                        android:layout_margin="5dp"
-                        android:layout_column="0"
-                        android:gravity="center"
-                        />
+                        android:text="Specification and Manual"
+                        android:textColor="#333333"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="12dp"/>
 
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="fill_parent"
-                    android:layout_height="0dp"
-                    android:layout_margin="1dp"
-                    android:layout_weight="1">
-
-                    <TextView
+                    <com.google.android.material.button.MaterialButton
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/black"
-                        android:text="Second"
-                        android:justificationMode="inter_word"
-                        android:autoLink="all"
-                        android:layout_margin="5dp"
-                        android:layout_column="0"
-                        android:gravity="center"
-                        />
+                        android:layout_height="56dp"
+                        android:text="Open NANO Manual"
+                        android:onClick="ButtonClick1"
+                        app:icon="@drawable/pdf_icon_1"
+                        app:iconGravity="textStart"
+                        app:cornerRadius="8dp"
+                        android:backgroundTint="#00979D" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/black"
-                        android:text="Second 2sjmnodpjvspodcvdcz \n\n vhvhvhvhvhvhvhvhvhvcnicnidcjdi"
-                        android:justificationMode="inter_word"
-                        android:autoLink="all"
-                        android:layout_margin="5dp"
-                        android:layout_column="1"
-                        android:gravity="center"
-                        />
-
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="fill_parent"
-                    android:layout_height="0dp"
-                    android:layout_margin="1dp"
-                    android:layout_weight="1">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/black"
-                        android:text="Third"
-                        android:justificationMode="inter_word"
-                        android:autoLink="all"
-                        android:layout_margin="5dp"
-                        android:layout_column="0"
-                        android:gravity="center"
-                        />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/black"
-                        android:text="Third3"
-                        android:justificationMode="inter_word"
-                        android:autoLink="all"
-                        android:layout_margin="5dp"
-                        android:layout_column="1"
-                        android:gravity="center"
-                        />
-
-                </TableRow>
-
-            </TableLayout> -->
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:layout_gravity="center"
-                android:text="@string/textviewSubmenu2_3_1"
-                android:justificationMode="inter_word"
-                android:autoLink="all"
-                android:layout_margin="20dp"
-                android:background="#4286b4"
-                />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="80dp"
-                android:layout_gravity="center"
-                android:autoLink="all"
-                android:text="ARDUINO NANO MANUAL"
-                android:onClick="ButtonClick1"
-                android:drawableStart="@drawable/pdf_icon_1"
-                android:layout_marginBottom="5dp"
-                />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:text="@string/textviewSubmenu2_3_2"
-                android:justificationMode="inter_word"
-                android:layout_gravity="start"
-                android:autoLink="all"
-
-                />
-
-
-
-
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
 
         </LinearLayout>
-
-    </ScrollView>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

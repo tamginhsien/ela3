@@ -1,117 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_image_2"
-    tools:context=".Submenu3_1">
+    android:background="#F5F7FA">
 
-    <TextView
-        android:id="@+id/Submenu3_1Title"
-        android:layout_width="0dp"
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#78A5BA"
-        android:gravity="center"
-        android:padding="5dp"
-        android:text="@string/buttonSubmenu3_1"
-        android:textAlignment="center"
-        android:textColor="#535D61"
-        android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        android:background="#00979D"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
-    <ScrollView
-        android:layout_width="350dp"
-        android:layout_height="600dp"
-        android:background="#d8bfd8"
-        android:padding="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Submenu3_1Title"
-        app:layout_constraintVertical_bias="0.5">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="Arduino MEGA Examples"
+            app:titleTextColor="@android:color/white" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <LinearLayout
-            android:id="@+id/button_example_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="16dp">
 
-            <TextView
-                android:id="@+id/textView_submenu3_1_1"
+            <!-- Example 1 -->
+            <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:justificationMode="inter_word"
-                android:text="@string/textviewSubmenu3_1_1"
-                android:textColor="@color/black" />
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@android:color/white">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Example 1: Capacitive Sensor Piano" android:textColor="#00979D" android:textSize="20sp" android:textStyle="bold" android:layout_marginBottom="12dp"/>
+                    
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Arduino Code:" android:textColor="#333333" android:textSize="16sp" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/code_ex_1" android:background="#F0F0F0" android:padding="12dp" android:textColor="#555555" android:typeface="monospace" android:layout_marginBottom="16dp"/>
+                    
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Wiring Diagram:" android:textColor="#333333" android:textSize="16sp" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+                    <ImageView android:layout_width="match_parent" android:layout_height="250dp" android:src="@drawable/connection_examples3_1_1" android:scaleType="fitCenter" android:layout_marginBottom="16dp" />
+                    
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Video Tutorial:" android:textColor="#333333" android:textSize="16sp" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:autoLink="web" android:text="https://www.youtube.com/watch?v=A0JoCosAPT8" android:textColor="#444444" android:layout_marginBottom="16dp"/>
 
-            <TextView
-                android:id="@+id/textView_coding3_1_1"
+                    <com.google.android.material.button.MaterialButton android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Discussion / Comments" android:onClick="openComments" android:tag="Example 1 (MEGA)" app:cornerRadius="8dp" android:backgroundTint="#00979D" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Example 2 -->
+            <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
-                android:justificationMode="inter_word"
-                android:text="@string/textviewCoding3_1_1"
-                android:textColor="@color/black" />
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@android:color/white">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Example 2: Water Level Sensor" android:textColor="#00979D" android:textSize="20sp" android:textStyle="bold" android:layout_marginBottom="12dp"/>
+                    
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Arduino Code:" android:textColor="#333333" android:textSize="16sp" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/code_ex_2" android:background="#F0F0F0" android:padding="12dp" android:textColor="#555555" android:typeface="monospace" android:layout_marginBottom="16dp"/>
+                    
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Wiring Diagram:" android:textColor="#333333" android:textSize="16sp" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+                    <ImageView android:layout_width="match_parent" android:layout_height="250dp" android:src="@drawable/connection_examples3_1_2" android:scaleType="fitCenter" android:layout_marginBottom="16dp" />
+                    
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Video Tutorial:" android:textColor="#333333" android:textSize="16sp" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:autoLink="web" android:text="https://www.youtube.com/watch?v=rdadoMGVQoQ" android:textColor="#444444" android:layout_marginBottom="16dp"/>
 
-            <TextView
-                android:id="@+id/textView_submenu3_1_2"
+                    <com.google.android.material.button.MaterialButton android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Discussion / Comments" android:onClick="openComments" android:tag="Example 2 (MEGA)" app:cornerRadius="8dp" android:backgroundTint="#00979D" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Example 3 -->
+            <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:justificationMode="inter_word"
-                android:text="@string/textviewSubmenu3_1_2"
-                android:textColor="@color/black" />
+                android:layout_marginBottom="32dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@android:color/white">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Example 3: Countdown Timer" android:textColor="#00979D" android:textSize="20sp" android:textStyle="bold" android:layout_marginBottom="12dp"/>
+                    
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Arduino Code:" android:textColor="#333333" android:textSize="16sp" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/code_ex_3" android:background="#F0F0F0" android:padding="12dp" android:textColor="#555555" android:typeface="monospace" android:layout_marginBottom="16dp"/>
+                    
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Wiring Diagram:" android:textColor="#333333" android:textSize="16sp" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+                    <ImageView android:layout_width="match_parent" android:layout_height="250dp" android:src="@drawable/connection_examples3_1_3" android:scaleType="fitCenter" android:layout_marginBottom="16dp" />
+                    
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Video Tutorial:" android:textColor="#333333" android:textSize="16sp" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:autoLink="web" android:text="https://www.youtube.com/watch?v=5Ryw650tDwY" android:textColor="#444444" android:layout_marginBottom="16dp"/>
 
-            <ImageView
-                android:id="@+id/schematic_examples3_1_1"
-                android:layout_width="match_parent"
-                android:layout_height="240dp"
-
-
-                 />
-
-            <TextView
-                android:id="@+id/textView_submenu3_1_3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:justificationMode="inter_word"
-                android:text="@string/textviewSubmenu3_1_3"
-                android:textColor="@color/black" />
-
-            <ImageView
-                android:id="@+id/connection_examples_3_1_1"
-                android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:layout_gravity="center"
-
-                 />
-
-            <TextView
-                android:id="@+id/textView_submenu3_1_4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:justificationMode="inter_word"
-                android:autoLink="web"
-                android:text="@string/textviewSubmenu3_1_4"
-                android:textColor="@color/black" />
-
-
-            <Button
-                android:id="@+id/button_comment_1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/comment_example_1"
-                android:textSize="16sp" />
-
+                    <com.google.android.material.button.MaterialButton android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Discussion / Comments" android:onClick="openComments" android:tag="Example 3 (MEGA)" app:cornerRadius="8dp" android:backgroundTint="#00979D" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
 
         </LinearLayout>
-
-    </ScrollView>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

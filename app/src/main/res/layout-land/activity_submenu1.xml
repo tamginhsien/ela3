@@ -162,13 +162,7 @@
                 />
 
             <!-- Arduino IDE download button -->
-            <Button
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:autoLink="all"
-                android:background="@drawable/arduino_ide_logo"
-                android:onClick="arduinoidelink1" />
+            
 
             <!-- Download Video -->
             <TextView
@@ -182,13 +176,7 @@
                 />
 
             <!-- Download video button -->
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:autoLink="all"
-                android:text="Arduino IDE Installation Video"
-                android:onClick="arduinoidelink2" />
+            
 
             <!-- HEX file location -->
             <TextView
@@ -202,17 +190,11 @@
                 />
 
             <!-- HEX file location button -->
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:autoLink="all"
-                android:text="HEX File Location"
-                android:onClick="arduinoidelink3" />
+            
 
             <!-- Implement Arduino Code -->
             <TextView
-                android:id="@+id/arduino_ide_textview3"
+                android:id="@+id/arduino_ide_textview4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
@@ -222,13 +204,7 @@
                 />
 
             <!-- Implement Arduino code video button -->
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:autoLink="all"
-                android:text="Implement Arduino Code"
-                android:onClick="arduinoidelink4" />
+            
 
             <!-- Schematic Diagram Software -->
             <TextView

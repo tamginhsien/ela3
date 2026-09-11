@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <!-- Home (Main Menu) -->
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.ela2.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_submenu1Fragment"
+            app:destination="@id/submenu1Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_submenu2Fragment"
+            app:destination="@id/submenu2Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_submenu3Fragment"
+            app:destination="@id/submenu3Fragment" />
+    </fragment>
+
+    <!-- Submenu 1 (Still an Activity) -->
+    <activity
+        android:id="@+id/submenu1Fragment"
+        android:name="com.example.ela2.Submenu1"
+        android:label="Submenu 1"
+        tools:layout="@layout/activity_submenu1" />
+
+    <!-- Submenu 2 -->
+    <fragment
+        android:id="@+id/submenu2Fragment"
+        android:name="com.example.ela2.Submenu2"
+        android:label="Submenu 2"
+        tools:layout="@layout/activity_submenu2">
+        <action
+            android:id="@+id/action_submenu2Fragment_to_submenu21Fragment"
+            app:destination="@id/submenu21Fragment" />
+        <action
+            android:id="@+id/action_submenu2Fragment_to_submenu22Fragment"
+            app:destination="@id/submenu22Fragment" />
+        <action
+            android:id="@+id/action_submenu2Fragment_to_submenu23Fragment"
+            app:destination="@id/submenu23Fragment" />
+    </fragment>
+
+    <!-- Submenu 2 Sub-activities -->
+    <activity
+        android:id="@+id/submenu21Fragment"
+        android:name="com.example.ela2.Submenu2_1"
+        tools:layout="@layout/activity_submenu21" />
+    <activity
+        android:id="@+id/submenu22Fragment"
+        android:name="com.example.ela2.Submenu2_2"
+        tools:layout="@layout/activity_submenu22" />
+    <activity
+        android:id="@+id/submenu23Fragment"
+        android:name="com.example.ela2.Submenu2_3"
+        tools:layout="@layout/activity_submenu23" />
+
+    <!-- Submenu 3 -->
+    <fragment
+        android:id="@+id/submenu3Fragment"
+        android:name="com.example.ela2.Submenu3"
+        android:label="Submenu 3"
+        tools:layout="@layout/activity_submenu3">
+        <action
+            android:id="@+id/action_submenu3Fragment_to_submenu31Fragment"
+            app:destination="@id/submenu31Fragment" />
+        <action
+            android:id="@+id/action_submenu3Fragment_to_submenu32Fragment"
+            app:destination="@id/submenu32Fragment" />
+        <action
+            android:id="@+id/action_submenu3Fragment_to_submenu33Fragment"
+            app:destination="@id/submenu33Fragment" />
+    </fragment>
+
+    <!-- Submenu 3 Sub-activities -->
+    <activity
+        android:id="@+id/submenu31Fragment"
+        android:name="com.example.ela2.Submenu3_1"
+        tools:layout="@layout/activity_submenu31" />
+    <activity
+        android:id="@+id/submenu32Fragment"
+        android:name="com.example.ela2.Submenu3_2"
+        tools:layout="@layout/activity_submenu32" />
+    <activity
+        android:id="@+id/submenu33Fragment"
+        android:name="com.example.ela2.Submenu3_3"
+        tools:layout="@layout/activity_submenu33" />
+
+    <!-- Other activities -->
+    <activity
+        android:id="@+id/comment1Fragment"
+        android:name="com.example.ela2.Comment_1"
+        tools:layout="@layout/activity_comment1" />
+
+    <activity
+        android:id="@+id/pinsArduinoUnoPictureFragment"
+        android:name="com.example.ela2.PinsArduinoUnoPicture"
+        tools:layout="@layout/activity_pins_arduinouno_picture" />
+
+</navigation>

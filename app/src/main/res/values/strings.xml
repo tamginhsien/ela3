@@ -54,56 +54,82 @@
         \n <a href="https://store.arduino.cc/usa/leonardo">[Arduino Official]  \n</a></string>
 
     <!-- Arduino IDE -->
-    <string name="textviewSubmenu1.3">\n <b>3.  Arduino Software (Arduino IDE)</b> </string>
+    <string name="textviewSubmenu1.3">
+ <b>3.  Arduino Software (Arduino IDE)</b> </string>
     <string name="arduino_ide">arduino ide</string>
-    <string name="arduino_ide_textview1">The implementation of Arduino software, Arduino IDE is used to
-    give command Arduino board by coding in Arduino programming language. It can connect to Arduino
-    hardware (Arduino board) \n
-        \n <u>Arduino IDE Download Links:</u> \n (About 200MB) \n\n </string>
-    <!-- Arduino IDE button here -->
-    <string name="arduino_ide_textview2">
-    \n\n <u>Arduino IDE Download Video:</u> \n\n </string>
-    <!-- Download video button here -->
-    <string name="arduino_ide_textview3">
-        \n\n <u>Set HEX files location video guide:</u> \n\n </string>
-    <!-- HEX files location video button here -->
-    <string name="arduino_ide_textview4">
-        \n\n <u>Video how to implement Arduino code to Proteus (with HEX files):</u> \n\n </string>
-    <!-- Video button here -->
+    <string name="arduino_ide_textview1">The Arduino IDE is used to write and upload code to Arduino boards.
+    
+
+<b>How to Install:</b>
+    
+1. Go to arduino.cc/en/software
+    
+2. Download the installer for your OS.
+    
+3. Run the installer and accept the default settings.
+    
+* Video Tutorial: https://www.youtube.com/watch?v=NxH5RNbIxBk
+    
+
+<b>Finding the HEX File (for Simulation):</b>
+    
+1. Open Arduino IDE -> File -> Preferences.
+    
+2. Check the box "Show verbose output during: compilation".
+    
+3. Compile your code. The bottom console will print the path to your .hex file.
+    
+* Video Tutorial: https://www.youtube.com/watch?v=oXjWl8tbyiA
+    
+
+<b>Implement Arduino coding to Proteus:</b>
+    
+* Video Tutorial: https://www.youtube.com/watch?v=8wjWfwXtCrY</string>
+    <string name="arduino_ide_textview2"></string>
+    <string name="arduino_ide_textview3"></string>
+    <string name="arduino_ide_textview4"></string>
 
     <!-- Schematic Diagram Software -->
     <string name="textviewSubmenu1.4.1">
-    \n\n <u><b>Schematic Diagram Software:</b></u>
-        \n\n <u>Proteus Professional</u>
-        \n Official Download Links: \n\n </string>
-    <string name="crack_proteus1">
-        \n\n Crack (Alternatives) Download Links: \n\n  </string>
-    <string name="crack_proteus2">
-        \n\n Crack Installation Guide Video: \n\n  </string>
-    <string name="no_library">
-        \n\n\n If no Library Found in Proteus: \n\n </string>
-    <string name="arduino_library1">
-        \n\n\n Arduino Library of Proteus: \n\n  </string>
-    <string name="arduino_library2">
-        \n\n Installation Video of Adding Arduino Library into Proteus: \n\n </string>
-    <string name="KiCAD">
-        \n\n\n <u>KiCAD</u>
-        \n (About 1.2GB)
-        \n Download Links: \n\n  </string>
+
+ <u><b>Schematic Diagram Software:</b></u>
+    
+
+ <u>Proteus Professional (Troubleshooting)</u>
+    
+* Add Arduino Library: https://www.youtube.com/watch?v=W8M8VHQGhfw
+    
+* Fix "No Libraries Found!": https://www.youtube.com/watch?v=5hULXu8gxlY
+    
+
+ <u>Wokwi (Free Alternative)</u>
+    
+ Wokwi is a free, modern online simulator for Arduino. You do not need to install anything! Just go to <b>wokwi.com</b>.</string>
+    <string name="crack_proteus1"></string>
+    <string name="crack_proteus2"></string>
+    <string name="no_library"></string>
+    <string name="arduino_library1"></string>
+    <string name="arduino_library2"></string>
+    <string name="KiCAD"></string>
 
     <!-- Wiring Connection Software -->
     <string name="textviewSubmenu1.5">
-    \n\n <u><b>Wiring Connection Software:</b></u>
-    \n\n <u>Fritzing</u>
-        \n (About 180MB)
-        \n Official (Not Free): \n </string>
-    <string name="crack_fritzing">
-        \n Free (Version 0.9.3b.32.pc): \n  </string>
-    <string name="virtualbreadboard">
-        \n\n <u>Virtual Breadboard</u>
-        \n (About 152MB)
-        \n Official (Free, Windows): \n
+    
+
+ <u><b>Wiring Connection Software:</b></u>
+    
+
+ <u>Fritzing</u>
+    
+ Fritzing is an excellent tool for wiring diagrams. It is open-source, but pre-built binaries cost a small fee.
+    
+
+ <u>Virtual Breadboard</u>
+    
+ Available for free on Windows, this is a great alternative for planning breadboard layouts.
     </string>
+    <string name="crack_fritzing"></string>
+    <string name="virtualbreadboard"></string>
 
 
     <!-- Submenu 2: Comparison of Different Types of Arduino -->
@@ -203,7 +229,7 @@
     <string name="textviewCoding3_1_1">[Coding put here]</string>
     <string name="textviewSubmenu3_1_2">Schematic Diagram (Plot in Proteus)</string>
     <string name="textviewSubmenu3_1_3">Wiring Connection</string>
-    <string name="textviewSubmenu3_1_4">Video Demonstration:</string>
+    <string name="textviewSubmenu3_1_4">\n <u>Video Demonstration:</u> \n https://www.youtube.com/playlist?list=PLrNsguCJEixyaA8y8afS1Z3u9JzG_zoXS</string>
     <string name="comment_example_1">Comment (Example 1)</string>
     <!-- Comment Feature 1 -->
     <string name="send_button1">Comment</string>
@@ -238,7 +264,7 @@
     <string name="schematic_examples3_2_1">Schematic_of_Blinking_with_Transistor</string>
     <string name="textviewSubmenu3_2_3">\n <u>Wiring Connection (Fritzing / Virtual Breadboard):</u></string>
     <string name="connection_examples_3_2_1">connection_examples_3_2_1</string>
-    <string name="textviewSubmenu3_2_4">\n\n <u>Video Demonstration:</u> \n https://www.youtube.com/watch?v=UElw1EXf3gw \n\n</string>
+    <string name="textviewSubmenu3_2_4">\n\n <u>Video Demonstration:</u> \n https://www.youtube.com/watch?v=VqfPNENyrEs \n\n</string>
     <string name="comment_example_4">Comment Example 4</string>
     <!-- Comment Feature 4 -->
     <string name="send_button4">Comment</string>
@@ -435,7 +461,7 @@
     <string name="schematic_examples3_2_2">Schematic_of_4 Digit 7 Segment LED Display</string>
     <string name="textviewSubmenu3_2_7">\n <u>Wiring Connection (Fritzing / Virtual Breadboard):</u></string>
     <string name="connection_examples_3_2_2">connection_examples_3_2_2</string>
-    <string name="textviewSubmenu3_2_8">\n <u>Video Demonstration:</u></string>
+    <string name="textviewSubmenu3_2_8">\n <u>Video Demonstration:</u> \n https://www.youtube.com/watch?v=CitcX6gJQRs</string>
     <string name="comment_example_5">Comment Example 5</string>
     <!-- Comment Feature 5 -->
 
@@ -486,8 +512,210 @@
     <string name="schematic_examples3_2_3">Schematic_of_4 Digit 7 Segment LED Display</string>
     <string name="textviewSubmenu3_2_11">\n <u>Wiring Connection (Fritzing / Virtual Breadboard):</u></string>
     <string name="connection_examples_3_2_3">connection_examples_3_2_2</string>
-    <string name="textviewSubmenu3_2_12">\n <u>Video Demonstration:</u></string>
+    <string name="textviewSubmenu3_2_12">\n <u>Video Demonstration:</u> \n https://www.youtube.com/watch?v=mSvN8ngRW9I</string>
     <string name="comment_example_6">Comment Example 6</string>
 
 
+
+    <!-- MEGA EXAMPLES (1,2,3) -->
+    <string name="mega_title_1"><b>1. Capacitive Sensor Piano</b></string>
+    <string name="mega_vid_1">\n <u>Video Demonstration:</u> \n https://www.youtube.com/watch?v=A0JoCosAPT8</string>
+    <string name="mega_title_2">\n\n<b>2. Water Level Sensor</b></string>
+    <string name="mega_vid_2">\n <u>Video Demonstration:</u> \n https://www.youtube.com/watch?v=rdadoMGVQoQ</string>
+    <string name="mega_title_3">\n\n<b>3. Countdown Timer</b></string>
+    <string name="mega_vid_3">\n <u>Video Demonstration:</u> \n https://www.youtube.com/watch?v=5Ryw650tDwY</string>
+    <!-- NANO EXAMPLES (7,8,9) -->
+    <string name="nano_title_7"><b>1. Polygraph with Serial Plotter</b></string>
+    <string name="nano_vid_7">\n <u>Video Demonstration:</u> \n https://www.youtube.com/watch?v=d6MoIg0VJOM</string>
+    <string name="nano_title_8">\n\n<b>2. Windows CPU &amp; RAM Monitoring</b></string>
+    <string name="nano_vid_8">\n <u>Video Demonstration:</u> \n https://www.youtube.com/watch?v=d-Em3nUdov0</string>
+    <string name="nano_title_9">\n\n<b>3. Ultrasonic Sensor</b></string>
+    <string name="nano_vid_9">\n <u>Video Demonstration:</u> \n https://www.youtube.com/watch?v=QUSUySVf8Bg</string>
+    <string name="placeholder_code"><![CDATA[/* Arduino Code Placeholder \n Please insert code here */]]></string>
+    <string name="wiring_diagram_label">\n <u>Wiring Connection:</u></string>
+    <string formatted="false" name="code_ex_1"><![CDATA[#include <CapacitiveSensor.h>
+
+// 10M resistor between send pin 4 and receive pins
+CapacitiveSensor cs_4_2 = CapacitiveSensor(4,2); 
+CapacitiveSensor cs_4_6 = CapacitiveSensor(4,6); 
+CapacitiveSensor cs_4_8 = CapacitiveSensor(4,8); 
+
+int buzzerPin = 10;
+
+void setup() {
+   Serial.begin(9600);
+}
+
+void loop() {
+    long total1 = cs_4_2.capacitiveSensor(30);
+    long total2 = cs_4_6.capacitiveSensor(30);
+    long total3 = cs_4_8.capacitiveSensor(30);
+
+    if (total1 > 1000) tone(buzzerPin, 261); // C4
+    else if (total2 > 1000) tone(buzzerPin, 293); // D4
+    else if (total3 > 1000) tone(buzzerPin, 329); // E4
+    else noTone(buzzerPin);
+    
+    delay(10);
+}]]></string>
+    <string formatted="false" name="code_ex_2"><![CDATA[int sensorPin = A0; // Water level sensor
+int ledPin = 13;    // Indicator LED
+
+void setup() {
+  pinMode(ledPin, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  int level = analogRead(sensorPin);
+  Serial.print("Water Level: ");
+  Serial.println(level);
+
+  if (level > 300) { 
+    digitalWrite(ledPin, HIGH);
+  } else {
+    digitalWrite(ledPin, LOW);
+  }
+  delay(500);
+}]]></string>
+    <string formatted="false" name="code_ex_3"><![CDATA[#include <LiquidCrystal.h>
+
+// Initialize LCD (RS, E, D4, D5, D6, D7)
+LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+int timeRemaining = 60; // 60 seconds
+
+void setup() {
+  lcd.begin(16, 2);
+  lcd.print("Countdown Timer:");
+}
+
+void loop() {
+  if (timeRemaining > 0) {
+    lcd.setCursor(0, 1);
+    lcd.print(timeRemaining);
+    lcd.print(" Secs remaining ");
+    delay(1000);
+    timeRemaining--;
+  } else {
+    lcd.setCursor(0, 1);
+    lcd.print("Time's UP!      ");
+  }
+}]]></string>
+    <string formatted="false" name="code_ex_4"><![CDATA[int controlPin = 9; // Base of the NPN transistor
+
+void setup() {
+  pinMode(controlPin, OUTPUT);
+}
+
+void loop() {
+  // Turn on external load (e.g., LED strip or Motor)
+  digitalWrite(controlPin, HIGH);
+  delay(1000);
+  
+  // Turn off external load
+  digitalWrite(controlPin, LOW);
+  delay(1000);
+}]]></string>
+    <string formatted="false" name="code_ex_5"><![CDATA[#include "SevSeg.h"
+SevSeg sevseg;
+
+void setup() {
+  byte numDigits = 4;
+  byte digitPins[] = {2, 3, 4, 5};
+  byte segmentPins[] = {6, 7, 8, 9, 10, 11, 12, 13};
+  bool resistorsOnSegments = true;
+
+  sevseg.begin(COMMON_CATHODE, numDigits, digitPins, segmentPins, resistorsOnSegments);
+  sevseg.setBrightness(90);
+}
+
+void loop() {
+  sevseg.setNumber(1234, 1); // Display 123.4
+  sevseg.refreshDisplay();   // Must run repeatedly
+}]]></string>
+    <string formatted="false" name="code_ex_6"><![CDATA[#include <Servo.h>
+
+Servo myServo;
+int ldrPin = A0; // Photoresistor
+int servoPin = 9;
+
+void setup() {
+  myServo.attach(servoPin);
+  Serial.begin(9600);
+}
+
+void loop() {
+  int lightVal = analogRead(ldrPin);
+  // Map light reading (0-1023) to Servo angle (0-180)
+  int angle = map(lightVal, 0, 1023, 0, 180);
+  
+  myServo.write(angle);
+  
+  delay(15);
+}]]></string>
+    <string formatted="false" name="code_ex_7"><![CDATA[// Basic GSR (Galvanic Skin Response) / Polygraph
+int gsrPin = A0;
+
+void setup() {
+  // Open serial at 9600 to view in Arduino Serial Plotter
+  Serial.begin(9600);
+}
+
+void loop() {
+  int gsrValue = analogRead(gsrPin);
+  // Print value so Serial Plotter can graph it
+  Serial.println(gsrValue);
+  delay(50); // Small delay for stable plotting
+}]]></string>
+    <string formatted="false" name="code_ex_8"><![CDATA[#include <LiquidCrystal_I2C.h>
+
+// I2C LCD address 0x27, 16 columns, 2 rows
+LiquidCrystal_I2C lcd(0x27, 16, 2);
+
+void setup() {
+  Serial.begin(9600);
+  lcd.init();
+  lcd.backlight();
+  lcd.print("Waiting for PC...");
+}
+
+void loop() {
+  // Expects data from PC script like: "CPU:45% RAM:60%"
+  if (Serial.available() > 0) {
+    String data = Serial.readStringUntil(10);
+    lcd.clear();
+    lcd.setCursor(0, 0);
+    lcd.print(data.substring(0, 8)); // E.g., "CPU: 45%"
+    lcd.setCursor(0, 1);
+    lcd.print(data.substring(9));    // E.g., "RAM: 60%"
+  }
+}]]></string>
+    <string formatted="false" name="code_ex_9"><![CDATA[int trigPin = 9;
+int echoPin = 10;
+
+void setup() {
+  pinMode(trigPin, OUTPUT);
+  pinMode(echoPin, INPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  // Send a 10us pulse to trigger
+  digitalWrite(trigPin, LOW);
+  delayMicroseconds(2);
+  digitalWrite(trigPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin, LOW);
+
+  // Measure echo duration
+  long duration = pulseIn(echoPin, HIGH);
+  
+  // Calculate distance in cm (Speed of sound = 343m/s)
+  int distance = duration * 0.034 / 2;
+
+  Serial.print("Distance: ");
+  Serial.print(distance);
+  Serial.println(" cm");
+  delay(500);
+}]]></string>
 </resources>
