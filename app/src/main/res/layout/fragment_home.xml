@@ -89,6 +89,17 @@
             app:cornerRadius="12dp" />
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonFavorites"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginBottom="16dp"
+            android:text="My Saved Projects"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="16sp"
+            app:cornerRadius="12dp" />
+
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/Submenu4"
             style="@style/Widget.Material3.Button.ElevatedButton"
             android:layout_width="match_parent"

@@ -7,6 +7,7 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
 
 import android.widget.ImageView
 import android.widget.TextView
@@ -25,6 +26,7 @@ class ExampleAdapter(
         val textTitle: TextView = view.findViewById(R.id.textTitle)
         val textCode: TextView = view.findViewById(R.id.textCode)
         val buttonCopy: View = view.findViewById(R.id.buttonCopy)
+        val buttonFavorite: ImageButton = view.findViewById(R.id.buttonFavorite)
         val imageWiring: ImageView = view.findViewById(R.id.imageWiring)
         val textVideo: TextView = view.findViewById(R.id.textVideo)
         val buttonComments: View = view.findViewById(R.id.buttonComments)
@@ -43,6 +45,18 @@ class ExampleAdapter(
         // Highlight Code
         val rawCode = context.getString(example.codeResId)
         holder.textCode.text = ArduinoSyntaxHighlighter.highlight(rawCode)
+        
+        
+        // Favorite Button
+        val isFav = FavoritesManager.isFavorite(context, example.id)
+        holder.buttonFavorite.setImageResource(if (isFav) R.drawable.ic_heart_filled else R.drawable.ic_heart_outline)
+        
+        holder.buttonFavorite.setOnClickListener {
+            val nowFav = FavoritesManager.toggleFavorite(context, example.id)
+            holder.buttonFavorite.setImageResource(if (nowFav) R.drawable.ic_heart_filled else R.drawable.ic_heart_outline)
+            val msg = if (nowFav) "Added to Favorites!" else "Removed from Favorites"
+            Toast.makeText(context, msg, Toast.LENGTH_SHORT).show()
+        }
         
         // Copy Button
         holder.buttonCopy.setOnClickListener {

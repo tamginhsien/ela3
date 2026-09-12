@@ -21,6 +21,7 @@
         <activity android:name=".Submenu3_2" android:exported="false" />
         <activity android:name=".CommentsActivity" android:exported="false" />
         <activity android:name=".Submenu3_1" android:exported="false" />
+        <activity android:name=".FavoritesActivity" android:exported="false" />
         <activity android:name=".Submenu1" android:exported="false" />
         <activity 
             android:name=".SplashActivity"

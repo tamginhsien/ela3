@@ -1,5 +1,6 @@
 package com.example.ela2
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -34,6 +35,10 @@ class HomeFragment : Fragment() {
 
         binding.Submenu3.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment_to_submenu3Fragment)
+        }
+
+                binding.buttonFavorites.setOnClickListener {
+            startActivity(Intent(requireContext(), FavoritesActivity::class.java))
         }
 
         binding.Submenu4.setOnClickListener {
