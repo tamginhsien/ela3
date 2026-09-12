@@ -2,22 +2,25 @@ package com.example.ela2
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.ela2.databinding.ActivitySubmenu32Binding
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import androidx.appcompat.widget.Toolbar
+import com.example.ela2.data.ExampleAdapter
+import com.example.ela2.data.ExampleRepository
 
 class Submenu3_2 : AppCompatActivity() {
-    private lateinit var binding: ActivitySubmenu32Binding
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivitySubmenu32Binding.inflate(layoutInflater)
-        setContentView(binding.root)
-    }
+        setContentView(R.layout.activity_example_list)
 
-    fun openComments(view: android.view.View) {
-        val exampleId = view.tag.toString()
-        val intent = android.content.Intent(this, CommentsActivity::class.java).apply {
-            putExtra("EXAMPLE_ID", exampleId)
-        }
-        startActivity(intent)
+        val toolbar = findViewById<Toolbar>(R.id.toolbar)
+        toolbar.title = "Arduino UNO Examples"
+        setSupportActionBar(toolbar)
+
+        val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
+        recyclerView.layoutManager = LinearLayoutManager(this)
+        
+        val examples = ExampleRepository.getExamplesByCategory("UNO")
+        recyclerView.adapter = ExampleAdapter(examples, this)
     }
 }
